@@ -109,6 +109,6 @@ arn:partition:service:region:account-id:resource-id
 arn:partition:service:region:account-id:resource-type/resource-id
 arn:partition:service:region:account-id:resource-type:resource-id
 
-arn:aws:s3:::pictures # S3 Bucket
+arn:aws:s3:::pictures # S3 Bucket no need to specify region or account-id due to global namespace
 arn:aws:s3:::pictures/* # all objects in the S3 Bucket
 ```
