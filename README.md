@@ -34,3 +34,18 @@ IAM Identity Policies are JSON documents that define permissions for an IAM prin
 - Policy Types: Types of policies that you can create. This is an optional field.
 - Policy Evaluation Logic: How policies are evaluated. This is an optional field.
 - Policy Evaluation: How policies are evaluated. This is an optional field.
+
+#### IAM Identity Policy Evaluation
+
+- Identity-based policies are evaluated when a principal (user or role) makes a request to AWS.
+- Resource-based policies are evaluated when a request is made to the resource that the policy is attached to.
+- If there is an explicit deny in any of the policies, the request is denied.
+- If there is an explicit allow in any of the policies, the request is allowed.
+- If there is no explicit allow or deny, the request is denied.
+- Policies are evaluated in the following order:
+  - Identity-based policies
+  - Resource-based policies
+  - SCPs
+  - Session policies
+  - ACLs
+  - Organizations service control policies (SCPs)
