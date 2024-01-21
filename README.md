@@ -39,9 +39,11 @@ IAM Identity Policies are JSON documents that define permissions for an IAM prin
 
 - Identity-based policies are evaluated when a principal (user or role) makes a request to AWS.
 - Resource-based policies are evaluated when a request is made to the resource that the policy is attached to.
-- If there is an explicit deny in any of the policies, the request is denied.
-- If there is an explicit allow in any of the policies, the request is allowed.
-- If there is no explicit allow or deny, the request is denied.
+
+1. If there is an explicit deny in any of the policies, the request is denied.
+2. If there is an explicit allow in any of the policies, the request is allowed.
+3. If there is no explicit allow or deny, the request is denied.
+
 - Policies are evaluated in the following order:
   - Identity-based policies
   - Resource-based policies
