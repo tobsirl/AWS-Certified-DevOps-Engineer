@@ -66,6 +66,11 @@ AWS managed policies are standalone identity-based policies that are created and
 
 Customer managed policies are standalone identity-based policies that are created and managed by you. You have full control over these policies and can attach them to multiple users, groups, and roles within your AWS account. You can also choose to share your customer managed policies across accounts.
 
+- Reusable
+- Managed by you
+- Shared across accounts
+- Version controlled
+
 ##### Inline Policies
 
 Inline policies are identity-based policies that are embedded directly into a single user, group, or role. Inline policies are useful for granting permissions to perform a specific task for a user, group, or role. An inline policy exists only as long as the user, group, or role exists.
