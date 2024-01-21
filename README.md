@@ -51,3 +51,9 @@ IAM Identity Policies are JSON documents that define permissions for an IAM prin
   - Session policies
   - ACLs
   - Organizations service control policies (SCPs)
+
+#### IAM Identity Policy Types
+
+- AWS Managed Policies: AWS managed policies are standalone identity-based policies that are created and managed by AWS. They are designed to be widely useful for many scenarios and are maintained by AWS. When you use an AWS managed policy, you can be sure that the policy is up-to-date and allows access to the specified AWS services and resources.
+- Customer Managed Policies: Customer managed policies are standalone identity-based policies that are created and managed by you. You have full control over these policies and can attach them to multiple users, groups, and roles within your AWS account. You can also choose to share your customer managed policies across accounts.
+- Inline Policies: Inline policies are identity-based policies that are embedded directly into a single user, group, or role. Inline policies are useful for granting permissions to perform a specific task for a user, group, or role. An inline policy exists only as long as the user, group, or role exists.
