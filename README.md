@@ -19,3 +19,18 @@ IAM Identity Policies are JSON documents that define permissions for an IAM prin
   ]
 }
 ```
+
+#### IAM Identity Policy Elements
+
+- Version: The version of the policy language. This is always 2012-10-17.
+- Statement: The main element of the policy. It is an array of one or more individual statements.
+- Sid: A statement identifier. This is an optional field that you can use to identify the statement.
+- Effect: The effect of the statement. This can be either Allow or Deny.
+- Principal: The principal to which this policy applies. This is optional and when not specified, the policy applies to the user or role that the policy is attached to.
+- Action: The action or actions that this policy allows or denies. This is an array of one or more actions.
+- Resource: The resource or resources that the statement covers. This is an array of one or more resources.
+- Condition: Conditions that must be met for the statement to be in effect. This is an optional field.
+- Policy Variables: Variables that you can use in your policy. This is an optional field.
+- Policy Types: Types of policies that you can create. This is an optional field.
+- Policy Evaluation Logic: How policies are evaluated. This is an optional field.
+- Policy Evaluation: How policies are evaluated. This is an optional field.
