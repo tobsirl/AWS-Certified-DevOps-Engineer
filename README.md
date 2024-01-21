@@ -97,3 +97,18 @@ Authenticated Identity: IAM User, IAM Role, AWS Account Root User, Federated Use
 Once authenticated, the user is authorized to perform actions and obtain information based on the permissions that are attached to the IAM user.
 
 IAM checks to see if the authenticated principal is authorized to perform the requested action or obtain the requested information. Authorization is performed by evaluating the policies that are attached to the IAM user.
+
+#### Amazon Resource Name (ARN)
+
+Amazon Resource Names (ARNs) uniquely identify AWS resources. We require an ARN when you need to specify a resource unambiguously across all of AWS, such as in IAM policies, Amazon Relational Database Service (Amazon RDS) tags, and API calls.
+
+An ARN is a unique identifier for an AWS resource. It is a string of characters that follow a specific format. The format of an ARN is:
+
+```bash
+arn:partition:service:region:account-id:resource-id
+arn:partition:service:region:account-id:resource-type/resource-id
+arn:partition:service:region:account-id:resource-type:resource-id
+
+arn:aws:s3:::pictures # S3 Bucket
+arn:aws:s3:::pictures/* # all objects in the S3 Bucket
+```
