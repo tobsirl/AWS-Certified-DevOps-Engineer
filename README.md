@@ -85,3 +85,15 @@ Inline policies are identity-based policies that are embedded directly into a si
 IAM users are entities that you create in AWS to represent the people and services that you work with. You use IAM users to control authentication (sign-in) and authorization (permissions) to AWS resources in your account. IAM users can be grouped together into IAM groups and roles, and these IAM principals can be assigned permissions to create a logical grouping of users.
 
 IAM User are an identity used for anything requiring long-term access to AWS resources. e.g. a person, an application, or a service.
+
+#### Principal
+
+Person or application that can make a request to IAM to perform and action or obtain information.
+
+IAM users are required to authenticate with AWS before they can make requests to AWS services. Authentication is performed by signing in with a username and password or by using access keys.
+
+Authenticated Identity: IAM User, IAM Role, AWS Account Root User, Federated User
+
+Once authenticated, the user is authorized to perform actions and obtain information based on the permissions that are attached to the IAM user.
+
+IAM checks to see if the authenticated principal is authorized to perform the requested action or obtain the requested information. Authorization is performed by evaluating the policies that are attached to the IAM user.
