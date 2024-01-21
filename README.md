@@ -112,3 +112,11 @@ arn:partition:service:region:account-id:resource-type:resource-id
 arn:aws:s3:::pictures # S3 Bucket no need to specify region or account-id due to global namespace
 arn:aws:s3:::pictures/* # all objects in the S3 Bucket
 ```
+
+#### IAM User limits
+
+- 5000 IAM Users per AWS Account
+- IAM User can be a member of up to 10 groups
+- Internet-scale applications
+- Large organizations
+- IAM Roles & IAM Federation can fix this
