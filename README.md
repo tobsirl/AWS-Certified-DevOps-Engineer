@@ -79,3 +79,9 @@ Inline policies are identity-based policies that are embedded directly into a si
 - Managed by you
 - Embedded directly into a single user, group, or role
 - Special or Exceptional Allow or Deny
+
+### IAM Users
+
+IAM users are entities that you create in AWS to represent the people and services that you work with. You use IAM users to control authentication (sign-in) and authorization (permissions) to AWS resources in your account. IAM users can be grouped together into IAM groups and roles, and these IAM principals can be assigned permissions to create a logical grouping of users.
+
+IAM User are an identity used for anything requiring long-term access to AWS resources. e.g. a person, an application, or a service.
