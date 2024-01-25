@@ -129,3 +129,4 @@ IAM groups are a collection of IAM users. Groups let you specify permissions for
 
 - No nested groups
 - 300 groups per AWS Account
+- Groups are _not_ a _true identity_. They can't be referenced as a _principal_ in a policy
