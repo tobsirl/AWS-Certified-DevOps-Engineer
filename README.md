@@ -120,3 +120,7 @@ arn:aws:s3:::pictures/* # all objects in the S3 Bucket
 - Internet-scale applications
 - Large organizations
 - IAM Roles & IAM Federation can fix this
+
+### IAM Groups
+
+IAM groups are a collection of IAM users. Groups let you specify permissions for multiple users, which can make it easier to manage the permissions for those users. For example, you could have a group called Admins and give that group the types of permissions that administrators typically need. Any user in that group automatically has the permissions that are assigned to the group. If a new user joins your organization and needs administrator privileges, you can assign the appropriate permissions by adding the user to that group. Similarly, if a person changes jobs in your organization, instead of editing that user's permissions, you can remove him or her from the old groups and add him or her to the appropriate new groups.
