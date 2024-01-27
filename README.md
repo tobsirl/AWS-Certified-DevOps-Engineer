@@ -148,3 +148,18 @@ IAM roles are a secure way to grant permissions to entities that you trust. Exam
 - IAM roles can be used to delegate access to services that do not normally support IAM users, such as Amazon EC2.
 - IAM roles can be used to delegate access to services that you do not own.
 - IAM roles can be used to delegate access to services outside of AWS.
+
+#### IAM Role Types
+
+IAM Roles have two types of policies attached to them:
+
+- Trust Policy: Specifies who can assume the role
+  IAM Roles have a Trust Policy that specifies who can assume the role. The Trust Policy is a JSON document that defines the trusted entities that are allowed to assume the role. The Trust Policy is attached to the role and is evaluated when a principal attempts to assume the role.
+  Which identities can assume the role?
+
+- Permissions Policy: Specifies what the role can do
+  IAM Roles have a Permissions Policy that specifies what the role can do. The Permissions Policy is a JSON document that defines the permissions that are allowed or denied when the role is assumed. The Permissions Policy is attached to the role and is evaluated when a principal attempts to assume the role.
+
+#### Temporary Security Credentials
+
+IAM roles issue temporary security credentials that are valid for a specified duration. These credentials are generated dynamically and provided to the user or application that assumes the role. The user or application can then use the temporary security credentials to make requests to AWS resources.
