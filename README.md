@@ -238,3 +238,5 @@ As an administrator of an organization, you can create accounts in your organiza
 #### AWS Organizations Consolidated Billing
 
 Consolidated billing enables you to consolidate payment for multiple AWS accounts or multiple Amazon Internet Services Pvt. Ltd (AISPL) accounts within your organization by designating a single account to pay for all charges. Consolidated billing is offered at no additional charge.
+
+Consolidation of reservations and volume discounts
