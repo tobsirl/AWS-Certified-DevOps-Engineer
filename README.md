@@ -167,3 +167,34 @@ IAM roles issue temporary security credentials that are valid for a specified du
 ##### sts:AssumeRole
 
 sts:AssumeRole is an AWS Security Token Service (AWS STS) API operation that grants an IAM user permission to assume a role. The IAM user must have permission to call the sts:AssumeRole API operation and the role must have a trust policy that allows the IAM user to assume the role.
+
+### Service-Linked Roles
+
+Service-linked roles are predefined IAM roles that are used by AWS services to enable integration with other AWS services. Each service-linked role delegates permissions to an AWS service so that the service can access resources in another service on your behalf.
+
+Service-linked roles are predefined by the service and include all the permissions that the service requires to call other AWS services on your behalf.
+
+A service-linked role makes setting up an integration between two AWS services easier because you don't have to manually add the necessary permissions. AWS creates a service-linked role only when you create a resource that requires a service-linked role to manage your resource on your behalf.
+
+example:
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "iam:CreateServiceLinkedRole",
+      "Resource": "arn:aws:iam::*:role/aws-service-role/SERVICE-NAME.amazonaws.com/SERVICE-LINKED-ROLE-NAME-PREFIX*",
+      "Condition": {
+        "StringLike": { "iam:AWSServiceName": "SERVICE-NAME.amazonaws.com" }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": ["iam:AttachRolePolicy", "iam:PutRolePolicy"],
+      "Resource": "arn:aws:iam::*:role/aws-service-role/SERVICE-NAME.amazonaws.com/SERVICE-LINKED-ROLE-NAME-PREFIX*"
+    }
+  ]
+}
+```
