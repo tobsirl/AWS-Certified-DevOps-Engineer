@@ -130,3 +130,21 @@ IAM groups are a collection of IAM users. Groups let you specify permissions for
 - No nested groups
 - 300 groups per AWS Account
 - Groups are _not_ a _true identity_. They can't be referenced as a _principal_ in a policy
+
+### IAM Roles
+
+IAM roles are a secure way to grant permissions to entities that you trust. Examples of entities include the following:
+
+- IAM user in another account
+- Application code running on an EC2 instance that needs to perform actions on AWS resources
+- An AWS service that needs to act on resources in your account to provide its features
+- Users from a corporate directory who use identity federation with SAML
+- IAM roles issue keys that are valid for short durations, making them a more secure way to grant access.
+- IAM roles do not have any credentials (password or access keys) associated with them.
+- Instead, IAM roles have a trust policy that specifies who can assume the role.
+- IAM roles are not associated with a specific user or group.
+- Instead, trusted entities assume roles, such as IAM users, applications, or AWS services such as EC2.
+- IAM roles can be used to delegate access within your account or between accounts you own.
+- IAM roles can be used to delegate access to services that do not normally support IAM users, such as Amazon EC2.
+- IAM roles can be used to delegate access to services that you do not own.
+- IAM roles can be used to delegate access to services outside of AWS.
