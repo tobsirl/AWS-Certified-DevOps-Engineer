@@ -198,3 +198,24 @@ example:
   ]
 }
 ```
+
+#### Service-Linked Role Pass Role
+
+Some services require you to pass a service-linked role to the service. This is because the service must delegate permissions to the service-linked role to access resources on your behalf. When you pass a service-linked role to a service, the service can assume the service-linked role only if the service-linked role has a trust policy that allows the service to assume the role.
+
+example:
+
+```json
+{
+  "Sid": "PolicyStatementToAllowUserToListRoles",
+  "Effect": "Allow",
+  "Action": ["iam:ListRoles"],
+  "Resource": "*"
+},
+{
+  "Sid": "PolicyStatementToAllowUserToPassOneSpecificRole",
+  "Effect": "Allow",
+  "Action": [ "iam:PassRole" ],
+  "Resource": "arn:aws:iam::account-id:role/my-role-for-XYZ"
+}
+```
