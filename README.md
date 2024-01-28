@@ -250,3 +250,6 @@ Service control policies can be attached to the root, organizational units (OUs)
 - SCPs that are attached to the root of the organization
 - SCPs that are attached to an OU
 - SCPs that are attached to an account
+
+- SCPs are account permissions boundaries
+- SCPs limit what the account (including the account root user) can do
