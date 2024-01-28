@@ -244,3 +244,9 @@ Consolidation of reservations and volume discounts
 ### Service Control Policies
 
 Service control policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization. SCPs offer central control over the maximum available permissions for all accounts in your organization. SCPs are available only in organizations that have all features enabled.
+
+Service control policies can be attached to the root, organizational units (OUs), and accounts. SCPs are applied in the following order:
+
+- SCPs that are attached to the root of the organization
+- SCPs that are attached to an OU
+- SCPs that are attached to an account
