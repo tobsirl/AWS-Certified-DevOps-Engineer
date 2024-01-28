@@ -254,6 +254,7 @@ Service control policies can be attached to the root, organizational units (OUs)
 - SCPs are account permissions boundaries
 - SCPs limit what the account (including the account root user) can do
 - SCPs do not grant permissions
+- SCPs determine what permissions are available to the account
 
 #### SCPs Allow list vs Deny list
 
