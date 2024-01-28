@@ -240,3 +240,7 @@ As an administrator of an organization, you can create accounts in your organiza
 Consolidated billing enables you to consolidate payment for multiple AWS accounts or multiple Amazon Internet Services Pvt. Ltd (AISPL) accounts within your organization by designating a single account to pay for all charges. Consolidated billing is offered at no additional charge.
 
 Consolidation of reservations and volume discounts
+
+### Service Control Policies
+
+Service control policies (SCPs) are a type of organization policy that you can use to manage permissions in your organization. SCPs offer central control over the maximum available permissions for all accounts in your organization. SCPs are available only in organizations that have all features enabled.
