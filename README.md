@@ -254,3 +254,42 @@ Service control policies can be attached to the root, organizational units (OUs)
 - SCPs are account permissions boundaries
 - SCPs limit what the account (including the account root user) can do
 - SCPs do not grant permissions
+
+#### SCPs Allow list vs Deny list
+
+- SCPs default to FullAWSAccess
+- SCPs therefore must deny access to services
+
+Using an allow list is the recommended approach for using SCPs. An allow list is a list of services, actions, or resources that are allowed. All other services, actions, or resources are denied. Using an allow list is more secure because it is easier to maintain and less likely to be misconfigured.
+
+First step is to remove FullAWSAccess
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyFullAWSAccess",
+      "Effect": "Deny",
+      "Action": "iam:*",
+      "Resource": "*"
+    }
+  ]
+}
+```
+
+Second step is to allow only the services you need
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AllowEC2AndS3",
+      "Effect": "Allow",
+      "Action": ["ec2:*", "s3:*"],
+      "Resource": "*"
+    }
+  ]
+}
+```
