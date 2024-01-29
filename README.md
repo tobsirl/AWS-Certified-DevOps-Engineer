@@ -302,4 +302,10 @@ AWS CloudFormation provides a common language for you to describe and provision 
 Physical Resources: AWS resources that are created and managed by CloudFormation. e.g. EC2 Instance, S3 Bucket, RDS Database
 Logical Resources: Resources that are part of the CloudFormation template. e.g. EC2 Instance, S3 Bucket, RDS Database
 
-### CloudFormation Template Anatomy
+### CloudFormation Template
+
+A CloudFormation template is a JSON or YAML formatted text file that describes your AWS infrastructure. The template contains sections that describe the AWS resources that you want to create and configure. You can also use the template to specify values for template parameters, to pass values between resources, and to output values.
+
+Contains logical resources - the "WHAT"
+
+Templates are used to create Stacks
