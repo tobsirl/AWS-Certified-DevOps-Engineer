@@ -329,3 +329,18 @@ If a stack is deleted, normally, the physical resources are deleted
 - Transform
 - Resources
 - Outputs
+
+example of a CloudFormation Template
+
+```yaml
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-0ff8a91507f77f867
+      InstanceType: t2.micro
+      KeyName: mykey
+      SecurityGroupIds:
+        - sg-78a54011
+      SubnetId: subnet-0e5dce72
+```
