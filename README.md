@@ -317,3 +317,15 @@ stacks create physical resources from the logical resources in the template
 If a stacks template is changed, physical resources are changed
 
 If a stack is deleted, normally, the physical resources are deleted
+
+### CloudFormation Template Anatomy
+
+- AWSTemplateFormatVersion
+- Description
+- Metadata
+- Parameters
+- Mappings
+- Conditions
+- Transform
+- Resources
+- Outputs
