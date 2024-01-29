@@ -309,3 +309,11 @@ A CloudFormation template is a JSON or YAML formatted text file that describes y
 Contains logical resources - the "WHAT"
 
 Templates are used to create Stacks
+
+1 stack, 100 stacks, 20.. stacks in each region
+
+stacks create physical resources from the logical resources in the template
+
+If a stacks template is changed, physical resources are changed
+
+If a stack is deleted, normally, the physical resources are deleted
