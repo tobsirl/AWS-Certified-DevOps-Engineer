@@ -294,3 +294,12 @@ Second step is to allow only the services you need
   ]
 }
 ```
+
+## CloudFormation
+
+AWS CloudFormation provides a common language for you to describe and provision all the infrastructure resources in your cloud environment. CloudFormation allows you to use a simple text file to model and provision, in an automated and secure manner, all the resources needed for your applications across all regions and accounts. This file serves as the single source of truth for your cloud environment. CloudFormation provisions your resources in a safe, repeatable manner, allowing you to build and rebuild your infrastructure and applications, without having to perform manual actions or write custom scripts.
+
+Physical Resources: AWS resources that are created and managed by CloudFormation. e.g. EC2 Instance, S3 Bucket, RDS Database
+Logical Resources: Resources that are part of the CloudFormation template. e.g. EC2 Instance, S3 Bucket, RDS Database
+
+### CloudFormation Template Anatomy
