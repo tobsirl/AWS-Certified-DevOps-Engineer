@@ -330,7 +330,7 @@ If a stack is deleted, normally, the physical resources are deleted
 - Resources
 - Outputs
 
-example of a CloudFormation Template
+Example of a CloudFormation Template
 
 ```yaml
 Resources:
