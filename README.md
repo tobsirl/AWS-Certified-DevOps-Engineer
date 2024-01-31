@@ -369,3 +369,17 @@ Parameters:
       - t2.medium
     ConstraintDescription: must be a valid EC2 instance type.
 ```
+
+Example of a Pseudo Parameter
+
+```yaml
+!Ref MyEC2Instance
+!Ref AWS::Region
+!Ref AWS::StackName
+!Ref AWS::StackId
+!Ref AWS::AccountId
+!Ref AWS::NotificationARNs
+!Ref AWS::NoValue
+!Ref AWS::Partition
+!Ref AWS::URLSuffix
+```
