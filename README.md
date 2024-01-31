@@ -354,3 +354,18 @@ Template parameters are used to pass values into a template at runtime. Paramete
 - Can be referenced from whithin logical resources
 - influence physical resources and/or configuration
 - Can be configured with Default, AllowedValues, MaxLength, MinLength, MaxValue, MinValue, NoEcho, Description, ConstraintDescription
+
+Example of a Template Parameter
+
+```yaml
+Parameters:
+  InstanceType:
+    Description: EC2 instance type
+    Type: String
+    Default: t2.micro
+    AllowedValues:
+      - t2.micro
+      - t2.small
+      - t2.medium
+    ConstraintDescription: must be a valid EC2 instance type.
+```
