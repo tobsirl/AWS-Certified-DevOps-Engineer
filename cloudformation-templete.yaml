@@ -5,3 +5,5 @@ Resources:
       BucketName: "accatpics13333337"
   Instance:
     Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: "t2.micro"
