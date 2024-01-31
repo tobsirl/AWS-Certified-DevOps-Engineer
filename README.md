@@ -344,3 +344,7 @@ Resources:
         - sg-78a54011
       SubnetId: subnet-0e5dce72
 ```
+
+### Template Parameters and Pseudo Parameters
+
+Template parameters are used to pass values into a template at runtime. Parameters enable you to input custom values to your template each time you create or update a stack. Parameters are important for reusability, because they enable you to customize your templates for various environments.
