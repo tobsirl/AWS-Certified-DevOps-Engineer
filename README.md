@@ -350,3 +350,7 @@ Resources:
 Template parameters are used to pass values into a template at runtime. Parameters enable you to input custom values to your template each time you create or update a stack. Parameters are important for reusability, because they enable you to customize your templates for various environments.
 
 - Template parameters accept input - console, API, CLI
+- when a stack is created or updated
+- Can be referenced from whithin logical resources
+- influence physical resources and/or configuration
+- Can be configured with Default, AllowedValues, MaxLength, MinLength, MaxValue, MinValue, NoEcho, Description, ConstraintDescription
