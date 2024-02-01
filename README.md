@@ -383,3 +383,10 @@ Example of a Pseudo Parameter
 !Ref AWS::Partition
 !Ref AWS::URLSuffix
 ```
+
+### Cloudformation Intrinsic Functions
+
+Intrinsic functions enable you to assign values to properties that are not available until runtime. You can use intrinsic functions for built-in functions, such as conditionals, and for creating your own functions. You can also use intrinsic functions to insert values into a stack from elsewhere in the template.
+
+- Ref: Returns the value of the specified parameter or resource.
+- Fn::GetAtt: Returns the value of an attribute from a resource in the template.
