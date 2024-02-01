@@ -398,3 +398,9 @@ Intrinsic functions enable you to assign values to properties that are not avail
 - Fn::Base64: Returns the Base64 representation of the input string.
 - Fn::Sub: Substitutes variables in an input string with values that you specify.
 - Fn::Cidr: Returns an array of CIDR address blocks.
+
+#### Ref
+
+```yaml
+!Ref MyEC2Instance
+```
