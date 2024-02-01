@@ -402,3 +402,7 @@ Intrinsic functions enable you to assign values to properties that are not avail
 ### CloudFormation Mappings
 
 Mappings are a set of key-value pairs that you can use to specify conditional parameter values, similar to a lookup table. You can match a key to a corresponding value by using the Fn::FindInMap intrinsic function in the Resources and Outputs section.
+
+- Templates can contain Mappings object
+- which can contain many mappings
+- which map keys to values, allowing lookup
