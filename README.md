@@ -390,3 +390,5 @@ Intrinsic functions enable you to assign values to properties that are not avail
 
 - Ref: Returns the value of the specified parameter or resource.
 - Fn::GetAtt: Returns the value of an attribute from a resource in the template.
+- Fn::Join: Appends a set of values into a single value, separated by the specified delimiter.
+- Fn::Split: Splits a string into a list of string values so that you can select an element from the resulting string list.
