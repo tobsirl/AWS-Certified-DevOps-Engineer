@@ -440,3 +440,7 @@ Example of FindInMap
 
 !FindInMap [RegionMap, !Ref "AWS::Region", 32]
 ```
+
+### CloudFormation Outputs
+
+Outputs are optional and can be used to export values from the stack to make them available for other stacks to import. For example, you can output the Amazon S3 bucket name for a stack, and then use the Name attribute of the AWS::S3::Bucket resource in another stack by using the { "Fn::ImportValue" : "stack-output-name" } function.
