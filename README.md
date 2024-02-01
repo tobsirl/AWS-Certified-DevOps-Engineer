@@ -394,3 +394,6 @@ Intrinsic functions enable you to assign values to properties that are not avail
 - Fn::Split: Splits a string into a list of string values so that you can select an element from the resulting string list.
 - Fn::GetAZs: Returns an array that lists Availability Zones for a specified region.
 - Fn::Select: Returns a single object from a list of objects by index.
+- Condition Functions: Returns one value if the specified condition evaluates to true and another value if the specified condition evaluates to false.
+- Fn::Base64: Returns the Base64 representation of the input string.
+- Fn::Sub: Substitutes variables in an input string with values that you specify.
