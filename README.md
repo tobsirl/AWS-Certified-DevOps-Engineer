@@ -399,8 +399,6 @@ Intrinsic functions enable you to assign values to properties that are not avail
 - Fn::Sub: Substitutes variables in an input string with values that you specify.
 - Fn::Cidr: Returns an array of CIDR address blocks.
 
-#### Ref
+### CloudFormation Mappings
 
-```yaml
-!Ref MyEC2Instance
-```
+Mappings are a set of key-value pairs that you can use to specify conditional parameter values, similar to a lookup table. You can match a key to a corresponding value by using the Fn::FindInMap intrinsic function in the Resources and Outputs section.
