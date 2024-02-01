@@ -437,4 +437,6 @@ Example of FindInMap
 
 ```yaml
 !FindInMap [MapName, TopLevelKey, SecondLevelKey]
+
+!FindInMap [RegionMap, !Ref "AWS::Region", 32]
 ```
