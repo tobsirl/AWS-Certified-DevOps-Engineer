@@ -444,3 +444,10 @@ Example of FindInMap
 ### CloudFormation Outputs
 
 Outputs are optional and can be used to export values from the stack to make them available for other stacks to import. For example, you can output the Amazon S3 bucket name for a stack, and then use the Name attribute of the AWS::S3::Bucket resource in another stack by using the { "Fn::ImportValue" : "stack-output-name" } function.
+
+- Templates can have an _optional_ Outputs section
+- Values can be declared in this section
+- visible as outputs when using the CLI
+- visible as outputs in the console UI
+- accessible from a parent stack when using nesting
+- Can be exported, allowing cross-stack references
