@@ -406,3 +406,4 @@ Mappings are a set of key-value pairs that you can use to specify conditional pa
 - Templates can contain Mappings object
 - which can contain many mappings
 - which map keys to values, allowing lookup
+- Can have one key, or Top & Second level keys
