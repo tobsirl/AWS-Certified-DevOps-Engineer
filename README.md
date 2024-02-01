@@ -451,3 +451,12 @@ Outputs are optional and can be used to export values from the stack to make the
 - visible as outputs in the console UI
 - accessible from a parent stack when using nesting
 - Can be exported, allowing cross-stack references
+
+Example of an Output
+
+```yaml
+Outputs:
+  WordPressURL:
+    Description: "Instance Web Url"
+    Value: !Join ["", ["http://", !GetAtt EC2Instance.PublicDnsName]]
+```
