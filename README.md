@@ -407,3 +407,5 @@ Mappings are a set of key-value pairs that you can use to specify conditional pa
 - which can contain many mappings
 - which map keys to values, allowing lookup
 - Can have one key, or Top & Second level keys
+- Mappings use !FindInMap intrinsic function
+- Common use ... retrieve AMI for a given region & architecture
