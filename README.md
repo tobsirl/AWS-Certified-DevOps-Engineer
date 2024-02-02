@@ -460,3 +460,7 @@ Outputs:
     Description: "Instance Web Url"
     Value: !Join ["", ["http://", !GetAtt EC2Instance.PublicDnsName]]
 ```
+
+### CloudFormation Conditions
+
+Conditions are optional and can be used to control whether certain resources are created or whether certain resource properties are assigned a value during stack creation or update. For example, you can conditionally create a resource based on the environment to which the stack is being deployed.
