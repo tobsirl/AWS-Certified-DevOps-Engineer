@@ -487,3 +487,10 @@ Parameters:
       - DEV
     ConstraintDescription: "must specify PROD, TEST, or DEV."
 ```
+
+```yaml
+Conditions:
+  CreateProdResources: !Equals [!Ref Environment, "PROD"]
+  CreateTestResources: !Equals [!Ref Environment, "TEST"]
+  CreateDevResources: !Equals [!Ref Environment, "DEV"]
+```
