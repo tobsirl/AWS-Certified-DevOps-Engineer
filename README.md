@@ -468,3 +468,6 @@ Conditions are optional and can be used to control whether certain resources are
 - Created in the optional Conditions section of a template
 - Conditions are evaluated to True or False
 - processed before resources are created
+- Use the other intrinsic functions AND, OR, NOT, IF, EQUALS
+- associated with logical resources to control if they are created or not
+- e.g. ONEAZ, TWOAZ, THREEAZ - how many AZs to create resources in
