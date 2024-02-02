@@ -494,3 +494,17 @@ Conditions:
   CreateTestResources: !Equals [!Ref Environment, "TEST"]
   CreateDevResources: !Equals [!Ref Environment, "DEV"]
 ```
+
+```yaml
+Resources:
+  MyEC2Instance:
+    Type: AWS::EC2::Instance
+    Condition: CreateProdResources
+    Properties:
+      ImageId: ami-0ff8a91507f77f867
+      InstanceType: t2.micro
+      KeyName: mykey
+      SecurityGroupIds:
+        - sg-78a54011
+      SubnetId: subnet-0e5dce72
+```
