@@ -471,3 +471,4 @@ Conditions are optional and can be used to control whether certain resources are
 - Use the other intrinsic functions AND, OR, NOT, IF, EQUALS
 - associated with logical resources to control if they are created or not
 - e.g. ONEAZ, TWOAZ, THREEAZ - how many AZs to create resources in
+- e.g. PROD, TEST, DEV - what environment to create resources in
