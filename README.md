@@ -562,5 +562,5 @@ EIP:
   Type: AWS::EC2::EIP
   Properties:
     Domain: vpc
-  DependsOn: InternetGateway
+  DependsOn: InternetGatewayAttachment
 ```
