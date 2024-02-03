@@ -669,3 +669,11 @@ JSON passed back in signal response
   "Data": "Configuration Complete"
 }
 ```
+
+Accessible via Fn::GetAtt on the WaitCondition
+
+```json
+{
+  "Signal1": "Some amazing thing has happened"
+}
+```
