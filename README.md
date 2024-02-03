@@ -525,7 +525,7 @@ Example of DependsOn a VPC and Internet Gateway
 
 ```yaml
 Resources:
-  MyVPC:
+  VPC:
     Type: AWS::EC2::VPC
     Properties:
       CidrBlock: 10.16.0.0/16
@@ -534,4 +534,13 @@ Resources:
       Tags:
         - Key: Name
           Value: a4l-vpc1
+```
+
+```yaml
+MyInternetGateway:
+  Type: AWS::EC2::InternetGateway
+  Properties:
+    Tags:
+      - Key: Name
+        Value: a4l-igw1
 ```
