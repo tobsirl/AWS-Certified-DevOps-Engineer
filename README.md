@@ -518,3 +518,5 @@ The DependsOn attribute is used to specify that the creation of a specific resou
 - tries to determine a **dependency order** (VPC -> Subnet -> EC2)
 - **reference** or **function** create these
 - DependsOn lets you _explicitly_ define these dependencies
+- if Resource B and C depends on Resource A, then Resource A is created first
+- both wait for A to complete before starting
