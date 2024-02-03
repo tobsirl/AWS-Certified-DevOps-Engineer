@@ -512,3 +512,6 @@ Resources:
 ### CloudFormation DependsOn
 
 The DependsOn attribute is used to specify that the creation of a specific resource follows another. When you add a DependsOn attribute to a resource, that resource is created only after the creation of the resource specified in the DependsOn attribute.
+
+- CloudFormation tries to be efficient
+- It will create resources in parallel if it can (create, update, delete)
