@@ -625,9 +625,9 @@ LaunchConfig:
     UserData:
       Fn::Base64: !Sub |
         #!/bin/bash -xe
-        yum update -y
-        yum install -y httpd
-        systemctl start httpd
-        systemctl enable httpd
-        echo "Hello World" > /var/www/html/index.html
+        yum update -y aws-cfn-bootstrap
+        /opt/aws/bin/cfn-init -v 
+        --stack ${AWS::StackName} 
+        --resource LaunchConfig 
+        --region ${AWS::Region}
 ```
