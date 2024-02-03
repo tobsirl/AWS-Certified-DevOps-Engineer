@@ -573,3 +573,4 @@ CreationPolicy, WaitConditions and cfn-signal can all be used together to preven
 - Logical resources in the **template**
 - Used to create a **Stack**
 - creates **physical resources** in AWS
+- Logical resource CREATE_COMPLETE does not mean physical resource is ready
