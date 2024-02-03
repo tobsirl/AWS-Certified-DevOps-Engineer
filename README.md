@@ -584,3 +584,46 @@ CreationPolicy, WaitConditions and cfn-signal can all be used together to preven
 - If failure signal received, creation fails
 - If timeout is reached creation fails
 - CreationPolicy or WaitCondition
+
+#### CloudFormation CreationPolicy
+
+- CreationPolicy is used to prevent the status of a resource from reaching create complete until AWS CloudFormation receives a specified number of success signals or the timeout period is exceeded.
+- CreationPolicy is used with the WaitCondition and cfn-signal helper script to signal AWS CloudFormation to indicate whether Amazon EC2 instances have been successfully created or updated.
+- CreationPolicy is used to prevent the status of a resource from reaching create complete until AWS CloudFormation receives a specified number of success signals or the timeout period is exceeded.
+
+Example of a CreationPolicy
+
+```yaml
+AutoScalingGroup:
+  Type: "AWS::AutoScaling::AutoScalingGroup"
+  CreationPolicy:
+    ResourceSignal:
+      Count: "1"
+      Timeout: "PT15M"
+  Properties:
+    AvailabilityZones:
+      - us-east-1a
+      - us-east-1b
+    LaunchConfigurationName: !Ref LaunchConfig
+    MinSize: "1"
+    MaxSize: "5"
+    DesiredCapacity: "3"
+```
+
+LaunchConfigue
+
+```yaml
+LaunchConfig:
+  Type: "AWS::AutoScaling::LaunchConfiguration"
+  Properties:
+    ImageId: "ami-0ff8a91507f77f867"
+    InstanceType: "t2.micro"
+    UserData:
+      Fn::Base64: !Sub |
+        #!/bin/bash -xe
+        yum update -y
+        yum install -y httpd
+        systemctl start httpd
+        systemctl enable httpd
+        echo "Hello World" > /var/www/html/index.html
+```
