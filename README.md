@@ -520,3 +520,18 @@ The DependsOn attribute is used to specify that the creation of a specific resou
 - DependsOn lets you _explicitly_ define these dependencies
 - if Resource B and C depends on Resource A, then Resource A is created first
 - both wait for A to complete before starting
+
+Example of DependsOn a VPC and Internet Gateway
+
+```yaml
+Resources:
+  MyVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 10.16.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      Tags:
+        - Key: Name
+          Value: a4l-vpc1
+```
