@@ -582,3 +582,5 @@ CreationPolicy, WaitConditions and cfn-signal can all be used together to preven
 - Wait for Timeout H:M:S for those signals (12 hour max)
 - If success signals received, then CREATE_COMPLETE
 - If failure signal received, creation fails
+- If timeout is reached creation fails
+- CreationPolicy or WaitCondition
