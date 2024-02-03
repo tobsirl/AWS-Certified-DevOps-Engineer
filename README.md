@@ -537,10 +537,19 @@ Resources:
 ```
 
 ```yaml
-MyInternetGateway:
+InternetGateway:
   Type: AWS::EC2::InternetGateway
   Properties:
     Tags:
       - Key: Name
-        Value: a4l-igw1
+        Value: a4l-vpc1-igw1
+```
+
+```yaml
+InternetGatewayAttachment:
+  Type: AWS::EC2::VPCGatewayAttachment
+  Properties:
+    VpcId: !Ref VPC
+    InternetGatewayId: !Ref InternetGateway
+  DependsOn: InternetGateway
 ```
