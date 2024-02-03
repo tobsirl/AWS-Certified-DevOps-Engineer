@@ -608,6 +608,10 @@ AutoScalingGroup:
     MinSize: "1"
     MaxSize: "5"
     DesiredCapacity: "3"
+  CreationPolicy:
+    ResourceSignal:
+      Count: "3"
+      Timeout: "PT15M"
 ```
 
 LaunchConfigue
