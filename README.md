@@ -551,7 +551,6 @@ InternetGatewayAttachment:
   Properties:
     VpcId: !Ref VPC
     InternetGatewayId: !Ref InternetGateway
-  DependsOn: InternetGateway
 ```
 
 An Elastic IP requires an Internet Gateway attached to a VPC in order to work ... but there is no dependency in the template - implicit
