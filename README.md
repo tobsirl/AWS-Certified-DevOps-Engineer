@@ -631,3 +631,39 @@ LaunchConfig:
         --resource LaunchConfig 
         --region ${AWS::Region}
 ```
+
+#### CloudFormation WaitCondition
+
+- WaitCondition is used to block the creation of a resource until a specified condition is met.
+- WaitCondition can be used to block the creation of a resource until a specified condition is met. For example, you can use a WaitCondition to block the creation of an Amazon EC2 instance until the instance has been configured and is ready to use.
+- WaitCondition can depend on other resources. Other resources can depend on the WaitCondition.
+
+Example of a WaitCondition
+
+```yaml
+Resources:
+  WaitHandle:
+    Type: "AWS::CloudFormation::WaitConditionHandle"
+  WaitCondition:
+    Type: "AWS::CloudFormation::WaitCondition"
+    DependsOn: "WebServer"
+    Properties:
+      Handle: !Ref WaitHandle
+      Timeout: "300"
+```
+
+Generates a Presigned URL for resources signals
+
+```yaml
+WaitHandle:
+  Type: "AWS::CloudFormation::WaitConditionHandle"
+```
+
+```json
+{
+  "Status": "SUCCESS",
+  "Reason": "Configuration Complete",
+  "UniqueId": "MyEC2Instance",
+  "Data": "Configuration Complete"
+}
+```
