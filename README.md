@@ -574,3 +574,8 @@ CreationPolicy, WaitConditions and cfn-signal can all be used together to preven
 - Used to create a **Stack**
 - creates **physical resources** in AWS
 - Logical resource CREATE_COMPLETE does not mean physical resource is ready
+
+#### CloudFormation Signal
+
+- Configure CloudFormation to hold
+- Wait for X number of success signals
