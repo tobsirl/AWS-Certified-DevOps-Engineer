@@ -659,6 +659,8 @@ WaitHandle:
   Type: "AWS::CloudFormation::WaitConditionHandle"
 ```
 
+JSON passed back in signal response
+
 ```json
 {
   "Status": "SUCCESS",
