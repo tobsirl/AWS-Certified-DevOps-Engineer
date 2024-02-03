@@ -553,3 +553,14 @@ InternetGatewayAttachment:
     InternetGatewayId: !Ref InternetGateway
   DependsOn: InternetGateway
 ```
+
+An Elastic IP requires an Internet Gateway attached to a VPC in order to work ... but there is no dependency in the template - implicit
+(e.g. !Ref) or explicit (e.g. DependsOn)
+
+```yaml
+EIP:
+  Type: AWS::EC2::EIP
+  Properties:
+    Domain: vpc
+  DependsOn: InternetGateway
+```
