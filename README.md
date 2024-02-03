@@ -563,3 +563,7 @@ EIP:
     Domain: vpc
   DependsOn: InternetGatewayAttachment
 ```
+
+### CloudFormation WaitConditions, CreationPolicy, and cfn-signal
+
+CreationPolicy, WaitConditions and cfn-signal can all be used together to prevent the status if a resource from reaching create complete until AWS CloudFormation receives a specified number of success signals or the timeout period is exceeded.The cfn-signal helper script signals AWS CloudFormation to indicate whether Amazon EC2 instances have been successfully created or updated.
