@@ -508,3 +508,7 @@ Resources:
         - sg-78a54011
       SubnetId: subnet-0e5dce72
 ```
+
+### CloudFormation DependsOn
+
+The DependsOn attribute is used to specify that the creation of a specific resource follows another. When you add a DependsOn attribute to a resource, that resource is created only after the creation of the resource specified in the DependsOn attribute.
