@@ -709,3 +709,18 @@ VPCStack:
       Param2: !Ref "AWS::AccountId"
       Param3: !Ref "SomeParameter"
 ```
+
+Parameters must be passed to the nested stack
+
+```yaml
+Parameters:
+  Param1:
+    Description: "Region"
+    Type: "String"
+  Param2:
+    Description: "Account ID"
+    Type: "String"
+  Param3:
+    Description: "Some Parameter"
+    Type: "String"
+```
