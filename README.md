@@ -791,3 +791,4 @@ AppStack:
   - Nested stacks can reference them
   - Outputs can be **exported** making them visiable to other stacks
   - Exports must have a **unique name** within the region
+  - `Fn::ImportValue` can be used to reference the exported value, this is used instead of !Ref
