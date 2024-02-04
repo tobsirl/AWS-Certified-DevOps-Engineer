@@ -724,3 +724,12 @@ Parameters:
     Description: "Some Parameter"
     Type: "String"
 ```
+
+VPCStack.Outputs.VPCID
+
+```yaml
+Outputs:
+  VPCID:
+    Description: "VPC ID"
+    Value: !GetAtt VPCStack.Outputs.VPCID
+```
