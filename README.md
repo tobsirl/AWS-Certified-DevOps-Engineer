@@ -789,3 +789,5 @@ AppStack:
   - CloudFormation stacks are designed to be isolated and self-contained
   - Outputs are normally **not visible** to other stacks
   - Nested stacks can reference them
+  - Outputs can be **exported** making them visiable to other stacks
+  - Exports must have a **unique name** within the region
