@@ -771,6 +771,11 @@ AppStack:
 - Nested Stacks reuses the template, not the resources
 - Used when the stacks form part of a single solution - lifecycle linked
 - Modular and reusable
+- Overcome the 500 resource limit of one stack
+- Modular templates ...code reuse
+- Make the installation process easier
+- nested stacks created by the root stack
+- Use only when everything is lifecycle linked
 
 - Cross-Stack References: A cross-stack reference is a way to export values from one stack and use them in another stack. You can use cross-stack references to create a dependency between two stacks. For example, you can use a cross-stack reference to create a dependency between a stack that contains a VPC and a stack that contains an EC2 instance. Cross-stack references are useful when you want to create a dependency between two stacks.
 - Cross-Stack References reuses the resources, not the template
