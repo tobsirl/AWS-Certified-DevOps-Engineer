@@ -792,3 +792,14 @@ AppStack:
   - Outputs can be **exported** making them visiable to other stacks
   - Exports must have a **unique name** within the region
   - `Fn::ImportValue` can be used to reference the exported value, this is used instead of !Ref
+
+Example of a Cross-Stack Reference shared VPC
+
+```yaml
+Outputs:
+  SHAREDVPCID:
+    Description: "Shared Services VPC"
+    Value: !Ref VPC
+    Export:
+      Name: "SHAREDVPCID"
+```
