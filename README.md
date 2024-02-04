@@ -683,3 +683,15 @@ Accessible via Fn::GetAtt on the WaitCondition
 Nested stacks allow for a hierarchy of related templates to be combined to form a single product
 A root stack can contain and create nested stacks .. each of which can be passed parameters and provide back outputs.
 Nested stacks should be used when the resources being provisioned share a lifecycle and are related.
+Resources in a single stack should **share a lifecycle** and be related.
+
+- Nested stacks are a way to create a hierarchy of stacks
+- A root stack can contain and create nested stacks
+- Nested stacks can be passed parameters
+- Nested stacks can provide outputs
+- Nested stacks should be used when the resources being provisioned share a lifecycle and are related
+
+Limitations
+
+- Stack resource limits (500)
+- Can't easily **reuse** resources e.g. VPC
