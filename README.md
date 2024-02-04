@@ -733,3 +733,32 @@ Outputs:
     Description: "VPC ID"
     Value: !GetAtt VPCStack.Outputs.VPCID
 ```
+
+ADSTACK that DependsOn VPCStack
+
+```yaml
+ADStack:
+  Type: "AWS::CloudFormation::Stack"
+  DependsOn: VPCStack
+  Properties:
+    TemplateURL: "https://s3.amazonaws.com/mybucket/ad.template"
+    TimeoutInMinutes: "60"
+    Parameters:
+      VPCID: !GetAtt VPCStack.Outputs.VPCID
+```
+
+APPSTACK that DependsOn VPCStack and ADStack
+
+```yaml
+AppStack:
+  Type: "AWS::CloudFormation::Stack"
+  DependsOn:
+    - VPCStack
+    - ADStack
+  Properties:
+    TemplateURL: "https://s3.amazonaws.com/mybucket/app.template"
+    TimeoutInMinutes: "60"
+    Parameters:
+      VPCID: !GetAtt VPCStack.Outputs.VPCID
+      ADID: !GetAtt ADStack.Outputs.ADID
+```
