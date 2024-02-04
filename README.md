@@ -785,4 +785,7 @@ AppStack:
   - Cross-Stack References reuses the resources, not the template
   - Cross stack references allow one stack to reference another
   - Outputs in one stack reference logical resources or attributes in that stack
-  - They can be exported, and then using the !ImportValue intrinsic function, referenced from another stack.
+  - They can be exported, and then using the `!ImportValue` intrinsic function, referenced from another stack.
+  - CloudFormation stacks are designed to be isolated and self-contained
+  - Outputs are normally **not visible** to other stacks
+  - Nested stacks can reference them
