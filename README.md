@@ -695,3 +695,15 @@ Limitations
 
 - Stack resource limits (500)
 - Can't easily **reuse** resources e.g. VPC
+
+Example of a Stack
+
+```yaml
+VPCStack:
+  Type: "AWS::CloudFormation::Stack"
+  Properties:
+    TemplateURL: "https://s3.amazonaws.com/mybucket/vpc.template"
+    TimeoutInMinutes: "60"
+    Parameters:
+      KeyName: "mykey"
+```
