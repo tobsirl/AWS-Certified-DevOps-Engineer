@@ -803,3 +803,13 @@ Outputs:
     Export:
       Name: "SHAREDVPCID"
 ```
+
+Export is used to export the output of a stack ... to a unique name in that region of that account
+`ImportValue` can be used to reference the exported value, this is used instead of !Ref
+
+```yaml
+VPCID:
+  Type: "String"
+  Description: "VPC ID"
+  Value: !ImportValue "SHAREDVPCID"
+```
