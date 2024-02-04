@@ -705,5 +705,7 @@ VPCStack:
     TemplateURL: "https://s3.amazonaws.com/mybucket/vpc.template"
     TimeoutInMinutes: "60"
     Parameters:
-      KeyName: "mykey"
+      Param1: !Ref "AWS::Region"
+      Param2: !Ref "AWS::AccountId"
+      Param3: !Ref "SomeParameter"
 ```
