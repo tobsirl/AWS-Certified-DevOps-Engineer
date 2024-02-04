@@ -762,3 +762,8 @@ AppStack:
       VPCID: !GetAtt VPCStack.Outputs.VPCID
       ADID: !GetAtt ADStack.Outputs.ADID
 ```
+
+#### Difference between Nested Stacks and Cross-Stack References
+
+- Nested Stacks: A nested stack is a stack that is created as a resource within a root stack. You can use nested stacks to create a reusable template that you can use to create common sets of resources. You can also use nested stacks to create a hierarchy of stacks that are managed as a single unit. Nested stacks are useful when you want to reuse a template that represents a set of resources that are used in multiple applications or environments. Nested stacks are also useful when you want to create a hierarchy of stacks that are managed as a single unit.
+- Cross-Stack References: A cross-stack reference is a way to export values from one stack and use them in another stack. You can use cross-stack references to create a dependency between two stacks. For example, you can use a cross-stack reference to create a dependency between a stack that contains a VPC and a stack that contains an EC2 instance. Cross-stack references are useful when you want to create a dependency between two stacks.
