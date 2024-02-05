@@ -879,3 +879,4 @@ Not supported for EC2
 - Which means **you need permissions for AWS**
 - CFN can **assume a role** to gain the permissions it needs
 - This lets you implement **role separation**
+- The identity creating the stack **does not need permissions** - only **PassRole**
