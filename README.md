@@ -852,3 +852,12 @@ With the DeletionPolicy attribute you can preserve or (in some cases) backup a r
 - EBS Volumes, ElastiCache Clusters, RDS Databases, Neptune, Redshift
 - Snapshots continue on past Stack lifetime - you have to clean up manually
 - ONLY APPLIES TO DELETE STACKS ... NOT REPLACE
+
+#### Delete
+
+The Default process is that when logical resources are removed (individually or via stack delete) the physical resources are also deleted
+
+#### Retain
+
+The Retain process is that when logical resources are removed (individually or via stack delete) the physical resources are retained
+Physical resources remain untouched when the Stacks logical resources are removed
