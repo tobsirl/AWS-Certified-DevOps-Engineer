@@ -874,3 +874,5 @@ Not supported for EC2
 - Stack roles allow an IAM role to be passed into the stack via PassRole
 - A stack uses this role, rather than the identity interacting with the stack to create, update and delete AWS resources.
 - ⚠️ It allows role separation and is a powerful security feature.
+- When you create a stack - CFN creates physical resources
+- CFN uses the **permissions** of the **logged in identity**
