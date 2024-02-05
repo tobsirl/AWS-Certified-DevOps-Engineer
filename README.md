@@ -828,3 +828,12 @@ Additionally it adds a dynamic architecture - allowing automatic operations base
 - **Stack instances** and **stacks** are in **target accounts**
 - Each stack = 1 region in 1 account
 - ⚠️ Security = self-managed or service-managed
+
+#### CFN StackSets - Terms
+
+- StackSet: A container for stack instances
+- StackInstance: A reference to a stack in a target account and region
+- Stack: A collection of resources that are created, updated, or deleted together
+- Concurrent Accounts: The number of accounts in which stack operations can occur at the same time
+- Failure Tolerance: The number of accounts for which stack operations can fail before the stack set operation stops
+- Retain Stacks: Whether to retain stacks in accounts when they are removed from a stack set
