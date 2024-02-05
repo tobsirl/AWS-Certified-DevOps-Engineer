@@ -876,3 +876,4 @@ Not supported for EC2
 - ⚠️ It allows role separation and is a powerful security feature.
 - When you create a stack - CFN creates physical resources
 - CFN uses the **permissions** of the **logged in identity**
+- Which means **you need permissions for AWS**
