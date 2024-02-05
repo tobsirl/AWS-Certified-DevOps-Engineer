@@ -885,3 +885,10 @@ Not supported for EC2
 
 CloudFormationInit and cfn-init are tools which allow a desired state configuration management system to be implemented within CloudFormation
 Use the AWS::CloudFormation::Init type to include metadata on an Amazon EC2 instance for the cfn-init helper script. If your template calls the cfn-init script, the script looks for resource metadata rooted in the AWS::CloudFormation::Init metadata key. cfn-init supports all metadata types for Linux systems & It supports some metadata types for Windows
+
+- Simple configuration management system
+- Configuration **directives** are stored in the template
+- AWS::CloudFormation::Init part of logical resource
+- Procedural - HOW (user data)
+- ...vs Desired State - WHAT (cfn-init)
+- cfn-init helper script - installed on EC2 OS image
