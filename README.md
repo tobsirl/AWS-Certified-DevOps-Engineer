@@ -943,3 +943,5 @@ UserData:
 - files: Create and manage files
 - commands: Execute commands
 - services: Manage services
+
+### CloudFormation cfn-hup
