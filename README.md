@@ -935,3 +935,11 @@ UserData:
     --resource MyEC2Instance 
     --region ${AWS::Region}
 ```
+
+- packages: Install and upgrade packages
+- groups: Create and manage user and group accounts
+- users: Create and manage user and group accounts
+- sources: Download and extract archives
+- files: Create and manage files
+- commands: Execute commands
+- services: Manage services
