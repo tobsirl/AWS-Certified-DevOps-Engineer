@@ -892,3 +892,46 @@ Use the AWS::CloudFormation::Init type to include metadata on an Amazon EC2 inst
 - Procedural - HOW (user data)
 - ...vs Desired State - WHAT (cfn-init)
 - cfn-init helper script - installed on EC2 OS image
+
+Example of a cfn-init
+
+```yaml
+Resources:
+  MyEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Metadata:
+      AWS::CloudFormation::Init:
+        config:
+          packages:
+            yum:
+              httpd: []
+          files:
+            /var/www/html/index.html:
+              content: !Sub |
+                <html>
+                <body>
+                <h1>Hello, World</h1>
+                </body>
+                </html>
+              mode: "000644"
+              owner: "apache"
+              group: "apache"
+          services:
+            sysvinit:
+              httpd:
+                enabled: "true"
+                ensureRunning: "true"
+```
+
+Example of UserData
+
+```yaml
+UserData:
+  Fn::Base64: !Sub |
+    #!/bin/bash -xe
+    yum update -y aws-cfn-bootstrap
+    /opt/aws/bin/cfn-init -v 
+    --stack ${AWS::StackName} 
+    --resource MyEC2Instance 
+    --region ${AWS::Region}
+```
