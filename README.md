@@ -837,3 +837,9 @@ Additionally it adds a dynamic architecture - allowing automatic operations base
 - Concurrent Accounts: The number of accounts in which stack operations can occur at the same time
 - Failure Tolerance: The number of accounts for which stack operations can fail before the stack set operation stops
 - Retain Stacks: Whether to retain stacks in accounts when they are removed from a stack set
+
+### CloudFormation DeletionPolicy
+
+DeletionPolicy is an optional attribute that you can use with AWS CloudFormation resources. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted.
+
+With the DeletionPolicy attribute you can preserve or (in some cases) backup a resource when its stack is deleted. You specify a DeletionPolicy attribute for each resource that you want to control. If a resource has no DeletionPolicy attribute, AWS CloudFormation deletes the resource by default.
