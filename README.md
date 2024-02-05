@@ -880,3 +880,8 @@ Not supported for EC2
 - CFN can **assume a role** to gain the permissions it needs
 - This lets you implement **role separation**
 - The identity creating the stack **does not need permissions** - only **PassRole**
+
+### CloudFormation CFN-Init
+
+CloudFormationInit and cfn-init are tools which allow a desired state configuration management system to be implemented within CloudFormation
+Use the AWS::CloudFormation::Init type to include metadata on an Amazon EC2 instance for the cfn-init helper script. If your template calls the cfn-init script, the script looks for resource metadata rooted in the AWS::CloudFormation::Init metadata key. cfn-init supports all metadata types for Linux systems & It supports some metadata types for Windows
