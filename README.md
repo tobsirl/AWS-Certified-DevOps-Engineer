@@ -867,3 +867,10 @@ Physical resources remain untouched when the Stacks logical resources are remove
 The Snapshot process is that when logical resources are removed (individually or via stack delete) the physical resources are snapshotted
 Physical resources are snapshotted when the Stacks logical resources are removed
 Not supported for EC2
+
+### CloudFormation Stack Roles
+
+- Stack Roles: A stack role is an AWS Identity and Access Management (IAM) role that is used to create, update, or delete a stack. You can use a stack role to specify the permissions that are required to create, update, or delete a stack.
+- Stack roles allow an IAM role to be passed into the stack via PassRole
+- A stack uses this role, rather than the identity interacting with the stack to create, update and delete AWS resources.
+- ⚠️ It allows role separation and is a powerful security feature.
