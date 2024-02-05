@@ -843,3 +843,12 @@ Additionally it adds a dynamic architecture - allowing automatic operations base
 DeletionPolicy is an optional attribute that you can use with AWS CloudFormation resources. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted. You can use DeletionPolicy to specify how AWS CloudFormation handles the deletion of a resource when a stack is deleted.
 
 With the DeletionPolicy attribute you can preserve or (in some cases) backup a resource when its stack is deleted. You specify a DeletionPolicy attribute for each resource that you want to control. If a resource has no DeletionPolicy attribute, AWS CloudFormation deletes the resource by default.
+
+- If you delete a logical resource from a template
+- by default, the physical resource is also deleted
+- This can cause data loss
+- With deletion policy, you can define on each resource
+- ...Delete (default), Retain or (if supported) Snapshot
+- EBS Volumes, ElastiCache Clusters, RDS Databases, Neptune, Redshift
+- Snapshots continue on past Stack lifetime - you have to clean up manually
+- ONLY APPLIES TO DELETE STACKS ... NOT REPLACE
