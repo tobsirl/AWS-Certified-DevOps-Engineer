@@ -813,3 +813,11 @@ VPCID:
   Description: "VPC ID"
   Value: !ImportValue "SHAREDVPCID"
 ```
+
+### CloudFormation StackSets
+
+AWS CloudFormation StackSets extends the functionality of stacks by enabling you to create, update, or delete stacks across multiple accounts and regions with a single operation. StackSets are useful when you want to create, update, or delete stacks across multiple accounts and regions. StackSets are useful when you want to create, update, or delete stacks across multiple accounts and regions.
+
+StackSets are a feature of CloudFormation allowing infrastructure to be deployed and managed across multiple regions and multiple accounts from a single location.
+
+Additionally it adds a dynamic architecture - allowing automatic operations based on accounts being added or removed from the scope of a StackSet.
