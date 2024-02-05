@@ -824,3 +824,7 @@ Additionally it adds a dynamic architecture - allowing automatic operations base
 
 - Deploy CFN stacks across **many accounts** and **regions**
 - StackSets are **container** in an admin account
+- ...conain **stack instances** ..which **reference stacks**
+- **Stack instances** and **stacks** are in **target accounts**
+- Each stack = 1 region in 1 account
+- ⚠️ Security = self-managed or service-managed
