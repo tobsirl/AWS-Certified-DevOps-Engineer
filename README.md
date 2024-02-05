@@ -861,3 +861,9 @@ The Default process is that when logical resources are removed (individually or 
 
 The Retain process is that when logical resources are removed (individually or via stack delete) the physical resources are retained
 Physical resources remain untouched when the Stacks logical resources are removed
+
+#### Snapshot
+
+The Snapshot process is that when logical resources are removed (individually or via stack delete) the physical resources are snapshotted
+Physical resources are snapshotted when the Stacks logical resources are removed
+Not supported for EC2
