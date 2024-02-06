@@ -952,3 +952,4 @@ cfn-hup is a daemon that detects changes in the metadata and runs user-specified
 - ...if CloudFromation::init is updated, cfn-init is not run again
 - cfn-hup is a daemon that can be installed on an EC2 instance
 - it detects changes in resource metadata
+- running configurable actions when a change is detected
