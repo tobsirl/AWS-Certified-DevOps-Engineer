@@ -949,3 +949,6 @@ UserData:
 cfn-hup is a daemon that detects changes in the metadata and runs user-specified hooks. You can use cfn-hup to detect changes in the metadata and run user-specified hooks.
 
 - cfn-init is run once as part of bootstrapping (user data)
+- ...if CloudFromation::init is updated, cfn-init is not run again
+- cfn-hup is a daemon that can be installed on an EC2 instance
+- it detects changes in resource metadata
