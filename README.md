@@ -969,3 +969,4 @@ When you need to update a stack, understanding how your changes will affect runn
 - No Interruption, ⚠️ Some Interruption ⚠️, 🚨 Replacement 🚨
 - Change Sets let you preview changes (A Change Set)
 - ... multiple different versions (lots of change sets)
+- Chosen changes can be applied by executing the change set
