@@ -967,3 +967,5 @@ When you need to update a stack, understanding how your changes will affect runn
 - Stack (Delete) => (Delete) Physical Resources
 - v2 Template => Existing Stack => Resources Change
 - No Interruption, ⚠️ Some Interruption ⚠️, 🚨 Replacement 🚨
+- Change Sets let you preview changes (A Change Set)
+- ... multiple different versions (lots of change sets)
