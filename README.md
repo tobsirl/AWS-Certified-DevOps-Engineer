@@ -966,3 +966,4 @@ When you need to update a stack, understanding how your changes will affect runn
 - Template => Stack => Physical Resources (Create)
 - Stack (Delete) => (Delete) Physical Resources
 - v2 Template => Existing Stack => Resources Change
+- No Interruption, ⚠️ Some Interruption ⚠️, 🚨 Replacement 🚨
