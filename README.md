@@ -962,3 +962,7 @@ The cfn-hup helper is a daemon that detects changes in resource metadata and run
 A change set is a summary of the changes that AWS CloudFormation will make to a stack when you execute the change set. You can use a change set to understand the changes that will be made to a stack before you execute the change set.
 
 When you need to update a stack, understanding how your changes will affect running resources before you implement them can help you update stacks with confidence. Change sets allow you to preview how proposed changes to a stack might impact your running resources, for example, whether your changes will delete or replace any critical resources, AWS CloudFormation makes the changes to your stack only when you decide to execute the change set, allowing you to decide whether to proceed with your proposed changes or explore other changes by creating another change set.
+
+- Template => Stack => Physical Resources (Create)
+- Stack (Delete) => (Delete) Physical Resources
+- v2 Template => Existing Stack => Resources Change
