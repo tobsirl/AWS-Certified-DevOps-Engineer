@@ -977,3 +977,5 @@ Custom resources enable you to write custom provisioning logic in templates that
 
 - Logical Resources in a template - WHAT you want
 - CFN uses them to CREATE, UPDATE, DELETE physical resources
+- CloudFormation doesn't support everything
+- Custom Resources lets CFN integrate with anything it doesn't yet, or doesn't naturally support
