@@ -970,3 +970,9 @@ When you need to update a stack, understanding how your changes will affect runn
 - Change Sets let you preview changes (A Change Set)
 - ... multiple different versions (lots of change sets)
 - Chosen changes can be applied by executing the change set
+
+### CloudFormation Custom Resources
+
+Custom resources enable you to write custom provisioning logic in templates that AWS CloudFormation runs anytime you create, update (if you changed the custom resource), or delete stacks. For example, you might want to include resources that aren't available as AWS CloudFormation resource types. You can include those resources by using custom resources.
+
+- Logical Resources in a template - WHAT you want
