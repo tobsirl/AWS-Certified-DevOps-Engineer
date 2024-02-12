@@ -1002,3 +1002,12 @@ Types
 - Built in languages
 - Docker
 - Custom platforms
+
+Examples
+
+- Go. Java SE, Tomcat
+- .NET Core (Linux) & .NET (Windows)
+- Node.js, PHP, Python and Ruby
+- Single Container Docker & Multicontainer Docker
+- Preconfigured Docker
+- Custom via packer
