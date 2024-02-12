@@ -982,3 +982,9 @@ Custom resources enable you to write custom provisioning logic in templates that
 - CloudFormation doesn't support everything
 - Custom Resources lets CFN integrate with anything it doesn't yet, or doesn't naturally support
 - Passes data to something, gets data back from something
+
+## Elastic Beanstalk (EB)
+
+Elastic Beanstalk is a Platform as a Service environment which can create and manage infrastructure for application code.
+
+- Platform as a service (PaaS)
