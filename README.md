@@ -993,3 +993,4 @@ Elastic Beanstalk is a Platform as a Service environment which can create and ma
 - User Provide code and EB handles the environment
 - Focus on code, low infrastructure overhead
 - Fully customisable - use AWS products under the covers
+- Requires app changes ... doesn't come for free
