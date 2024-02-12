@@ -1011,3 +1011,6 @@ Examples
 - Single Container Docker & Multicontainer Docker
 - Preconfigured Docker
 - Custom via packer
+
+Elastic Beanstalk Application - an application is a collection of things relating to an application - a container / folder
+EB Application Versions - a specific labeled version of deployable code for an application. The source bundle is store on S3.
