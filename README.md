@@ -1015,3 +1015,4 @@ Examples
 Elastic Beanstalk Application - an application is a collection of things relating to an application - a container / folder
 EB Application Versions - a specific labeled version of deployable code for an application. The source bundle is store on S3.
 EB Environments - containers of infrastructure and configuration for a specific application version.
+Each environment is either a web server tier or a worker tier. This controls the structure & function of the environment.
