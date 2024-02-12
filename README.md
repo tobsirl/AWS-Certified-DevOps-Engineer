@@ -988,3 +988,5 @@ Custom resources enable you to write custom provisioning logic in templates that
 Elastic Beanstalk is a Platform as a Service environment which can create and manage infrastructure for application code.
 
 - Platform as a service (PaaS)
+- Developer Focssed - not end user
+- High level - Managed Application Environments
