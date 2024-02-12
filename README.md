@@ -990,3 +990,5 @@ Elastic Beanstalk is a Platform as a Service environment which can create and ma
 - Platform as a service (PaaS)
 - Developer Focssed - not end user
 - High level - Managed Application Environments
+- User Provide code and EB handles the environment
+- Focus on code, low infrastructure overhead
