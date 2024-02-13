@@ -1018,3 +1018,12 @@ EB Environments - containers of infrastructure and configuration for a specific 
 Each environment is either a web server tier or a worker tier. This controls the structure & function of the environment.
 
 ### Elastic Beanstalk (EB) - Deployment Options
+
+AWS Elastic Beanstalk provides several options for how deployments are processed, including deployment policies (All at once, Rolling, Rolling with additional batch, Immutable, and Traffic splitting) and options that let you configure batch size and health check behavior during deployments
+
+- All at once: Deploys the new version to all instances simultaneously. This results in a temporary outage while the deployment is in process.
+- Rolling: Deploys the new version in batches. Each batch is taken out of service while the remaining batches continue to serve traffic. This reduces the impact on your application's availability during deployment.
+- Rolling with additional batch: Similar to rolling, but adds capacity to the environment before the deployment and reduces capacity after the new version is deployed. This means that both the new and old versions of your application are running on the same environment at the same time.
+- Immutable: Deploys the new version to a fresh group of instances in a separate environment, then swaps the fresh group of instances with the current group. This results in no downtime during the deployment.
+- Traffic splitting: Deploys the new version to a separate fleet of instances and then gradually shifts traffic from the old to the new version. This results in no downtime during the deployment.
+- Blue/Green: Deploys the new version to a separate environment, then swaps CNAMEs. This results in no downtime during the deployment.
