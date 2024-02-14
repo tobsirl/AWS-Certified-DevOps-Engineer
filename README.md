@@ -1053,3 +1053,5 @@ Decoupling the RDS from the EB environment allows for the RDS to be managed inde
 - Create a new Environment with the same app version
 - Ensure new environment can connect to the DB
 - Swap CNAMEs to the new environment (CNAME or DNS change)
+- Terminate the old environment - this will try and terminate the RDS instance
+- Locate DELETE_FAILED Stack, manually delete and pick to retain stuck resources
