@@ -1032,8 +1032,16 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 
 Elastic Beanstalk can create and manage an RDS database for you. It can also manage the lifecycle of the RDS database. This includes creating, updating, and deleting the RDS database.
 
+Create RDS Database in EB Environment
+
 - You can create and RDS instance within an EB environment
 - It's then linked to the EB environment
 - Delete the environment = delete RDS = data loss
 - Different environments = different RDS = different data
 - Environment Properties: RDS_DB_NAME, RDS_USERNAME, RDS_PASSWORD, RDS_HOSTNAME, RDS_PORT
+
+Create RDS Database outside of EB Environment
+
+- You can also create an RDS instance outside of an EB environment
+- Add environment properties to point at RDS instance: RDS_HOSTNAME, RDS_PORT, RDS_DB_NAME, RDS_USERNAME, RDS_PASSWORD
+- Environment can be changed at will - data is outside of the lifecycle of that environment
