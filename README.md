@@ -1036,3 +1036,4 @@ Elastic Beanstalk can create and manage an RDS database for you. It can also man
 - It's then linked to the EB environment
 - Delete the environment = delete RDS = data loss
 - Different environments = different RDS = different data
+- Environment Properties: RDS_DB_NAME, RDS_USERNAME, RDS_PASSWORD, RDS_HOSTNAME, RDS_PORT
