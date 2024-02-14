@@ -1027,3 +1027,10 @@ AWS Elastic Beanstalk provides several options for how deployments are processed
 - Immutable: Deploys the new version to a fresh group of instances in a separate environment, then swaps the fresh group of instances with the current group. This results in no downtime during the deployment.
 - Traffic splitting: Deploys the new version to a separate fleet of instances and then gradually shifts traffic from the old to the new version. This results in no downtime during the deployment.
 - Blue/Green: Deploys the new version to a separate environment, then swaps CNAMEs. This results in no downtime during the deployment.
+
+### Elastic Beanstalk (EB) - Lifecycle and RDS
+
+Elastic Beanstalk can create and manage an RDS database for you. It can also manage the lifecycle of the RDS database. This includes creating, updating, and deleting the RDS database.
+
+- You can create and RDS instance within an EB environment
+- It's then linked to the EB environment
