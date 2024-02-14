@@ -1045,3 +1045,11 @@ Create RDS Database outside of EB Environment
 - You can also create an RDS instance outside of an EB environment
 - Add environment properties to point at RDS instance: RDS_HOSTNAME, RDS_PORT, RDS_DB_NAME, RDS_USERNAME, RDS_PASSWORD
 - Environment can be changed at will - data is outside of the lifecycle of that environment
+
+Decoupling the RDS from the EB environment allows for the RDS to be managed independently of the EB environment.
+
+- Create an RDS Snapshot
+- Enable Delete Protection
+- Create a new Environment with the same app version
+- Ensure new environment can connect to the DB
+- Swap CNAMEs to the new environment (CNAME or DNS change)
