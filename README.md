@@ -1075,3 +1075,12 @@ You can add AWS Elastic Beanstalk configuration files (.ebextensions) to your we
 - via EB Console => Environment => Load Balancer Configuration
 - Or via .ebextensions/securelistener-alb.config
 - Make sure you configure the security group to allow HTTPS traffic
+
+### Elastic Beanstalk (EB) - Environment Cloning
+
+You can use an existing Elastic Beanstalk environment as the basis for a new environment by cloning the existing environment. For example, you might want to create a clone so that you can use a newer version of the platform branch used by the original environment's platform. Elastic Beanstalk configures the clone with the same environment settings used by the original environment. By cloning an existing environment instead of creating a new environment, you don't have to manually configure option settings, environment variables, and other settings. Elastic Beanstalk also creates a copy of any AWS resource associated with the original environment. However, during the cloning process, Elastic Beanstalk doesn't copy data from Amazon RDS to the clone. After you create the clone environment, you can modify environment configuration settings as needed.
+
+- Create a NEW environment, by cloning an EXISTING environment
+- PROD-ENV to a new TEST-ENV (for testing and Q/A)
+- new version of platform branch
+- Copies options, env vars, resources and other settings
