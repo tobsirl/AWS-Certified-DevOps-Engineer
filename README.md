@@ -1073,3 +1073,5 @@ You can add AWS Elastic Beanstalk configuration files (.ebextensions) to your we
 
 - Apply the SSL certificate to the load balancer
 - via EB Console => Environment => Load Balancer Configuration
+- Or via .ebextensions/securelistener-alb.config
+- Make sure you configure the security group to allow HTTPS traffic
