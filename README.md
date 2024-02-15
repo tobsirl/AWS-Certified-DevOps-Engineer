@@ -1086,3 +1086,4 @@ You can use an existing Elastic Beanstalk environment as the basis for a new env
 - Copies options, env vars, resources and other settings
 - Includes RDS in ENV, but no data is copied
 - unmanaged changes are NOT included
+- Console UI, API or "eb clone EXISTING-ENVNAME"
