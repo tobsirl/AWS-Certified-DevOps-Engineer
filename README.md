@@ -1064,3 +1064,7 @@ You can add AWS Elastic Beanstalk configuration files (.ebextensions) to your we
 - Inside application source bundle (zip/war)
 - .ebextensions folder at the root
 - Add YAML or JSON files ending in .config
+- Uses CFN format to create additional resources within the EB environment
+- `options_settings` - allows you to set options of resources
+- Resources allow entirely new resources to be created
+- ...packages, sources, files, commands, users, groups, container commands
