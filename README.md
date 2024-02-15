@@ -1087,3 +1087,7 @@ You can use an existing Elastic Beanstalk environment as the basis for a new env
 - Includes RDS in ENV, but no data is copied
 - unmanaged changes are NOT included
 - Console UI, API or "eb clone EXISTING-ENVNAME"
+
+### Elastic Beanstalk (EB) - Docker
+
+AWS Elastic Beanstalk can launch Docker environments by building an image described in a Dockerfile or pulling a remote Docker image. If you're deploying a remote Docker image, you don't need to include a Dockerfile. Instead, if you are also using Docker Compose, use a docker-compose.yml file, which specifies an image to use and additional configuration options. If you are not using Docker Compose with your Docker environments, use a Dockerrun.aws.json file instead.
