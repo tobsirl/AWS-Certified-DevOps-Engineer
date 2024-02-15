@@ -1068,3 +1068,8 @@ You can add AWS Elastic Beanstalk configuration files (.ebextensions) to your we
 - `options_settings` - allows you to set options of resources
 - Resources allow entirely new resources to be created
 - ...packages, sources, files, commands, users, groups, container commands
+
+### Elastic Beanstalk (EB) - HTTPS
+
+- Apply the SSL certificate to the load balancer
+- via EB Console => Environment => Load Balancer Configuration
