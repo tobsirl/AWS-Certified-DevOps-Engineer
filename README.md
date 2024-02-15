@@ -1098,3 +1098,8 @@ AWS Elastic Beanstalk can launch Docker environments by building an image descri
 - Dockerfile: EB will build a docker image use this to run a container
 - Dockerrun.aws.json (version 1): Use and existing docker image - configues image, ports, volumes and other docker attributes
 - Docker-compose.yml - if you use docker compose
+
+- Multi Docker Container
+- Multiple container applications
+- Create an ECS Cluster
+- EC2 instance provisioned in the cluster and an ELB for high availability
