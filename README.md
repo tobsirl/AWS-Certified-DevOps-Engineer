@@ -1059,3 +1059,8 @@ Decoupling the RDS from the EB environment allows for the RDS to be managed inde
 ### Elastic Beanstalk (EB) - Advanced Customisation via .ebextensions
 
 You can add AWS Elastic Beanstalk configuration files (.ebextensions) to your web application's source code to configure your environment and customize the AWS resources that it contains. Configuration files are YAML- or JSON-formatted documents with a .config file extension that you place in a folder named .ebextensions and deploy in your application source bundle.
+
+- .ebextensions are a way to customise the environment
+- Inside application source bundle (zip/war)
+- .ebextensions folder at the root
+- Add YAML or JSON files ending in .config
