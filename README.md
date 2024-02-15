@@ -1055,3 +1055,5 @@ Decoupling the RDS from the EB environment allows for the RDS to be managed inde
 - Swap CNAMEs to the new environment (CNAME or DNS change)
 - Terminate the old environment - this will try and terminate the RDS instance
 - Locate DELETE_FAILED Stack, manually delete and pick to retain stuck resources
+
+### Elastic Beanstalk (EB) - Advanced Customisation via .ebextensions
