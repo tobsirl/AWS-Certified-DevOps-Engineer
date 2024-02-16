@@ -1115,3 +1115,10 @@ They can monitor the default account event bus - and pattern match events flowin
 They are also the source of scheduled events which can perform certain actions at certain times of day, days of the week, or multiple combinations of both - using the Unix CRON time expression format.
 
 Both services are one way how event driven architectures can be implemented within AWS.
+
+- If X happens, or at Y time(s) ... do Z
+- EventBridge is ... CloudWatch Events v2
+- A **default** event bus for the account
+- In CloudWatch Events this is the **only** event bus
+- In EventBridge there can be **multiple** event buses
+- Rules match incoming events ... (or scheduled events)
