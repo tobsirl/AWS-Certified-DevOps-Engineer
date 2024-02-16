@@ -1122,3 +1122,4 @@ Both services are one way how event driven architectures can be implemented with
 - In CloudWatch Events this is the **only** event bus
 - In EventBridge there can be **multiple** event buses
 - Rules match incoming events ... (or scheduled events)
+- Route the events to 1+ Targets ..e.g. Lambda
