@@ -1177,3 +1177,11 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Metrics - invocation success/failure, retries, latency are stored in CloudWatch
 - Lambda can by integrated with X-Ray for distributed tracing
 - CloudWatch logs requires permissions via Execution Role
+
+### Lambda - Invocation Types
+
+#### Synchronous
+
+#### Asynchronous
+
+#### Event Source mappings
