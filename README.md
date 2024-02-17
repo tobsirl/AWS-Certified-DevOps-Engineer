@@ -1142,3 +1142,7 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - 128MB - 10,240 MB memory in 64MB increments
 - 512MB storage available in /tmp up to 10,240MB
 - 1vCPU per 1,792 MB of memory
+
+### Lambda - Common Use Cases
+
+- Serverless Applications (S3, API Gateway, DynamoDB, Lambda)
