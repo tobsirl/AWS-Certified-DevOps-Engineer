@@ -1169,3 +1169,10 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 
 - Lambda execution roles are IAM roles attached to lambda functions which control the PERMISSIONS the Lambda function RECEIVES...
 - Lambda resource policy controls **WHAT** services and accounts can **INVOKE** lambda functions
+
+### Lambda - Logging
+
+- Lambda uses CloudWatch Logs and X-Ray for logging and tracing
+- Logs from Lambda execution are sent to CloudWatch Logs
+- Metrics - invocation success/failure, retries, latency are stored in CloudWatch
+- Lambda can by integrated with X-Ray for distributed tracing
