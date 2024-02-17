@@ -1135,3 +1135,10 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - The environment has a _direct memory_ (indirect CPU) allocation
 - You are billed for the **duration that a function runs**
 - A key part of **Serverless** architectures
+
+### Lambda - facts
+
+- 900 seconds (15 minutes) max runtime
+- 128MB - 10,240 MB memory in 64MB increments
+- 512MB storage available in /tmp up to 10,240MB
+- 1vCPU per 1,792 MB of memory
