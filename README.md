@@ -1127,3 +1127,9 @@ Both services are one way how event driven architectures can be implemented with
 ## Lambda
 
 AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. You can use AWS Lambda to extend other AWS services with custom logic, or create your own back-end services that operate at AWS scale, performance, and security.
+
+- Function as a Service (FaaS) - short running & focussed
+- Lambda **function** - a **piece of code** lambda runs
+- Functions use a **runtime** (e.g. Python 3.8)
+- Functions are loaded and run in a **runtime environment**
+- The environment has a _direct memory_ (indirect CPU) allocation
