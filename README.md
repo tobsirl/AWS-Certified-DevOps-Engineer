@@ -1123,3 +1123,7 @@ Both services are one way how event driven architectures can be implemented with
 - In EventBridge there can be **multiple** event buses
 - Rules match incoming events ... (or scheduled events)
 - Route the events to 1+ Targets ..e.g. Lambda
+
+## Lambda
+
+AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. You can use AWS Lambda to extend other AWS services with custom logic, or create your own back-end services that operate at AWS scale, performance, and security.
