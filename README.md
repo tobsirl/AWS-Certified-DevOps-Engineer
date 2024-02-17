@@ -1182,6 +1182,9 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 
 #### Synchronous
 
+- CLI / API **invokes** a lambda function, passing in data and **waiting for a response**
+- Lambda function responds with data or fails
+
 #### Asynchronous
 
 #### Event Source mappings
