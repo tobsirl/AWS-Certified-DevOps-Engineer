@@ -1133,3 +1133,5 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Functions use a **runtime** (e.g. Python 3.8)
 - Functions are loaded and run in a **runtime environment**
 - The environment has a _direct memory_ (indirect CPU) allocation
+- You are billed for the **duration that a function runs**
+- A key part of **Serverless** architectures
