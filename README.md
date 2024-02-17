@@ -1187,4 +1187,7 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 
 #### Asynchronous
 
+- Typically used for **event driven** architectures
+- AWS services invoke a lambda function and **do not wait for a response**
+
 #### Event Source mappings
