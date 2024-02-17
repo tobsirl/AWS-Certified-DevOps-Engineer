@@ -1150,3 +1150,8 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Database Triggers (DynamoDB, Lambda, Streams)
 - Serverless CRON Jobs (CloudWatch Events/EventBridge + Lambda)
 - Realtime Stream Data Processing (Kinesis + Lambda)
+
+### Lambda - Networking Public
+
+- By deault lambda functions are given public networking.
+- They can access public AWS services and the public internet.
