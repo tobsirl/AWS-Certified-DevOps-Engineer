@@ -1190,6 +1190,18 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Typically used for **event driven** architectures
 - AWS services invoke a lambda function and **do not wait for a response**
 
-#### Event Source mappings
+#### Event Source Mappings
 
 - Typically used on streams or queues which don't support event generation to invoke lambda (Kinesis, DynamoDB streams, SQS)
+
+#### Lambda Destinations
+
+- Used to send the result of a lambda function to another service
+- e.g. S3, SNS, SQS, EventBridge, Lambda
+
+### Lambda - Versions
+
+- Lambda functions can have multiple versions - v1, v2, v3
+- A version is the code + configuration of the lambda function
+- It's immutable - it never changes once published and has its own ARN
+- $latest points at the latest version of the function
