@@ -1205,3 +1205,4 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - A version is the code + configuration of the lambda function
 - It's immutable - it never changes once published and has its own ARN
 - $latest points at the latest version of the function
+- Aliases (DEV, STAGE, PROD) can point at different versions - can be changed
