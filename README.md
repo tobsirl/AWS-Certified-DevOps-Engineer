@@ -1168,3 +1168,4 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 ### Lambda - Security
 
 - Lambda execution roles are IAM roles attached to lambda functions which control the PERMISSIONS the Lambda function RECEIVES...
+- Lambda resource policy controls **WHAT** services and accounts can **INVOKE** lambda functions
