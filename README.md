@@ -1146,3 +1146,4 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 ### Lambda - Common Use Cases
 
 - Serverless Applications (S3, API Gateway, DynamoDB, Lambda)
+- File Processing (S3, Lambda, S3 Events)
