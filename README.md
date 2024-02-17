@@ -1157,3 +1157,10 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - They can access public AWS services and the public internet.
 - Public networking offers the best performance because no customer specific VPC networking is required.
 - Lambda functions have **no access** to VPC based services unless public IPs are provided and secruity controls allow external access.
+
+### Lambda - Networking VPC
+
+- Lambda functions running in a VPC obey all networking rules of that VPC.
+- However, this means they can't access the public internet.
+- VPC Endpoints can be used to access public AWS services without public IPs.
+- Nat Gateways and Internet Gateways are required for VPC Lambdas to access the public internet.
