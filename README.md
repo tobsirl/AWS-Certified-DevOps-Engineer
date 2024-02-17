@@ -1191,3 +1191,5 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - AWS services invoke a lambda function and **do not wait for a response**
 
 #### Event Source mappings
+
+- Typically used on streams or queues which don't support event generation to invoke lambda (Kinesis, DynamoDB streams, SQS)
