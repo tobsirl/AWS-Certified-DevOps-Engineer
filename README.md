@@ -1164,3 +1164,7 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - However, this means they can't access the public internet.
 - VPC Endpoints can be used to access public AWS services without public IPs.
 - Nat Gateways and Internet Gateways are required for VPC Lambdas to access the public internet.
+
+### Lambda - Security
+
+- Lambda execution roles are IAM roles attached to lambda functions which control the PERMISSIONS the Lambda function RECEIVES...
