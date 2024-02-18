@@ -1227,3 +1227,4 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Function Initialization code (outside of the handler) is executed once every cold start, during the function initialization phase. (or in advance if you use provisioned concurrency)
 - Lambda attempts to reuse an execution environment for subsequent invocations, so the function initialization code is not executed again unless the execution environment is frozen by AWS Lambda due to inactivity or other reasons.
 - Your lambda function should assume a cold start every time... but should be able to take advantage if it's an additional invoke in the same environment (warm start)
+- Environment are shut down after a period of inactivity
