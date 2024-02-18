@@ -1217,3 +1217,12 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - **INVOKE** runs the function handler (Cold start)
 - Next **INVOKE(s)** reuses the Execution Environment (Warm start)
 - **SHUTDOWN** - Terminate the Execution Environment
+
+#### Lambda - Function Handler - Phases
+
+- **INIT** - Execution Initialization, Runtime initialization, Function initialization
+- **INVOKE** - Function handler, Function code
+- **SHUTDOWN** - Runtime Shutdown, Execution Environment Shutdown
+
+- Function Initialization code (outside of the handler) is executed once every cold start, during the function initialization phase. (or in advance if you use provisioned concurrency)
+- Lambda attempts to reuse an execution environment for subsequent invocations, so the function initialization code is not executed again unless the execution environment is frozen by AWS Lambda due to inactivity or other reasons.
