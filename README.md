@@ -1209,7 +1209,11 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 
 ### Lambda - Function Handler
 
+[Function Handler](https://docs.aws.amazon.com/lambda/latest/dg/runtimes-context.html)
+
 - Lambda executions have **lifecycles**
 - **Execution Environment** is created
 - **INIT** creates or Unfreezes the Execution Environment
 - **INVOKE** runs the function handler (Cold start)
+- Next **INVOKE(s)** reuses the Execution Environment (Warm start)
+- **SHUTDOWN** - Terminate the Execution Environment
