@@ -1206,3 +1206,10 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - It's immutable - it never changes once published and has its own ARN
 - $latest points at the latest version of the function
 - Aliases (DEV, STAGE, PROD) can point at different versions - can be changed
+
+### Lambda - Function Handler
+
+- Lambda executions have **lifecycles**
+- **Execution Environment** is created
+- **INIT** creates or Unfreezes the Execution Environment
+- **INVOKE** runs the function handler (Cold start)
