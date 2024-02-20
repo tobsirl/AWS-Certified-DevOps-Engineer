@@ -1260,3 +1260,5 @@ Aliases can point at a single version, or be configured to perform weighted rout
 - Each **Alias** has a **unique ARN** .. fixed for the alias
 - Alias can be **updated**, changing **which version** they reference
 - Useful for PROD/DEV, A/B Testing, Blue/Green deployments
+- Alias Routing .. percentage at v1 & percentage at v2
+- ... need same role, same dead-letter queue and not $LATEST
