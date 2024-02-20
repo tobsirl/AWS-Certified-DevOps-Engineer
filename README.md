@@ -1241,3 +1241,10 @@ You can use versions to manage the deployment of your functions. For example, yo
 - A unique ARN for that function version (uniquely identifies)
 - Qualified ARN points at a specific version
 - Unqualified ARN points at the function ($LATEST) - not a specific version
+
+A function version includes the following information:
+
+- The function code and all associated dependencies.
+- The Lambda runtime that invokes the function.
+- All of the function settings, including the environment variables.
+- A unique Amazon Resource Name (ARN) to identify the specific version of the function.
