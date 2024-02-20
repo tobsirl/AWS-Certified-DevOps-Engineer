@@ -1239,3 +1239,5 @@ You can use versions to manage the deployment of your functions. For example, yo
 - locked, no editing of that published version
 - Functions Code, Dependencies, Runtime, Settings & Environment Variables
 - A unique ARN for that function version (uniquely identifies)
+- Qualified ARN points at a specific version
+- Unqualified ARN points at the function ($LATEST) - not a specific version
