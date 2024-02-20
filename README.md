@@ -1254,3 +1254,9 @@ A function version includes the following information:
 You can create one or more aliases for your Lambda function. A Lambda alias is like a pointer to a specific function version. Users can access the function version using the alias Amazon Resource Name (ARN).
 
 Aliases can point at a single version, or be configured to perform weighted routing between 2 versions.
+
+- An **Alias** is a pointer to a specific version of a function
+- PROD => bestanimal:1, STAGE => bestanimal:2
+- Each **Alias** has a **unique ARN** .. fixed for the alias
+- Alias can be **updated**, changing **which version** they reference
+- Useful for PROD/DEV, A/B Testing, Blue/Green deployments
