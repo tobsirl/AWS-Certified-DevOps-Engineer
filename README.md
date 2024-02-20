@@ -1229,7 +1229,7 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Your lambda function should assume a cold start every time... but should be able to take advantage if it's an additional invoke in the same environment (warm start)
 - Environment are shut down after a period of inactivity
 
-### Lambda - Versions
+### Lambda - Versions and Aliases
 
 You can use versions to manage the deployment of your functions. For example, you can publish a new version of a function for beta testing without affecting users of the stable production version. Lambda creates a new version of your function each time that you publish the function. The new version is a copy of the unpublished version of the function.
 
