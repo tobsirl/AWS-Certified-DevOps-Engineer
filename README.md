@@ -1248,3 +1248,9 @@ A function version includes the following information:
 - The Lambda runtime that invokes the function.
 - All of the function settings, including the environment variables.
 - A unique Amazon Resource Name (ARN) to identify the specific version of the function.
+
+### Lambda - Aliases
+
+You can create one or more aliases for your Lambda function. A Lambda alias is like a pointer to a specific function version. Users can access the function version using the alias Amazon Resource Name (ARN).
+
+Aliases can point at a single version, or be configured to perform weighted routing between 2 versions.
