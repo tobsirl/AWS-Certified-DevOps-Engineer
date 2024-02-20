@@ -1234,3 +1234,8 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 You can use versions to manage the deployment of your functions. For example, you can publish a new version of a function for beta testing without affecting users of the stable production version. Lambda creates a new version of your function each time that you publish the function. The new version is a copy of the unpublished version of the function.
 
 - Unpublished functions - can be changed and deployed
+- this is what you've used so far (Deploys to $LATEST)
+- Functions can be published - this creates an immutable version
+- locked, no editing of that published version
+- Functions Code, Dependencies, Runtime, Settings & Environment Variables
+- A unique ARN for that function version (uniquely identifies)
