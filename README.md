@@ -1273,3 +1273,8 @@ An environment variable is a pair of strings that are stored in a function's ver
 - Can be accessed within the execution environment
 - Can be encrypted using KMS
 - Allow code execution to be adjusted based on variables
+
+### Lambda - Monitoring, Logging and Tracing
+
+AWS Lambda integrates with other AWS services to help you monitor and troubleshoot your Lambda functions. Lambda automatically monitors Lambda functions on your behalf and reports metrics through Amazon CloudWatch.
+To help you monitor your code when it runs, Lambda automatically tracks the number of requests, the invocation duration per request, and the number of requests that result in an error.
