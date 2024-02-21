@@ -1266,3 +1266,10 @@ Aliases can point at a single version, or be configured to perform weighted rout
 ### Lambda - Environment Variables
 
 An environment variable is a pair of strings that are stored in a function's version-specific configuration. The Lambda runtime makes environment variables available to your code and sets additional environment variables that contain information about the function and invocation request.
+
+- KEY & VALUE pairs (0 or more)
+- Associated with $LATEST (Can be edited)
+- Associated with a version (Immutable)
+- Can be accessed within the execution environment
+- Can be encrypted using KMS
+- Allow code execution to be adjusted based on variables
