@@ -1282,3 +1282,5 @@ To help you monitor your code when it runs, Lambda automatically tracks the numb
 - All Lambda metrics are available in CloudWatch
 - ... directly or via monitoring tab on a specific function
 - Dimensions - FunctionName, Resource (Alias/Version), Executed Version (combination of alias and version i.e weighted alias) adn ALL FUNCTIONS
+- Invocation, Errors, Duration, Concurrent Executions
+- DeadLetterErrors, DestinationDeliveryFailures
