@@ -1170,7 +1170,7 @@ AWS Lambda is a serverless compute service that runs your code in response to ev
 - Lambda execution roles are IAM roles attached to lambda functions which control the PERMISSIONS the Lambda function RECEIVES...
 - Lambda resource policy controls **WHAT** services and accounts can **INVOKE** lambda functions
 
-### Lambda - Logging
+### AWS Lambda - Logging
 
 - Lambda uses CloudWatch Logs and X-Ray for logging and tracing
 - Logs from Lambda execution are sent to CloudWatch Logs
@@ -1293,3 +1293,9 @@ To help you monitor your code when it runs, Lambda automatically tracks the numb
 - Log Streams = YYYY/MM/DD/[$LATEST||version]..random
 - Permissions via Execution Role
 - ... default role give logging permissions
+
+### Lambda - Tracing
+
+- AWS X-Ray shows the flow of requests through your application
+- Enable 'Active Tracing' in the Lambda function
+- aws lambda update-function-configuration --function-name my-function --tracing-config Mode=Active
