@@ -1284,3 +1284,12 @@ To help you monitor your code when it runs, Lambda automatically tracks the numb
 - Dimensions - FunctionName, Resource (Alias/Version), Executed Version (combination of alias and version i.e weighted alias) adn ALL FUNCTIONS
 - Invocation, Errors, Duration, Concurrent Executions
 - DeadLetterErrors, DestinationDeliveryFailures
+
+### Lambda - Logging
+
+- Lambda Execution logs => CloudWatch Logs
+- stdout or stderr
+- Log Groups = /aws/lambda/function-name
+- Log Streams = YYYY/MM/DD/[$LATEST||version]..random
+- Permissions via Execution Role
+- ... default role give logging permissions
