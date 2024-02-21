@@ -1262,3 +1262,7 @@ Aliases can point at a single version, or be configured to perform weighted rout
 - Useful for PROD/DEV, A/B Testing, Blue/Green deployments
 - Alias Routing .. percentage at v1 & percentage at v2
 - ... need same role, same dead-letter queue and not $LATEST
+
+### Lambda - Environment Variables
+
+An environment variable is a pair of strings that are stored in a function's version-specific configuration. The Lambda runtime makes environment variables available to your code and sets additional environment variables that contain information about the function and invocation request.
