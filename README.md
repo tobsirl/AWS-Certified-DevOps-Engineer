@@ -1278,3 +1278,7 @@ An environment variable is a pair of strings that are stored in a function's ver
 
 AWS Lambda integrates with other AWS services to help you monitor and troubleshoot your Lambda functions. Lambda automatically monitors Lambda functions on your behalf and reports metrics through Amazon CloudWatch.
 To help you monitor your code when it runs, Lambda automatically tracks the number of requests, the invocation duration per request, and the number of requests that result in an error.
+
+- All Lambda metrics are available in CloudWatch
+- ... directly or via monitoring tab on a specific function
+- Dimensions - FunctionName, Resource (Alias/Version), Executed Version (combination of alias and version i.e weighted alias) adn ALL FUNCTIONS
