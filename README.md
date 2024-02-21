@@ -1299,3 +1299,6 @@ To help you monitor your code when it runs, Lambda automatically tracks the numb
 - AWS X-Ray shows the flow of requests through your application
 - Enable 'Active Tracing' in the Lambda function
 - aws lambda update-function-configuration --function-name my-function --tracing-config Mode=Active
+- AWSXRayWriteOnlyAccess policy required
+- Use X-Ray SDK within your function code
+- AWS_XRAY_DAEMON_ADDRESS environment variable
