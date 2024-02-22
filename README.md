@@ -1302,3 +1302,9 @@ To help you monitor your code when it runs, Lambda automatically tracks the numb
 - AWSXRayWriteOnlyAccess policy required
 - Use X-Ray SDK within your function code
 - AWS_XRAY_DAEMON_ADDRESS environment variable
+
+### Lambda - Layers
+
+You can configure your Lambda function to pull in additional code and content in the form of layers. A layer is a .zip file archive that contains libraries, a custom runtime, or other dependencies. With layers, you can use libraries in your function without needing to include them in your deployment package.
+
+[Layers](https://aws.amazon.com/blogs/aws/new-for-aws-lambda-use-any-programming-language-and-share-common-components/)
