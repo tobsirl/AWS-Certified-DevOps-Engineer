@@ -1324,3 +1324,9 @@ Additionally, AWS provides a runtime interface emulator for you to test your fun
 - ...would like a way of locally testing lambda functions before deploying
 - Lambda Runtime API - IN CONTAINER IMAGE
 - AWS Lambda Runtime Interface Emulator - LOCAL TESTING
+
+### Lambda - ALB Integration
+
+You can use a Lambda function to process requests from an Application Load Balancer. Elastic Load Balancing supports Lambda functions as a target for an Application Load Balancer. Use load balancer rules to route HTTP requests to a function, based on path or header values. Process the request and return an HTTP response from your Lambda function.
+
+Elastic Load Balancing invokes your Lambda function synchronously with an event that contains the request body and metadata.
