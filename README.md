@@ -1321,3 +1321,6 @@ Additionally, AWS provides a runtime interface emulator for you to test your fun
 - Create a function, upload code, it executes
 - This is awesome... But has 2 problems
 - ORG... use containers & CI/CD processes built for containers
+- ...would like a way of locally testing lambda functions before deploying
+- Lambda Runtime API - IN CONTAINER IMAGE
+- AWS Lambda Runtime Interface Emulator - LOCAL TESTING
