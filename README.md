@@ -1316,3 +1316,8 @@ You can package your code and dependencies as a container image using tools such
 AWS provides a set of open-source base images that you can use to build the container image for your function code. You can also use alternative base images from other container registries. AWS also provides an open-source runtime client that you add to your alternative base image to make it compatible with the Lambda service.
 
 Additionally, AWS provides a runtime interface emulator for you to test your functions locally using tools such as the Docker CLI.
+
+- Lambda is a Function as a Service (FaaS) product
+- Create a function, upload code, it executes
+- This is awesome... But has 2 problems
+- ORG... use containers & CI/CD processes built for containers
