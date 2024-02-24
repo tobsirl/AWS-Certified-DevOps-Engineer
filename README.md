@@ -1343,3 +1343,16 @@ Two forms of security policy for Lambda
 - Not required for an identity in the same account
 - Can view and perform limited edits in the UI
 - .. also full control via CLI/API
+
+## API Gateway
+
+Amazon API Gateway is a fully managed service that makes it easy for developers to create, publish, maintain, monitor, and secure APIs at any scale. APIs act as the "front door" for applications to access data, business logic, or functionality from your backend services.
+
+[API Gateway Error Codes](https://docs.aws.amazon.com/apigateway/latest/api/CommonErrors.html)
+
+- Create and manage APIs
+- Endpoint/entry-point for applications to access data, business logic or functionality
+- Sits between applications and integrations (services)
+- Highly available, scalable, handles authorisation, throttling, caching, CORS, transformations, OpenAPI spec, direct integrations, Lambda, HTTP, AWS services, VPC links
+- Can connect to services/endpoints in AWS or on-premises
+- HTTP APIs, REST APIs and WebSocket APIs
