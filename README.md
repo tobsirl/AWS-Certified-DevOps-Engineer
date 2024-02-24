@@ -1337,3 +1337,9 @@ Two forms of security policy for Lambda
 
 - Execution Role - Assumed by the function, determines **WHAT** the function **CAN DO**
 - Resource Policy - **WHO** can do **WHAT** with the lambda function
+- Cross Account Access - requires Identity (OUT) AND Resource Policy (IN)
+- Required when a service needs to invoke a lambda function in another account
+- Required cross-account (lambda has no trust)
+- Not required for an identity in the same account
+- Can view and perform limited edits in the UI
+- .. also full control via CLI/API
