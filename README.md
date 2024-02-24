@@ -1362,3 +1362,10 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 - **Edge Optimised** - for global clients - routed to the nearest CloudFront Point of Presence
 - **Regional** - for clients in the same region
 - **Private** - endpoint accessible only within a VPC via an interface endpoint
+
+### API Gateway - Stages
+
+- **Stages** - a logical reference to a lifecycle of an API
+- APIs are deployed to stages, each stage has one deployment
+- Stages can be enabled for canary deployments. If done, deployments are made to the canary not the stage
+- Stages enabled for canary deployments can be configured so a certain percentage of traffic is sent to the canary. This can be adjusted over time - or the carary can be promoted to make it the new base 'stage'
