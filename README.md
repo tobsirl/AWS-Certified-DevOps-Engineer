@@ -1412,12 +1412,12 @@ https://api-id.execute-api.region.amazonaws.com/stage/resource
 
 You choose an API integration type according to the types of integration endpoint you work with and how you want data to pass to and from the integration endpoint. For a Lambda function, you can have the Lambda proxy integration, or the Lambda custom integration. For an HTTP endpoint, you can have the HTTP proxy integration or the HTTP custom integration. For an AWS service action, you have the AWS integration of the non-proxy type only. API Gateway also supports the mock integration, where API Gateway serves as an integration endpoint to respond to a method request.
 
-- **Lambda Function** - Invoke a lambda function
-- **HTTP** - Invoke an HTTP endpoint
-- **AWS Service** - Invoke an AWS service
-- **Mock** - Return a response without invoking a backend
-- **VPC Link** - Invoke a service in a VPC
-- **HTTP Proxy** - Pass through to an HTTP endpoint
-- **AWS Service Proxy** - Pass through to an AWS service
+- API Methods (client) are integrated with a backend endpoint
+- Different types of integration are available
+- **Mock** - return a response without invoking a backend, used for testing
+- **HTTP** - Backend HTTP endpoint
+- **HTTP Proxy** - Pass through to integration unmodified, return to the client unmodified (backend needs to use supported format)
+- **AWS** - Lets and API expose AWS service actions
+- **AWS Proxy (Lambda)** - Low admin overhead Lambda endpoint
 
 [Integration Types](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html)
