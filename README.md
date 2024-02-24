@@ -1369,3 +1369,14 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 - APIs are deployed to stages, each stage has one deployment
 - Stages can be enabled for canary deployments. If done, deployments are made to the canary not the stage
 - Stages enabled for canary deployments can be configured so a certain percentage of traffic is sent to the canary. This can be adjusted over time - or the carary can be promoted to make it the new base 'stage'
+
+### API Gateway - Errors
+
+- 4XX - Client Errors - e.g. 400, 401, 403, 404 invalid request on client side
+- 5XX - Server Errors - e.g. 500, 502, 503, 504 server side errors, valid request, backend error
+- 400 - Bad Request - Generic client side error
+- 403 - Forbidden - Client does not have permission e.g. Authorizer denies, WAF filter
+- 429 - API Gateway can throttle requests- this means you've exceeded the rate limit
+- 502 - Bad Gateway - API Gateway can't reach the backend, bad output returned by lambda
+- 503 - Service Unavailable - API Gateway can't reach the backend, backend is down
+- 504 - Gateway Timeout - API Gateway can't reach the backend, backend is taking too long to respond, integration failure/timeout - 29s limit
