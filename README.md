@@ -1421,3 +1421,12 @@ You choose an API integration type according to the types of integration endpoin
 - **AWS Proxy (Lambda)** - Low admin overhead Lambda endpoint
 
 [Integration Types](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html)
+
+### API Gateway - Mapping Templates
+
+- Used for AWS and HTTP (non PROXY) integrations
+- Modify of Rename Parameters
+- Modify the body or headers of the request
+- Filtering - removing anything which isn't needed
+- Uses Velocity Template Language (VTL)
+- Common exam scenario is REST API (on API Gateway) to a SOAP API ..transfrom the request using mapping template
