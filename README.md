@@ -1330,3 +1330,10 @@ Additionally, AWS provides a runtime interface emulator for you to test your fun
 You can use a Lambda function to process requests from an Application Load Balancer. Elastic Load Balancing supports Lambda functions as a target for an Application Load Balancer. Use load balancer rules to route HTTP requests to a function, based on path or header values. Process the request and return an HTTP response from your Lambda function.
 
 Elastic Load Balancing invokes your Lambda function synchronously with an event that contains the request body and metadata.
+
+### Lambda - Resource Policies
+
+Two forms of security policy for Lambda
+
+- Execution Role - Assumed by the function, determines **WHAT** the function **CAN DO**
+- Resource Policy - **WHO** can do **WHAT** with the lambda function
