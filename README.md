@@ -1407,3 +1407,17 @@ https://api-id.execute-api.region.amazonaws.com/stage/resource
 - Think of resources as points in the API tree or bit of functionality within your API.
 - Methods are desired action to be performed HTTP verbs (GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD)
 - Methods are where integrations are configured which provide the functionality of the API e.g. lambda, HTTP and AWS services
+
+### API Gateway - Integration Types
+
+You choose an API integration type according to the types of integration endpoint you work with and how you want data to pass to and from the integration endpoint. For a Lambda function, you can have the Lambda proxy integration, or the Lambda custom integration. For an HTTP endpoint, you can have the HTTP proxy integration or the HTTP custom integration. For an AWS service action, you have the AWS integration of the non-proxy type only. API Gateway also supports the mock integration, where API Gateway serves as an integration endpoint to respond to a method request.
+
+- **Lambda Function** - Invoke a lambda function
+- **HTTP** - Invoke an HTTP endpoint
+- **AWS Service** - Invoke an AWS service
+- **Mock** - Return a response without invoking a backend
+- **VPC Link** - Invoke a service in a VPC
+- **HTTP Proxy** - Pass through to an HTTP endpoint
+- **AWS Service Proxy** - Pass through to an AWS service
+
+[Integration Types](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-integration-types.html)
