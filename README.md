@@ -1380,3 +1380,15 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 - 502 - Bad Gateway - API Gateway can't reach the backend, bad output returned by lambda
 - 503 - Service Unavailable - API Gateway can't reach the backend, backend is down
 - 504 - Gateway Timeout - API Gateway can't reach the backend, backend is taking too long to respond, integration failure/timeout - 29s limit
+
+### API Gateway - Caching
+
+- API Gateway can cache responses from the backend
+- This can reduce the number of calls to the backend
+- Cache can be configured per method
+- Cache TTL default is 300 seconds
+- Configurable from 0 to 3600 seconds
+- Cache can be invalidated
+- Cache can be encrypted
+- Cache size 500MB to 237GB
+- Cache is defined per stage
