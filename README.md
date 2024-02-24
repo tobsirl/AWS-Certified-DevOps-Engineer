@@ -1392,3 +1392,15 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 - Cache can be encrypted
 - Cache size 500MB to 237GB
 - Cache is defined per stage
+
+### API Gateway - Methods and Resources
+
+- Invoke URL points at the _API Gateway Endpoint_, **stage** and `resource`
+
+```bash
+https://api-id.execute-api.region.amazonaws.com/stage/resource
+```
+
+- Stages are logical configurations which exist within API Gateway.
+- APIs are deployed into stages
+- Can be used for different versions or lifecycle stages of the API
