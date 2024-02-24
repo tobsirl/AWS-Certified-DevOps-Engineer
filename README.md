@@ -1404,3 +1404,5 @@ https://api-id.execute-api.region.amazonaws.com/stage/resource
 - Stages are logical configurations which exist within API Gateway.
 - APIs are deployed into stages
 - Can be used for different versions or lifecycle stages of the API
+- Think of resources as points in the API tree or bit of functionality within your API.
+- Methods are desired action to be performed HTTP verbs (GET, POST, PUT, DELETE, PATCH, OPTIONS, HEAD)
