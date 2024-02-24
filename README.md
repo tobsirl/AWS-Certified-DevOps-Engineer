@@ -1356,3 +1356,9 @@ Amazon API Gateway is a fully managed service that makes it easy for developers 
 - Highly available, scalable, handles authorisation, throttling, caching, CORS, transformations, OpenAPI spec, direct integrations, Lambda, HTTP, AWS services, VPC links
 - Can connect to services/endpoints in AWS or on-premises
 - HTTP APIs, REST APIs and WebSocket APIs
+
+### API Gateway - Endpoint Types
+
+- **Edge Optimised** - for global clients - routed to the nearest CloudFront Point of Presence
+- **Regional** - for clients in the same region
+- **Private** - endpoint accessible only within a VPC via an interface endpoint
