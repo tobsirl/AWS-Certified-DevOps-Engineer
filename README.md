@@ -1441,3 +1441,7 @@ A stage is a named reference to a deployment, which is a snapshot of the API. Yo
 - or versions (v1, v2, v3) - for breaking changes
 - Each stage has its own configuration
 - not immutable, can be overwritten
+
+### API Gateway - Swagger and OpenAPI
+
+You can use API Gateway to import a REST API from an external definition file into API Gateway. Currently, API Gateway supports OpenAPI v2.0 and OpenAPI v3.0 definition files. You can update an API by overwriting it with a new definition, or you can merge a definition with an existing API.
