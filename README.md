@@ -1437,3 +1437,7 @@ A stage is a named reference to a deployment, which is a snapshot of the API. Yo
 
 - Changes made in API Gateway are not live until they are deployed
 - The current API state needs to be deployed to a stage
+- Stages can be environments (DEV, TEST, PROD)
+- or versions (v1, v2, v3) - for breaking changes
+- Each stage has its own configuration
+- not immutable, can be overwritten
