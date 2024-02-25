@@ -1450,3 +1450,7 @@ You can use API Gateway to import a REST API from an external definition file in
 - Swagger = v2.0, OpenAPI = v3.0
 - OpenAPI v3.0 is the latest version
 - API Description format for REST APIs
+- Endpoints (/listcats) and Operations (GET, POST, PUT, DELETE)
+- Input and Output Parameters and Authentication Methods
+- Non tech infromaton - Contact Info, Licence, Terms of use
+- API Gateway can export to Swagger/OpenAPI and import from Swagger/OpenAPI
