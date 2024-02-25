@@ -1430,3 +1430,10 @@ You choose an API integration type according to the types of integration endpoin
 - Filtering - removing anything which isn't needed
 - Uses Velocity Template Language (VTL)
 - Common exam scenario is REST API (on API Gateway) to a SOAP API ..transfrom the request using mapping template
+
+### API Gateway - Stages and Deployments
+
+A stage is a named reference to a deployment, which is a snapshot of the API. You use a Stage to manage and optimize a particular deployment. For example, you can configure stage settings to enable caching, customize request throttling, configure logging, define stage variables, or attach a canary release for testing.
+
+- Changes made in API Gateway are not live until they are deployed
+- The current API state needs to be deployed to a stage
