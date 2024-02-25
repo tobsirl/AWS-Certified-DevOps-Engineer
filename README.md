@@ -1445,3 +1445,8 @@ A stage is a named reference to a deployment, which is a snapshot of the API. Yo
 ### API Gateway - Swagger and OpenAPI
 
 You can use API Gateway to import a REST API from an external definition file into API Gateway. Currently, API Gateway supports OpenAPI v2.0 and OpenAPI v3.0 definition files. You can update an API by overwriting it with a new definition, or you can merge a definition with an existing API.
+
+- OpenAPI (Swagger) is a specification for building APIs
+- Swagger = v2.0, OpenAPI = v3.0
+- OpenAPI v3.0 is the latest version
+- API Description format for REST APIs
