@@ -1454,3 +1454,9 @@ You can use API Gateway to import a REST API from an external definition file in
 - Input and Output Parameters and Authentication Methods
 - Non tech infromaton - Contact Info, Licence, Terms of use
 - API Gateway can export to Swagger/OpenAPI and import from Swagger/OpenAPI
+
+## Simple Notification Service (SNS)
+
+The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliable delivery of notification style messages between AWS components or between AWS and external systems.
+
+- Public AWS Service - network connectivity with Public Endpoint
