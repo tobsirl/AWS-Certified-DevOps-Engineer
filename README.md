@@ -1460,3 +1460,8 @@ You can use API Gateway to import a REST API from an external definition file in
 The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliable delivery of notification style messages between AWS components or between AWS and external systems.
 
 - Public AWS Service - network connectivity with Public Endpoint
+- Coordinates the sending and delivery of messages
+- Messages are <= 256KB payloads
+- SNS Topics are base entity of SNS - permissions and configuration
+- A Publisher sends messages to a Topic
+- e.g. HTTP, Lambda, SQS, Email, SMS, Mobile Push, Lambda
