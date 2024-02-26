@@ -1465,3 +1465,4 @@ The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliabl
 - SNS Topics are base entity of SNS - permissions and configuration
 - A Publisher sends messages to a Topic
 - e.g. HTTP, Lambda, SQS, Email, SMS, Mobile Push, Lambda
+- SNS used across AWS for notifications - e.g. CloudWatch and CloudFormation
