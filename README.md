@@ -1466,3 +1466,8 @@ The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliabl
 - A Publisher sends messages to a Topic
 - e.g. HTTP, Lambda, SQS, Email, SMS, Mobile Push, Lambda
 - SNS used across AWS for notifications - e.g. CloudWatch and CloudFormation
+- Delivery Status - Success, Failure, TimeOut (for Lambda, SQS, HTTP)
+- Delivery Retries - 3 retries, 1 second, 5 seconds, 10 seconds
+- HA and Scalable - 11 9's durability, 300 seconds retention
+- Server Side Encryption (SSE) - KMS or AWS Managed Keys
+- Cross Account via TOPIC Policy
