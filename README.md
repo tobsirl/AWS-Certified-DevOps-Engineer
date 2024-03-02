@@ -1491,6 +1491,7 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - Short Polling - returns immediately, even if no messages
 - Long Polling - waits for messages, reduces cost and latency (waitTimeSeconds - up to 20 seconds)
 - Encrypted at rest(KMS) and in transit
+- Queue Policies - control who can send and receive messages
 
 ### SQS - FIFO Queue
 
