@@ -1482,3 +1482,13 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - .. then either reappear (retry) or are explicitly deleted
 - Dead-Letter Queues - messages which can't be processed
 - ASGs can scale and Lambdas invoke based on queue length
+
+### SQS - Standard Queue
+
+- Standard = at least once delivery
+
+### SQS - FIFO Queue
+
+- FIFO = exactly once delivery
+- Messages are delivered in order
+- FIFO (Performance) **3,000 messages per second** with batching, or up to **300 messages per second** (individual messages)
