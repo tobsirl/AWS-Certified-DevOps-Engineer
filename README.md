@@ -1475,3 +1475,8 @@ The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliabl
 ## Simple Queue Service (SQS)
 
 SQS queues are a managed message queue service in AWS which help to decouple application components, allow Asynchronous messaging or the implementation of worker pools.
+
+- Public, Fully Managed, Highly Available Queues - Standard and FIFO
+- Messages up to 256KB in size - link to large data
+- Received messages are hidden (Visibility Timeout) - 12 hours max
+- .. then either reappear (retry) or are explicitly deleted
