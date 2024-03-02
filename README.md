@@ -1471,3 +1471,7 @@ The Simple Notification Service (SNS) is a pub/sub system in AWS for the reliabl
 - HA and Scalable - 11 9's durability, 300 seconds retention
 - Server Side Encryption (SSE) - KMS or AWS Managed Keys
 - Cross Account via TOPIC Policy
+
+## Simple Queue Service (SQS)
+
+SQS queues are a managed message queue service in AWS which help to decouple application components, allow Asynchronous messaging or the implementation of worker pools.
