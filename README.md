@@ -1480,3 +1480,5 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - Messages up to 256KB in size - link to large data
 - Received messages are hidden (Visibility Timeout) - 12 hours max
 - .. then either reappear (retry) or are explicitly deleted
+- Dead-Letter Queues - messages which can't be processed
+- ASGs can scale and Lambdas invoke based on queue length
