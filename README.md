@@ -1504,3 +1504,15 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - Message order is strictly preserved - First In, First Out
 - Exactly Once Processing - Deduplicates are removed
 - Must have .fifo suffix
+
+### SQS - Extended Client Library
+
+[Extended Client Library](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-extended-client.html)
+
+- Used when handling message over SQS max (256KB)
+- Allows large payloads - **stored in S3**
+- **SendMessage**, uploads to S3, stores link in **message**
+- **Receive message** loads large payload from S3
+- **Delete message** also **deletes large S3 payload**
+- Interface for SQS+S3 - handling the integration workload
+- Exam often mentions **Java** with Extended Client Library
