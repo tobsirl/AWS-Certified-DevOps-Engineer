@@ -1526,3 +1526,10 @@ Delay queues provide an initial period of invisibility for messages. Predefine p
 [Amazon SQS delay queues](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-delay-queues.html)
 
 [Amazon SQS visibility timeout](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-visibility-timeout.html)
+
+### SQS - Dead Letter Queues
+
+Dead letter queues allow for messages which are causing repeated processing errors to be moved into a dead letter queue in this queue, different processing methods, diagnostic methods or logging methods can be used to identity message faults
+
+- Redrive Policy - Specifies the source queue, the dead-letter queue and the condidtions where messages will be moved from one to the other Define **maxReceiveCount**
+- When ReceiveCount > maxReceiveCount amd message isn't deleted, it's moved to the dead-letter queue
