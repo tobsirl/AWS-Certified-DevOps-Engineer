@@ -1533,3 +1533,4 @@ Dead letter queues allow for messages which are causing repeated processing erro
 
 - Redrive Policy - Specifies the source queue, the dead-letter queue and the condidtions where messages will be moved from one to the other Define **maxReceiveCount**
 - When ReceiveCount > maxReceiveCount amd message isn't deleted, it's moved to the dead-letter queue
+- Enqueue timestamp of message is unchanged. Retention period of a dead-letter queue is generally longer than the source queue (s)
