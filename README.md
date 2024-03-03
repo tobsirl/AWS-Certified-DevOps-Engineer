@@ -1516,3 +1516,7 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - **Delete message** also **deletes large S3 payload**
 - Interface for SQS+S3 - handling the integration workload
 - Exam often mentions **Java** with Extended Client Library
+
+### SQS - Delay Queues
+
+Delay queues provide an initial period of invisibility for messages. Predefine periods can ensure that processing of messages doesn't begin until this period has expired.
