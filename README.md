@@ -1492,9 +1492,15 @@ SQS queues are a managed message queue service in AWS which help to decouple app
 - Long Polling - waits for messages, reduces cost and latency (waitTimeSeconds - up to 20 seconds)
 - Encrypted at rest(KMS) and in transit
 - Queue Policies - control who can send and receive messages
+- Best Effort Ordering - not guaranteed
+- At least once delivery - messages can be delivered more than once
+- Decoupling, worker pools, Batch for future processing
 
 ### SQS - FIFO Queue
 
 - FIFO = exactly once delivery
 - Messages are delivered in order
 - FIFO (Performance) **3,000 messages per second** with batching, or up to **300 messages per second** (individual messages)
+- Message order is strictly preserved - First In, First Out
+- Exactly Once Processing - Deduplicates are removed
+- Must have .fifo suffix
