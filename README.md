@@ -1534,3 +1534,14 @@ Dead letter queues allow for messages which are causing repeated processing erro
 - Redrive Policy - Specifies the source queue, the dead-letter queue and the condidtions where messages will be moved from one to the other Define **maxReceiveCount**
 - When ReceiveCount > maxReceiveCount amd message isn't deleted, it's moved to the dead-letter queue
 - Enqueue timestamp of message is unchanged. Retention period of a dead-letter queue is generally longer than the source queue (s)
+
+## Step Functions
+
+Step functions is a product which lets you build long running serverless workflow based applications within AWS which integrate with many AWS services.
+Step functions help with the limitation of Lambda functions which can only run for 15 minutes. Step functions can run for up to a year.
+
+- Lambda is FaaS - short running, focussed
+- 15 minutes max runtime
+- Can be chained together, but not ideal for long running workflows
+- Gets messy at scale
+- Runtime Environments are stateless
