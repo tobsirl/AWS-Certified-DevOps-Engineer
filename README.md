@@ -1545,3 +1545,10 @@ Step functions help with the limitation of Lambda functions which can only run f
 - Can be chained together, but not ideal for long running workflows
 - Gets messy at scale
 - Runtime Environments are stateless
+
+### Step Functions - State Machines
+
+- Serverless workflow .. START -> STATE -> STATE -> END
+- States are THINGS that happen
+- Maximum Duration of 1 year
+- Standard Workflow and Express Workflows
