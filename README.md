@@ -1555,3 +1555,12 @@ Step functions help with the limitation of Lambda functions which can only run f
 - Started via API Gateway, IOT Rules, EventBridge, Lambda...
 - Amazon States Language - JSON based language to define state machines
 - IAM Role is used for permissions
+
+### Step Functions - States
+
+- SUCCEED and FAIL are terminal states
+- WAIT is a delay
+- CHOICE is a conditional
+- PARALLEL is a parallel execution
+- MAP is a parallel execution with dynamic number of iterations
+- TASK is a call to a service (Lambda, ECS, Batch, SNS, SQS, DynamoDB, Glue, S3, SSM, Fargate, Step Functions, SageMaker, EMR, EC2, API Gateway, HTTP, etc)
