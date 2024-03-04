@@ -1552,3 +1552,6 @@ Step functions help with the limitation of Lambda functions which can only run f
 - States are THINGS that happen
 - Maximum Duration of 1 year
 - Standard Workflow and Express Workflows
+- Started via API Gateway, IOT Rules, EventBridge, Lambda...
+- Amazon States Language - JSON based language to define state machines
+- IAM Role is used for permissions
