@@ -1570,3 +1570,8 @@ Step functions help with the limitation of Lambda functions which can only run f
 [ContainerDefinition](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html)
 
 [ECS TaskDefinition](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_TaskDefinition.html)
+
+### ECS Concepts
+
+- **Container Definition** - Image and Ports
+- **Task Definition** - Security(Task Role), IAM, Volumes, Network, Placement
