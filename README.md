@@ -1564,3 +1564,7 @@ Step functions help with the limitation of Lambda functions which can only run f
 - PARALLEL is a parallel execution
 - MAP is a parallel execution with dynamic number of iterations
 - TASK is a call to a service (Lambda, ECS, Batch, SNS, SQS, DynamoDB, Glue, S3, SSM, Fargate, Step Functions, SageMaker, EMR, EC2, API Gateway, HTTP, etc)
+
+## Elastic Container Service (ECS)
+
+[ContainerDefinition](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ContainerDefinition.html)
