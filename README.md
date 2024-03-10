@@ -1577,3 +1577,17 @@ Step functions help with the limitation of Lambda functions which can only run f
 - **Task Definition** - Security(Task Role), IAM, Volumes, Network, Placement
 - **Task Role** - IAM Role which the TASK assumes
 - **Service** - How many compies, HA, Restarts
+
+### ECS - Cluster Types
+
+- ECS is capable of running in EC2 mode or Fargate mode.
+
+#### EC2 Mode
+
+- EC2 mode deploys EC2 instances into your AWS account which can be used to deploy tasks and services.
+- With EC2 mode you pay for the EC2 instances regardless of container usage
+
+#### Fargate Mode
+
+- Fargate mode uses shared AWS infrastructure, and ENI's which are injected into your VPC
+- You pay only for container resources used while they are running.
