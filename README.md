@@ -1599,3 +1599,5 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 ### Kubernetes Cluster Structure
 
 - Highly available cluster of compute resources which are **organised** to work as **one unit**
+- Cluster Control Plane manages the cluster, scheduling, applications, scaling and deploying
+- Cluster Nodes - A VM or Physical server which functions as a worker in the cluster
