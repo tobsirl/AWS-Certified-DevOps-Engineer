@@ -1591,3 +1591,11 @@ Step functions help with the limitation of Lambda functions which can only run f
 
 - Fargate mode uses shared AWS infrastructure, and ENI's which are injected into your VPC
 - You pay only for container resources used while they are running.
+
+## Kubernetes (EKS)
+
+Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes it easy for you to run Kubernetes on AWS without needing to install, operate, and maintain your own Kubernetes control plane or nodes.
+
+### Kubernetes Cluster Structure
+
+- Highly available cluster of compute resources which are **organised** to work as **one unit**
