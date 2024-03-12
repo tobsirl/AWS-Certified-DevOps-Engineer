@@ -1601,3 +1601,5 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - Highly available cluster of compute resources which are **organised** to work as **one unit**
 - Cluster Control Plane manages the cluster, scheduling, applications, scaling and deploying
 - Cluster Nodes - A VM or Physical server which functions as a worker in the cluster
+- containerd or Docker Software for handling container operations - Container Runtime
+- kubelet - agent to interact with the cluster control plane
