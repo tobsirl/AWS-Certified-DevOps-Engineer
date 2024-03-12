@@ -1608,3 +1608,9 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - kube-apiserver - the frond-end for the Kubernetes control plane. It's what nodes and other cluster elements interact with. Can be horizontally scaled for HA and performance.
 - etcd provides a highly-available key value store used within the cluster. It's used as the main backing store fro the cluster.
 - kube-scheduler identifies any pods within the cluster with no assigned node and assigns a node based on resource requirements, deadlines, affinity/anti affinity, data locality and any constraints.
+- cloud-controller-manager provides cloud-specific control logic. It allows you to link Kubernetes with a cloud providers APIs (i.e AWS/Azure/GCP)
+- kube-controller-manager cluster controller processes
+- Node Controller - monitoring and responding to node conditions
+- Job Controller - one-off tasks (jobs) => PODS
+- Endpoint Controller - populates endpoints (Services <=> Pods)
+- Service Account and Token Controllers - create default accounts and API access tokens for new namespaces
