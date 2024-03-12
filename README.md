@@ -1622,6 +1622,12 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a fully-managed, Kubernetes im
 
 - AWS Managed Kubernetes Service - open source and cloud agnostic
 - AWS, Outposts, EKS Anywhere, EKS Distro
+- Controle plane scales and runs on multiple AZs
+- Integrates with AWS Services - IAM, VPC, EBS, EFS, ELB, CloudWatch, CloudTrail, KMS, Secrets Manager, Cognito
+- EKS Cluster = EKS Control Plane + EKS Worker Nodes
+- etcd distributed across multiple AZs
+- Nodes - Self Managed, Managed node groups or Fargate pods
+- windows, GPU, Inferentia, Graviton2, ARM, x86
 
 [Amazon EKS nodes](https://docs.aws.amazon.com/eks/latest/userguide/eks-compute.html)
 [AWS Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html)
