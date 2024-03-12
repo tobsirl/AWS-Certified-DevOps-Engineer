@@ -1605,3 +1605,5 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - kubelet - agent to interact with the cluster control plane
 - Kubernetes API used for communication between the control plane and kubelet agent
 - Pods are the smallest unit of computing in Kubernetes Shared storage and networking "one-container-one-pod" is very common PODS ARE NONPERMANENT
+- kube-apiserver - the frond-end for the Kubernetes control plane. It's what nodes and other cluster elements interact with. Can be horizontally scaled for HA and performance.
+- etcd provides a highly-available key value store used within the cluster. It's used as the main backing store fro the cluster.
