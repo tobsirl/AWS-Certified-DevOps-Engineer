@@ -1604,3 +1604,4 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - containerd or Docker Software for handling container operations - Container Runtime
 - kubelet - agent to interact with the cluster control plane
 - Kubernetes API used for communication between the control plane and kubelet agent
+- Pods are the smallest unit of computing in Kubernetes Shared storage and networking "one-container-one-pod" is very common PODS ARE NONPERMANENT
