@@ -1607,3 +1607,4 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - Pods are the smallest unit of computing in Kubernetes Shared storage and networking "one-container-one-pod" is very common PODS ARE NONPERMANENT
 - kube-apiserver - the frond-end for the Kubernetes control plane. It's what nodes and other cluster elements interact with. Can be horizontally scaled for HA and performance.
 - etcd provides a highly-available key value store used within the cluster. It's used as the main backing store fro the cluster.
+- kube-scheduler identifies any pods within the cluster with no assigned node and assigns a node based on resource requirements, deadlines, affinity/anti affinity, data locality and any constraints.
