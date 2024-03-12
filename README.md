@@ -1628,6 +1628,7 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a fully-managed, Kubernetes im
 - etcd distributed across multiple AZs
 - Nodes - Self Managed, Managed node groups or Fargate pods
 - windows, GPU, Inferentia, Graviton2, ARM, x86
+- Storage Providers - include.. EBS, EFS, FSx, S3, RDS, DynamoDB, Aurora, Neptune, DocumentDB, ElastiCache, Redshift, S3, EBS, EFS, FSx, S3, RDS, DynamoDB, Aurora, Neptune, DocumentDB, ElastiCache, Redshift
 
 [Amazon EKS nodes](https://docs.aws.amazon.com/eks/latest/userguide/eks-compute.html)
 [AWS Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html)
