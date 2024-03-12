@@ -1614,3 +1614,4 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a managed service that makes i
 - Job Controller - one-off tasks (jobs) => PODS
 - Endpoint Controller - populates endpoints (Services <=> Pods)
 - Service Account and Token Controllers - create default accounts and API access tokens for new namespaces
+- kube-proxy is a network proxy. Running on each node, it coordinates networking with the control plane. It helps implement "services" and configures rules allowing communications with pods from inside or outside of the cluster.
