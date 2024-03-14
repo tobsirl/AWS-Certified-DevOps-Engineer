@@ -1676,3 +1676,4 @@ For supported services it can even adjust the credentials of the service itself.
 - Designed for secrets - passwords, API keys, tokens
 - Usable via Console, CLI, SDK, API
 - Automatic rotation of secrets ...this uses Lambda
+- Directly integrates with some AWS products e.g. RDS, Redshift
