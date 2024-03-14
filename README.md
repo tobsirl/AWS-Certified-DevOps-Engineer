@@ -1655,3 +1655,11 @@ AWS OpsWorks has three modes:
 - Lifecycle Events - Setup, Configure, Deploy, Undeploy, Shutdown
 - Instances - 24/7, Time-Based of Load-Based
 - Apps - Deployed to instances
+
+## SSM - Parameter Store
+
+The SSM Parameter store is a service which is part of Systems Manager which allows the storage and retrieval of parameters - string, stringlist or secure string.
+
+The service supports encryption which integrates with KMS, versioning and can be secured using IAM.
+
+The service integrates natively with many AWS services - and can be accessed using the CLI/APIs from anywhere with access to the AWS Public Space Endpoints.
