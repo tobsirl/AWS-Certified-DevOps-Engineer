@@ -1663,3 +1663,11 @@ The SSM Parameter store is a service which is part of Systems Manager which allo
 The service supports encryption which integrates with KMS, versioning and can be secured using IAM.
 
 The service integrates natively with many AWS services - and can be accessed using the CLI/APIs from anywhere with access to the AWS Public Space Endpoints.
+
+## SSM - Secrets Manager
+
+AWS Secrets manager is a product which can manage secrets within AWS. There is some overlap between it and the SSM Parameter Store - but Secrets manager is specialised for secrets.
+
+Additionally Secrets managed is capable of automatic credential rotation using Lambda.
+
+For supported services it can even adjust the credentials of the service itself.
