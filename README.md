@@ -1671,3 +1671,8 @@ AWS Secrets manager is a product which can manage secrets within AWS. There is s
 Additionally Secrets managed is capable of automatic credential rotation using Lambda.
 
 For supported services it can even adjust the credentials of the service itself.
+
+- It does share functionality with SSM Parameter Store
+- Designed for secrets - passwords, API keys, tokens
+- Usable via Console, CLI, SDK, API
+- Automatic rotation of secrets ...this uses Lambda
