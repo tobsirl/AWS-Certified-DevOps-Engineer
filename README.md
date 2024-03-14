@@ -1637,3 +1637,9 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a fully-managed, Kubernetes im
 ## AWS OpsWorks
 
 AWS OpsWorks provides managed implementations of Puppet and Chef in a product which integrates with other AWS Products and services.
+
+AWS OpsWorks has three modes:
+
+- **Puppet Enterprise** AWS Managed Puppet Master Server
+- **Chef Automate** AWS Managed Chef Server
+- **OpsWorks** AWS Integrated Chef, No Servers
