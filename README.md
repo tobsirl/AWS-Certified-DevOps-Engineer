@@ -1654,3 +1654,4 @@ AWS OpsWorks has three modes:
 - Recipes & Cookbooks - Chef or Puppet
 - Lifecycle Events - Setup, Configure, Deploy, Undeploy, Shutdown
 - Instances - 24/7, Time-Based of Load-Based
+- Apps - Deployed to instances
