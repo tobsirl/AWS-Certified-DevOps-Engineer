@@ -1646,3 +1646,10 @@ AWS OpsWorks has three modes:
 - Use when you already have one of these
 - Requirement to automate...
 - See Recipes, Cookbooks or Manifests for more information
+
+### OpsWorks - Stacks
+
+- Stacks - Core Component ...container of resources
+- Layers - each layer is a specific function within a stack
+- Recipes & Cookbooks - Chef or Puppet
+- Lifecycle Events - Setup, Configure, Deploy, Undeploy, Shutdown
