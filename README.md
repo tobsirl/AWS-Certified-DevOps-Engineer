@@ -1653,3 +1653,4 @@ AWS OpsWorks has three modes:
 - Layers - each layer is a specific function within a stack
 - Recipes & Cookbooks - Chef or Puppet
 - Lifecycle Events - Setup, Configure, Deploy, Undeploy, Shutdown
+- Instances - 24/7, Time-Based of Load-Based
