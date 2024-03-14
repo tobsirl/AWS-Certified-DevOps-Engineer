@@ -1633,3 +1633,7 @@ Amazon Elastic Kubernetes Service (Amazon EKS) is a fully-managed, Kubernetes im
 
 [Amazon EKS nodes](https://docs.aws.amazon.com/eks/latest/userguide/eks-compute.html)
 [AWS Fargate](https://docs.aws.amazon.com/eks/latest/userguide/fargate.html)
+
+## AWS OpsWorks
+
+AWS OpsWorks provides managed implementations of Puppet and Chef in a product which integrates with other AWS Products and services.
