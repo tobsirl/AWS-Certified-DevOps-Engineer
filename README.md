@@ -1643,3 +1643,6 @@ AWS OpsWorks has three modes:
 - **Puppet Enterprise** AWS Managed Puppet Master Server
 - **Chef Automate** AWS Managed Chef Server
 - **OpsWorks** AWS Integrated Chef, No Servers
+- Use when you already have one of these
+- Requirement to automate...
+- See Recipes, Cookbooks or Manifests for more information
