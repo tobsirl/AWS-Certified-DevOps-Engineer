@@ -1697,3 +1697,40 @@ STS is a fundamental AWS Service which is used within many other identity relate
 - STS generates temporary credentials which can access AWS resources until expiration. They authorise access based on the permissions policy.
 - Temporary credentials consists of AccessKeyId (unique ID of the credentials), SecretAccessKey(used to sign requests), SessionToken(unique token which must be passed with all requests) and Expiration(date and time of credentials expiration)
 - Credentials are returned to the identity which requested them. Another sts:AssumeRole is required when credentials expire.
+
+## Policy Interpretation Deep Dive - Example 1
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": [
+        "s3:PutObject",
+        "s3:PutObjectAcl",
+        "s3:GetObject",
+        "s3:GetObjectAcl",
+        "s3:DeleteObject"
+      ],
+      "Resource": "arn:aws:s3:::holidaygifts/*"
+    },
+    {
+      "Effect": "Deny",
+      "Action": ["s3:GetObject", "s3:GetObjectAcl"],
+      "Resource": "arn:aws:s3:::holidaygifts/*",
+      "Condition": {
+        "DateGreaterThan": {
+          "aws:CurrentTime": "2022-12-01T00:00:00Z"
+        },
+        "DateLessThan": {
+          "aws:CurrentTime": "2022-12-25T06:00:00Z"
+        }
+      }
+    }
+  ]
+}
+```
+
+- Number of statements: 2 (Counted by the brackets)
+- Statements are always Allow or Deny
