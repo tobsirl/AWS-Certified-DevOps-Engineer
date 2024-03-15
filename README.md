@@ -1677,3 +1677,13 @@ For supported services it can even adjust the credentials of the service itself.
 - Usable via Console, CLI, SDK, API
 - Automatic rotation of secrets ...this uses Lambda
 - Directly integrates with some AWS products e.g. RDS, Redshift
+
+## Security Token Service (STS)
+
+STS is a fundamental AWS Service which is used within many other identity related services.
+
+- Generates temporary credentials for IAM users or roles (sts:AssumeRole)
+- Similar to access keys
+- ..they expire and don't belong to the identity
+- Limited Access
+- Requested by an identity (AWS or EXTERNAL)
