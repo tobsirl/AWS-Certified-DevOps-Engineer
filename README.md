@@ -1737,3 +1737,27 @@ STS is a fundamental AWS Service which is used within many other identity relate
 - AWS defaults to Deny
 - Explicit Deny always overrides Allow
 - Resource is the S3 bucket and the paths are the same so are overlapping
+
+## Policy Interpretation Deep Dive - Example 2
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyNonApprovedRegions",
+      "Effect": "Deny",
+      "NotAction": ["cloudfront:*", "iam:*", "route53:*", "support:*"],
+      "Resource": "*",
+      "Condition": {
+        "StringNotEquals": {
+          "aws:RequestedRegion": ["ap-southeast-2", "eu-west-1"]
+        }
+      }
+    }
+  ]
+}
+```
+
+- Inverted logic - NotAction
+- StringNotEquals - aws:RequestedRegion
