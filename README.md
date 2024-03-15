@@ -1765,3 +1765,34 @@ STS is a fundamental AWS Service which is used within many other identity relate
 ## Policy Interpretation Deep Dive - Example 3
 
 [IAM policy elements: Variables and tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html)
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": ["s3:ListAllMyBuckets", "s3:GetBucketLocation"],
+      "Resource": "*"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:ListBucket",
+      "Resource": "arn:aws:s3:::cl-animals4life",
+      "Condition": {
+        "StringLike": {
+          "s3:prefix": ["", "home/", "home/${aws:username}/*"]
+        }
+      }
+    },
+    {
+      "Effect": "Allow",
+      "Action": "s3:*",
+      "Resource": [
+        "arn:aws:s3:::cl-animals4life/home/${aws:username}",
+        "arn:aws:s3:::cl-animals4life/home/${aws:username}/*"
+      ]
+    }
+  ]
+}
+```
