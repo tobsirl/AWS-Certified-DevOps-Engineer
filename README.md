@@ -1687,3 +1687,11 @@ STS is a fundamental AWS Service which is used within many other identity relate
 - ..they expire and don't belong to the identity
 - Limited Access
 - Requested by an identity (AWS or EXTERNAL)
+
+### STS - How it works
+
+- The Trush policy controls who can assume the role. Conceptually this is a wall around the role.
+- If an identity isn't ALLOWED to assume the role, based on the TRUST policy.. AssumeRole will fail
+- sts:AssumeRole calls are made by and existing identity ..either AWS or External(federation)
+- Premissions Policy controls what the identity can do once it has assumed the role
+- STS generates temporary credentials which can access AWS resources until expiration. They authorise access based on the permissions policy.
