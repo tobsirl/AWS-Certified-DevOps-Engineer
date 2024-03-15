@@ -1761,3 +1761,7 @@ STS is a fundamental AWS Service which is used within many other identity relate
 
 - Inverted logic - NotAction
 - StringNotEquals - aws:RequestedRegion
+
+## Policy Interpretation Deep Dive - Example 3
+
+[IAM policy elements: Variables and tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_variables.html)
