@@ -1734,3 +1734,6 @@ STS is a fundamental AWS Service which is used within many other identity relate
 
 - Number of statements: 2 (Counted by the brackets)
 - Statements are always Allow or Deny
+- AWS defaults to Deny
+- Explicit Deny always overrides Allow
+- Resource is the S3 bucket and the paths are the same so are overlapping
