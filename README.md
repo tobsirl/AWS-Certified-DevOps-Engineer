@@ -1796,3 +1796,8 @@ STS is a fundamental AWS Service which is used within many other identity relate
   ]
 }
 ```
+
+- 3 statements
+- 1st statement - ListAllMyBuckets and GetBucketLocation
+- 2nd statement - ListBucket - with a condition
+- 3rd statement - All actions on the home directory and subdirectories
