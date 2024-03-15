@@ -1696,3 +1696,4 @@ STS is a fundamental AWS Service which is used within many other identity relate
 - Premissions Policy controls what the identity can do once it has assumed the role
 - STS generates temporary credentials which can access AWS resources until expiration. They authorise access based on the permissions policy.
 - Temporary credentials consists of AccessKeyId (unique ID of the credentials), SecretAccessKey(used to sign requests), SessionToken(unique token which must be passed with all requests) and Expiration(date and time of credentials expiration)
+- Credentials are returned to the identity which requested them. Another sts:AssumeRole is required when credentials expire.
