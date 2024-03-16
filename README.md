@@ -1801,3 +1801,10 @@ STS is a fundamental AWS Service which is used within many other identity relate
 - 1st statement - ListAllMyBuckets and GetBucketLocation
 - 2nd statement - ListBucket - with a condition
 - 3rd statement - All actions on the home directory and subdirectories
+
+## Permission Boundaries
+
+Permission boundaries are an advanced feature of AWS IAM which can be used to limit the maximum permissions which can be granted to an identity.
+
+- Only Identity-based policies can be limited by a permission boundary
+- Boundaries can be applied to IAM Users or IAM Roles
