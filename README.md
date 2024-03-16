@@ -1809,3 +1809,11 @@ Permission boundaries are an advanced feature of AWS IAM which can be used to li
 - Only Identity-based policies can be limited by a permission boundary
 - Boundaries can be applied to IAM Users or IAM Roles
 - Permissions boundaries don't GRANT any access on their own. They define maximum permissions that can be granted
+
+## Policy Evaluation Logic
+
+- Organisations SCPs are evaluated first
+- Resource Policies are evaluated next
+- IAM Permissions are evaluated next
+- Session Policies are evaluated last
+- Identity-based policies are evaluated before resource-based policies
