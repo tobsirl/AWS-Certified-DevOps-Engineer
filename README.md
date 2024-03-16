@@ -1812,8 +1812,9 @@ Permission boundaries are an advanced feature of AWS IAM which can be used to li
 
 ## Policy Evaluation Logic
 
-- Organisations SCPs are evaluated first
+- Explicit Deny are evaluated first
+- Organisations SCPs are evaluated next
 - Resource Policies are evaluated next
-- IAM Permissions are evaluated next
-- Session Policies are evaluated last
-- Identity-based policies are evaluated before resource-based policies
+- Permissions Boundaries are evaluated next
+- Session Policies are evaluated next
+- Identity-based policies are evaluated last
