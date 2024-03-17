@@ -1827,3 +1827,11 @@ Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web 
 - Register and manage domain names
 - Host Zones.. managed nameservers
 - Globally Resilient and Highly Available
+
+### Route 53 - Hosted Zones
+
+- Zone files in AWS
+- Hosted on four managed name servers
+- Can be public
+- Can be private ..linked to VPCs
+- ..stores records(recordsets) - A, AAAA, CNAME, MX, NS, PTR, SOA, SPF, SRV, TXT
