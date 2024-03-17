@@ -1865,3 +1865,13 @@ A public hosted zone is a container that holds information about how you want to
 - use "NS records" to point at these NS (connect to global DNS)
 - Resource Records (RR) created within the Hosted Zone
 - Externally registed domains can point at Route 53 Public Zone
+
+### Route 53 - Private Hosted Zones
+
+A private hosted zone is a container that holds information about how you want Amazon Route 53 to respond to DNS queries for a domain and its subdomains within one or more VPCs that you create with the Amazon VPC service
+
+- A Public Hosted Zone which isn't public
+- Associated with VPCs
+- ..only accessible from those VPCs
+- ..Using different accounts is supported via CLI/API
+- Split-view (overlapping public and private zones) for Public and Internal use with the same domain name
