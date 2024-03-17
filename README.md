@@ -1878,6 +1878,8 @@ A private hosted zone is a container that holds information about how you want A
 
 ### Route 53 - CNAME vs Alias
 
+#### CNAME
+
 - "A" maps a NAME to an IP Address
 - ..catagram.io => 1.3.3.7
 - CNAME maps a NAME to another NAME
@@ -1885,3 +1887,13 @@ A private hosted zone is a container that holds information about how you want A
 - CNAME is invalid for naked/apex domains (catagram.io)
 - Many AWS services use a DNS Name (ELBs)
 - With just CNAME, catagram.io => ELB would be invalid
+
+#### Alias
+
+- ALIAS records map a NAME to an AWS resource
+- Can be used both for naked/apex and normal records
+- For non apex/naked - functions like a CNAME
+- There is no charge for ALIAS requests pointing at AWS resources
+- For AWS Services - default to pick ALIAS over CNAME
+- Should be the same "Type" as what the record is pointing at
+- API Gateway, CloudFront, ELB, S3, S3 Static Website Hosting, VPC Endpoints, Global Accelerator
