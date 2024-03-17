@@ -1875,3 +1875,13 @@ A private hosted zone is a container that holds information about how you want A
 - ..only accessible from those VPCs
 - ..Using different accounts is supported via CLI/API
 - Split-view (overlapping public and private zones) for Public and Internal use with the same domain name
+
+### Route 53 - CNAME vs Alias
+
+- "A" maps a NAME to an IP Address
+- ..catagram.io => 1.3.3.7
+- CNAME maps a NAME to another NAME
+- ..www.catagram.io => catagram.io
+- CNAME is invalid for naked/apex domains (catagram.io)
+- Many AWS services use a DNS Name (ELBs)
+- With just CNAME, catagram.io => ELB would be invalid
