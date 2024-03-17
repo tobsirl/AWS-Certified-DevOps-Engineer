@@ -1897,3 +1897,12 @@ A private hosted zone is a container that holds information about how you want A
 - For AWS Services - default to pick ALIAS over CNAME
 - Should be the same "Type" as what the record is pointing at
 - API Gateway, CloudFront, ELB, S3, S3 Static Website Hosting, VPC Endpoints, Global Accelerator
+
+### Route 53 - Routing Policies
+
+#### Simple Routing
+
+Simple routing lets you configure standard DNS records, with no special Route 53 routing such as weighted or latency. With simple routing, you typically route traffic to a single resource, for example, to a web server for your website.
+
+- Use Simple Routing when you want to route requests towards one service such as a web server
+- Simple Routing doesn't support health checks or failover routing - all values are returned for a record when queried
