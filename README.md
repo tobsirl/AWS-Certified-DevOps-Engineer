@@ -1818,3 +1818,12 @@ Permission boundaries are an advanced feature of AWS IAM which can be used to li
 - Permissions Boundaries are evaluated next
 - Session Policies are evaluated next
 - Identity-based policies are evaluated last
+
+## Route 53 Fundamentals
+
+Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating human readable names like www.example.com into the numeric IP addresses like
+
+- Route 53 is a global service
+- Register and manage domain names
+- Host Zones.. managed nameservers
+- Globally Resilient and Highly Available
