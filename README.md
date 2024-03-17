@@ -1848,3 +1848,13 @@ Name servers are responsible for resolving the domain name to an IP address.
 - MX - Mail Exchange Record - maps a domain name to a list of mail exchange servers for that domain
 - NS - Name Server Record - maps a domain name to a list of DNS servers authoritative for that domain
 - TXT - Text Record - used to associate some text with a domain
+
+### Route 53 - Public Hosted Zones
+
+A public hosted zone is a container that holds information about how you want to route traffic on the internet for a specific domain which is accessible from the public internet
+
+- A Hosted Zone is a DNS database for a domain name
+- Globally Resilient and Highly Available (multiple DNS servers)
+- Created with domain registration via Route 53 - can be created separately
+- Host DNS Records - A, AAAA, CNAME, MX, NS, PTR, SOA, SPF, SRV, TXT
+- Hosted Zones are what the DNS system references - Authoritative for a domain name
