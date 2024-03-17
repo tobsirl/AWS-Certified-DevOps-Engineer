@@ -1858,3 +1858,10 @@ A public hosted zone is a container that holds information about how you want to
 - Created with domain registration via Route 53 - can be created separately
 - Host DNS Records - A, AAAA, CNAME, MX, NS, PTR, SOA, SPF, SRV, TXT
 - Hosted Zones are what the DNS system references - Authoritative for a domain name
+
+- DNS Database (zone file) hosted by Route 53 (Public Name Servers)
+- Accessible from the public internet & VPCs
+- Hosted on 4 Route 53 Name Servers specific for the zone
+- use "NS records" to point at these NS (connect to global DNS)
+- Resource Records (RR) created within the Hosted Zone
+- Externally registed domains can point at Route 53 Public Zone
