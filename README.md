@@ -1835,3 +1835,16 @@ Amazon Route 53 is a scalable and highly available Domain Name System (DNS) web 
 - Can be public
 - Can be private ..linked to VPCs
 - ..stores records(recordsets) - A, AAAA, CNAME, MX, NS, PTR, SOA, SPF, SRV, TXT
+
+### Route 53 - Record Sets
+
+DNS is capable of handling a number of different record types - which perform different tasks.
+
+Name servers are responsible for resolving the domain name to an IP address.
+
+- A - Address Record - maps a domain name to an IP address
+- AAAA - IPv6 Address Record - maps a domain name to an IPv6 address
+- CNAME - Canonical Name Record - maps an alias to another name
+- MX - Mail Exchange Record - maps a domain name to a list of mail exchange servers for that domain
+- NS - Name Server Record - maps a domain name to a list of DNS servers authoritative for that domain
+- TXT - Text Record - used to associate some text with a domain
