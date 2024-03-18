@@ -1917,6 +1917,14 @@ Failover routing lets you route traffic to a resource when the resource is healt
 
 #### Multi Value Routing
 
+Multivalue answer routing lets you configure Amazon Route 53 to return multiple values, such as IP addresses for your web servers, in response to DNS queries. You can specify multiple values for almost any record, but multivalue answer routing also lets you check the health of each resource, so Route 53 returns only values for healthy resources.
+
+- Multi Value Routing supports multiple records for a single record set
+- Up to 8 healthy records returned for a single record set, if more than 8 are healthy, a random 8 are returned
+- Each record is independent and can have its own health check
+- Any records which are unhealthy are not returned
+- Multi Value Routing improves availability and fault tolerance. It is NOT a replacement for a load balancer
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
