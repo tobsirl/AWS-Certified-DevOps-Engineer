@@ -1906,3 +1906,17 @@ Simple routing lets you configure standard DNS records, with no special Route 53
 
 - Use Simple Routing when you want to route requests towards one service such as a web server
 - Simple Routing doesn't support health checks or failover routing - all values are returned for a record when queried
+
+### Route 53 - Health Checks
+
+Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
+
+- The health of a specified resource, such as a web server
+- The status of other health checks
+- The status of an Amazon CloudWatch alarm
+- Health check are separate from, but are used by records
+- Health checkers located globally
+- Health checkers check every 30s (every 10s costs extra)
+- TCP, HTTP, HTTPS, HTTP with string matching
+- Healthy or Unhealthy
+- Endpoint, CloudWatch Alarm, Checks of Checks (calculated health)
