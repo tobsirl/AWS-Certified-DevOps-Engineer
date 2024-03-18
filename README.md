@@ -1944,6 +1944,16 @@ If your application is hosted in multiple AWS Regions, you can improve performan
 - AWS maintains a database of latency between the user general location and the regions tagged in records
 - The record returned is the one which offers the lowest estimated latency and is healthy
 
+#### Geolocation Routing
+
+Geolocation routing lets you choose the resources that serve your traffic based on the geographic location of your users, meaning the location that DNS queries originate from.
+
+- With Geolocation Routing, records are tagged withh locatoin. Either "US state", "country", "continent" or "default"
+- An IP check verifies the location of the user (normally the resolver)
+- Geoloaction doesn't return "closest" records, only relevant records
+- Route 53 checks the records 1) US State 2) Country 3) Continent 4) Default - it returns the most specific record or "NO AWSWER"
+- Geolocation can be used for compliance, legal or performance reasons
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
