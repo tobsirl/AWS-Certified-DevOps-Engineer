@@ -1925,6 +1925,16 @@ Multivalue answer routing lets you configure Amazon Route 53 to return multiple 
 - Any records which are unhealthy are not returned
 - Multi Value Routing improves availability and fault tolerance. It is NOT a replacement for a load balancer
 
+#### Weighted Routing
+
+Weighted routing lets you associate multiple resources with a single domain name (catagram.io) and choose how much traffic is routed to each resource. This can be useful for a variety of purposes, including load balancing and testing new versions of software.
+
+- Simple load balancing or testing new software versions
+- You can assign a weight to each record set
+- A "0" weight record is never returned unless all other records have a weight of "0"
+- Each record is returned based on its record weight vs the total weight of all records
+- If a chosen record is Unhealthy, the process of selection is repeated until a healthy record is chosen
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
