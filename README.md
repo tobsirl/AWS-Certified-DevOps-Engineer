@@ -1935,6 +1935,15 @@ Weighted routing lets you associate multiple resources with a single domain name
 - Each record is returned based on its record weight vs the total weight of all records
 - If a chosen record is Unhealthy, the process of selection is repeated until a healthy record is chosen
 
+#### Latency Based Routing
+
+If your application is hosted in multiple AWS Regions, you can improve performance for your users by serving their requests from the AWS Region that provides the lowest latency.
+
+- Use latency-based routing when optimizing for performance and user experience
+- Latency-based routing support one record with the same name in each AWS Region
+- AWS maintains a database of latency between the user general location and the regions tagged in records
+- The record returned is the one which offers the lowest estimated latency and is healthy
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
