@@ -1907,6 +1907,16 @@ Simple routing lets you configure standard DNS records, with no special Route 53
 - Use Simple Routing when you want to route requests towards one service such as a web server
 - Simple Routing doesn't support health checks or failover routing - all values are returned for a record when queried
 
+#### Failover Routing
+
+Failover routing lets you route traffic to a resource when the resource is healthy or to a different resource when the first resource is unhealthy. You might use failover routing when you want to configure an active-passive failover setup.
+
+- Use Failover Routing when you want to route requests towards one service such as a web server
+- Failover Routing supports health checks and failover routing - you can specify a primary and secondary record
+- Failover Routing can be used for active-passive failover
+
+#### Multi Value Routing
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
