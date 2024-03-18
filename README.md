@@ -1954,6 +1954,14 @@ Geolocation routing lets you choose the resources that serve your traffic based 
 - Route 53 checks the records 1) US State 2) Country 3) Continent 4) Default - it returns the most specific record or "NO AWSWER"
 - Geolocation can be used for compliance, legal or performance reasons
 
+#### Geo Proximity Routing
+
+Geoproximity routing lets Amazon Route 53 route traffic to your resources based on the geographic location of your users and your resources. You can also optionally choose to route more traffic or less to a given resource by specifying a value, known as a bias. A bias expands or shrinks the size of the geographic region from which traffic is routed to a resource.
+
+- Records can be tagged with an AWS Region or lat and long coordinates
+- "+" or "-" bias can be added to expand or shrink the region
+- Routing is distance based (including bias)
+
 ### Route 53 - Health Checks
 
 Amazon Route 53 health checks monitor the health and performance of your web applications, web servers, and other resources. Each health check that you create can monitor one of the following:
