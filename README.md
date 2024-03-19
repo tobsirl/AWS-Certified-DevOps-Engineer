@@ -1975,3 +1975,10 @@ Amazon Route 53 health checks monitor the health and performance of your web app
 - TCP, HTTP, HTTPS, HTTP with string matching
 - Healthy or Unhealthy
 - Endpoint, CloudWatch Alarm, Checks of Checks (calculated health)
+
+### Route 53 - Interoperability
+
+- Route 53 can be used as Domain Registrar and Domain Hosting
+- Route 53 can do Both, or either one
+
+## SDLC AUTOMATION
