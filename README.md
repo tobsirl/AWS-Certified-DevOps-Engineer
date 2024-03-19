@@ -1982,3 +1982,8 @@ Amazon Route 53 health checks monitor the health and performance of your web app
 - Route 53 can do Both, or either one
 
 ## SDLC AUTOMATION
+
+CI/CD is handled within AWS by CodeCommit, CodeBuild, CodeDeploy and CodePipeline.
+
+[CodeDeploy AppSpec file reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
+[Build specification reference for CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
