@@ -1999,3 +1999,5 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 - STAGES can have sequential or parallel ACTIONS
 - Movement between stages can require manual approval
 - Artifacts can be loaded into an action, and generated from an action
+- State Changes => Event bridge (e.g. Success, Failure, Cancelled)
+- Cloudtrail or Console UI can be used to view / interact
