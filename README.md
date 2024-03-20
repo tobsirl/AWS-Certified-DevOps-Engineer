@@ -1987,3 +1987,15 @@ CI/CD is handled within AWS by CodeCommit, CodeBuild, CodeDeploy and CodePipelin
 
 [CodeDeploy AppSpec file reference](https://docs.aws.amazon.com/codedeploy/latest/userguide/reference-appspec-file.html)
 [Build specification reference for CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/build-spec-ref.html)
+
+### CodePipeline
+
+AWS CodePipeline is a continuous delivery service you can use to model, visualize, and automate the steps required to release your software. You can quickly model and configure the different stages of a software release process. CodePipeline automates the steps required to release your software changes continuously
+
+- CodePipeline is a CI/CD service
+- Pipeline is a Continuous Delivery tool
+- Controls the flow from source, through build towards deployment
+- Pipelines are built from STAGES
+- STAGES can have sequential or parallel ACTIONS
+- Movement between stages can require manual approval
+- Artifacts can be loaded into an action, and generated from an action
