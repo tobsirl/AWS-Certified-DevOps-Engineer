@@ -2012,3 +2012,10 @@ AWS CodeBuild is a fully managed continuous integration service that compiles so
 - Used for builds and tests
 - Uses docker for build environment, can be customised
 - Integrates with AWS services ..KMS, IAM, VPC, CloudTrail, S3
+- Architecture - Gets source from GitHub, CodeCommit, S3, ECR, CodePipeline
+- Builds and tests
+- Customised via buildspec.yml file (in the root of the source code)
+- Logs => S3 and CloudWatch Logs
+- Metrics => CloudWatch Metrics
+- Events => EventBridge (event-driven response)
+- Java, Ruby, Python, Node.js, Go, Docker, .NET, PHP, Android, Linux, Windows
