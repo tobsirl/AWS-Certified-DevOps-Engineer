@@ -2001,3 +2001,14 @@ AWS CodePipeline is a continuous delivery service you can use to model, visualiz
 - Artifacts can be loaded into an action, and generated from an action
 - State Changes => Event bridge (e.g. Success, Failure, Cancelled)
 - Cloudtrail or Console UI can be used to view / interact
+
+### CodeBuild
+
+AWS CodeBuild is a fully managed continuous integration service that compiles source code, runs tests, and produces software packages that are ready to deploy. With CodeBuild, you don’t need to provision, manage, and scale your own build servers. CodeBuild scales continuously and processes multiple builds concurrently, so your builds are not left waiting in a queue
+
+- Code Build as a service - fully managed
+- Pay only for the resources consumed during builds
+- Alternative to part of Jenkins functionality
+- Used for builds and tests
+- Uses docker for build environment, can be customised
+- Integrates with AWS services ..KMS, IAM, VPC, CloudTrail, S3
