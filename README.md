@@ -2027,3 +2027,18 @@ AWS CodeBuild is a fully managed continuous integration service that compiles so
 - post_build - e.g. package things up, push docker image, explicit notifications
 - Environment variables - shell, variables, parameter store, secrets manager
 - Artifacts - what stuff to put where
+
+### CodeDeploy
+
+CodeDeploy is a deployment service that automates application deployments to Amazon EC2 instances, on-premises instances, serverless Lambda functions, or Amazon ECS services.
+
+- CodeDeploy is a deployment service
+- There are alternatives - Jenkins, Ansible, Chef, Puppet, CloudFormation and more...
+- Deploys code ... not resources
+- EC2, On-Premises, Lambda, ECS
+- Code, Web, Configuration, EXE files, Packages, Scripts, media and more
+- CodeBuild integrates with AWS services & AWS Code tools
+- CodeDeploy agent (on premises or EC2)
+- Appspec.yml (YAML or JSON formatted)
+- Manage Deployments - config + lifecycle event hooks
+- Files (EC2/ON-PREMISES), Resources (LAMBDA, ECS), Permissions (EC2/ON-PREMISES)
