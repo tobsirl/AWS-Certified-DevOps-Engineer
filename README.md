@@ -2019,3 +2019,11 @@ AWS CodeBuild is a fully managed continuous integration service that compiles so
 - Metrics => CloudWatch Metrics
 - Events => EventBridge (event-driven response)
 - Java, Ruby, Python, Node.js, Go, Docker, .NET, PHP, Android, Linux, Windows
+- buildspec.yml - customise the build process
+- Four main phases - install, pre_build, build, post_build
+- install - install packages in the build environment (frameworks)
+- pre_build - sign-in to things or install dependencies
+- build - commands run during the build process
+- post_build - e.g. package things up, push docker image, explicit notifications
+- Environment variables - shell, variables, parameter store, secrets manager
+- Artifacts - what stuff to put where
