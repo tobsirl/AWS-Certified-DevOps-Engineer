@@ -2043,3 +2043,13 @@ CodeDeploy is a deployment service that automates application deployments to Ama
 - Manage Deployments - config + lifecycle event hooks
 - Files (EC2/ON-PREMISES), Resources (LAMBDA, ECS), Permissions (EC2/ON-PREMISES)
 - ApplicationStop, DownloadBundle, BeforeInstall, Install, AfterInstall, ApplicationStart, ValidateService
+
+### Elastic Container Registry (ECR)
+
+- Managed Container image registry service
+- like docker hub ..but for AWS
+- Each AWS account has a public and private registry
+- Each repository can have multiple images
+- Images can be tagged
+- Public = public R/O ... R/W requires permissions
+- Private = permissions required for any R/O or R/W
