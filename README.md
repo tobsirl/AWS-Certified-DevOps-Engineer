@@ -2042,3 +2042,4 @@ CodeDeploy is a deployment service that automates application deployments to Ama
 - Appspec.yml (YAML or JSON formatted)
 - Manage Deployments - config + lifecycle event hooks
 - Files (EC2/ON-PREMISES), Resources (LAMBDA, ECS), Permissions (EC2/ON-PREMISES)
+- ApplicationStop, DownloadBundle, BeforeInstall, Install, AfterInstall, ApplicationStart, ValidateService
