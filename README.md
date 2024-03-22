@@ -2053,3 +2053,9 @@ CodeDeploy is a deployment service that automates application deployments to Ama
 - Images can be tagged
 - Public = public R/O ... R/W requires permissions
 - Private = permissions required for any R/O or R/W
+- Integrated with IAM - Permissions
+- Image scanning, basic and enhanced (inspector)
+- Near real-time Metrics => CW (auth, push, pull, scan)
+- API Actions = CloudTrail
+- Events => EventBridge
+- Replication ... Cross-Region AND Cross-Account
