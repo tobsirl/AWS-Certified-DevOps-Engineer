@@ -2068,3 +2068,6 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 - Public Service - public space endpoints
 - ..AWS Service integration - management plane
 - ..Agent integration .. e.g. EC2 - richer metrics
+- ..Application Integration via API/Agents (custom metrics)
+- View data via console UI, CLI, API, dashboards and anomaly detection
+- Alarms ... react to metrics, can be used to notify or perform actions
