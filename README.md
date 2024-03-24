@@ -2059,3 +2059,12 @@ CodeDeploy is a deployment service that automates application deployments to Ama
 - API Actions = CloudTrail
 - Events => EventBridge
 - Replication ... Cross-Region AND Cross-Account
+
+## CloudWatch
+
+Amazon CloudWatch is a monitoring and observability service built for DevOps engineers, developers, site reliability engineers (SREs), and IT managers. CloudWatch provides you with data and actionable insights to monitor your applications, respond to system-wide performance changes, optimize resource utilization, and get a unified view of operational health.
+
+- Ingestion, Storage and Management of Metrics
+- Public Service - public space endpoints
+- ..AWS Service integration - management plane
+- ..Agent integration .. e.g. EC2 - richer metrics
