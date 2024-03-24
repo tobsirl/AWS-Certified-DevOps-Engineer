@@ -2076,3 +2076,8 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 
 - Namespace = container for metrics e.g. AWS/EC2, AWS/S3, AWS/RDS, AWS/Lambda
 - Datapoint = timestamp, value, unit
+- Metric = time ordered set of data points
+- .. CPUUtilization, NetworkIn, NetworkOut, DiskWriteBytes, DiskReadBytes
+- Every metric has a MetricName (CPUUtilization) and a Namespace (AWS/EC2)
+- Dimensions = name/value pairs which identify the metric e.g. CPUUtilization Name=InstanceID Value=i-1234567890abcdef0
+- AutoScalingGroupName, ImageId, InstanceId, InstanceType, ServiceName
