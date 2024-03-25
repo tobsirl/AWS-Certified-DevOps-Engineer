@@ -2081,3 +2081,4 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 - Every metric has a MetricName (CPUUtilization) and a Namespace (AWS/EC2)
 - Dimensions = name/value pairs which identify the metric e.g. CPUUtilization Name=InstanceID Value=i-1234567890abcdef0
 - AutoScalingGroupName, ImageId, InstanceId, InstanceType, ServiceName
+- Resolution ..Standard (1 minute) or High Resolution (1 second)
