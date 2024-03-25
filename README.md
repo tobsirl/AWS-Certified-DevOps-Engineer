@@ -2086,3 +2086,12 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 - As data ages, its aggregated and stored for longer with less resolution
 - Statistics aggregation over a period of time - Sum, Average, Minimum, Maximum, SampleCount
 - Percentile - e.g. p90, p95, p99
+
+### CloudWatch - Alarms
+
+- Alarm - watches a metric over a time period
+- Alarm State - OK, ALARM, INSUFFICIENT_DATA
+- ...value of metric vs threshold .. overtime
+- ...one or more actions
+- Alarm Resolution - how often to check the metric
+- Alarm Actions - SNS, EC2, AutoScaling, Lambda, SQS, SSM, Kinesis, Step Functions
