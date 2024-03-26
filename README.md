@@ -2095,3 +2095,8 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 - ...one or more actions
 - Alarm Resolution - how often to check the metric
 - Alarm Actions - SNS, EC2, AutoScaling, Lambda, SQS, SSM, Kinesis, Step Functions
+
+### CloudWatch - Logs
+
+CloudWatch logs is a product which can store, manage and provide access to logging data for on-premises and AWS environments including systems and applications it can also via subscription filters stream the data to Lambda, Elasticsearch, Kinesis streams and firehose for further delivery
+Metric filters can be used to generate Metrics within Cloudwatch, alarms and eventual events within Eventbridge.
