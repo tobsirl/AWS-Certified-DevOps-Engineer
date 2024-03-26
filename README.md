@@ -2100,3 +2100,13 @@ Amazon CloudWatch is a monitoring and observability service built for DevOps eng
 
 CloudWatch logs is a product which can store, manage and provide access to logging data for on-premises and AWS environments including systems and applications it can also via subscription filters stream the data to Lambda, Elasticsearch, Kinesis streams and firehose for further delivery
 Metric filters can be used to generate Metrics within Cloudwatch, alarms and eventual events within Eventbridge.
+
+#### CloudWatch Logs - Ingestion
+
+- Public Service - Store, Monitor, Access logging data
+- AWS, On-Premises, IOT, Custom Applications
+- CWAgent - system or custom application logs
+- VPC Flow Logs
+- CloudTrail Logs ... Account events and AWS API Calls
+- Elastic Beanstalk, ECS Container Logs, API Gateway, Lambda, RDS, Route 53, VPC Flow Logs
+- Route53 - Log DNS Requests
