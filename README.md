@@ -2110,3 +2110,17 @@ Metric filters can be used to generate Metrics within Cloudwatch, alarms and eve
 - CloudTrail Logs ... Account events and AWS API Calls
 - Elastic Beanstalk, ECS Container Logs, API Gateway, Lambda, RDS, Route 53, VPC Flow Logs
 - Route53 - Log DNS Requests
+
+### CloudTrail Essentials
+
+CloudTrail Is a product which logs API calls and account events.
+It's very often used to diagnose security or performance issues, or to provide quality account level traceability.
+It is enabled by default in AWS accounts and logs free information with a 90 day retention.
+It can be configured to store data indefinitely in S3 or CloudWatch Logs.
+In this lesson I detail the theory and architecture of the product.
+
+- Logs API calls/activities as a CloudTrail Event
+- 90 days stored by default in Event History
+- Enabled by default - no cost for 90 day history
+- To customise the service .. create 1 or more Trails
+- Management Events and Data Events
