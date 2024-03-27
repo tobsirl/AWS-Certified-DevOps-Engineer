@@ -2124,3 +2124,8 @@ In this lesson I detail the theory and architecture of the product.
 - Enabled by default - no cost for 90 day history
 - To customise the service .. create 1 or more Trails
 - Management Events and Data Events
+- Enabled by default .. but 90 days .. no S3
+- Trails are how you configure S3 and CWLogs
+- Management events only by default
+- IAM, STS, CloudFront => Global Service Events
+- Not realtime - 15 minute delay
