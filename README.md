@@ -2129,3 +2129,9 @@ In this lesson I detail the theory and architecture of the product.
 - Management events only by default
 - IAM, STS, CloudFront => Global Service Events
 - Not realtime - 15 minute delay
+
+## Amazon Kinesis Data Streams
+
+Kinesis data streams are a streaming service within AWS designed to ingest large quantities of data and allow access to that data for consumers.
+Kinesis is ideal for dashboards and large scale real time analytics needs.
+Kinesis data firehose allows the long term persistent storage of kinesis data onto services like S3
