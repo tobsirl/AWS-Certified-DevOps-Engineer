@@ -2135,3 +2135,11 @@ In this lesson I detail the theory and architecture of the product.
 Kinesis data streams are a streaming service within AWS designed to ingest large quantities of data and allow access to that data for consumers.
 Kinesis is ideal for dashboards and large scale real time analytics needs.
 Kinesis data firehose allows the long term persistent storage of kinesis data onto services like S3
+
+- Kinesis is a scalable streaming service
+- Producers send data into a kinesis stream
+- Streams can scale from low to near infinite data rates
+- Public service & highly available by design
+- Stream store a 24-hour moving window of data
+- .. can be increased to a maximum of 365 days (additional cost)
+- Multiple consumers access data from that moving window
