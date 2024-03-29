@@ -2152,3 +2152,13 @@ Kinesis data firehose allows the long term persistent storage of kinesis data on
 - Kinesis - designed for huge scale ingestion
 - .. and multiple consumers .. rolling window
 - Data ingestion, Analytics, Monitoring, App Clicks
+
+### Amazon Kinesis Data Firehose
+
+Kinesis Data Firehose is a stream based delivery service capable of delivering high throughput streaming data to supported destinations in near realtime.
+
+- Fully managed service to load data for data lakes, data stores and analytics services
+- Automatic scaling ... fully serverless ..resilient
+- Near Real Time delivery (60 seconds)
+- Supports transformation of data on the fly (Lambda)
+- Billing - volume through firehouse
