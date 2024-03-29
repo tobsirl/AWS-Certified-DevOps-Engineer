@@ -2162,3 +2162,4 @@ Kinesis Data Firehose is a stream based delivery service capable of delivering h
 - Near Real Time delivery (60 seconds)
 - Supports transformation of data on the fly (Lambda)
 - Billing - volume through firehouse
+- Firehose offers near realtime delivery of data when buffer size in 1MB fills or Buffer interval in 60 seconds
