@@ -2143,3 +2143,12 @@ Kinesis data firehose allows the long term persistent storage of kinesis data on
 - Stream store a 24-hour moving window of data
 - .. can be increased to a maximum of 365 days (additional cost)
 - Multiple consumers access data from that moving window
+
+### Kinesis Data Streams SQS vs Kinesis
+
+- SQS 1 production group, 1 comsumption group
+- Decoupling and Asynchronous communications
+- No persistence of messages, no window
+- Kinesis - designed for huge scale ingestion
+- .. and multiple consumers .. rolling window
+- Data ingestion, Analytics, Monitoring, App Clicks
