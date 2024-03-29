@@ -2163,3 +2163,20 @@ Kinesis Data Firehose is a stream based delivery service capable of delivering h
 - Supports transformation of data on the fly (Lambda)
 - Billing - volume through firehouse
 - Firehose offers near realtime delivery of data when buffer size in 1MB fills or Buffer interval in 60 seconds
+
+### Amazon Kinesis Data Analytics
+
+Amazon Kinesis Data Analytics is the easiest way to analyze streaming data, gain actionable insights, and respond to your business and customer needs in real time.
+
+- Real time processing of data
+- .. Using Structured Query Language (SQL)
+- Ingest from Kinisis Data Streams or Firehose
+- Destination can be S3, Redshift, ElasticSearch, Lambda, Kinesis Data Streams
+- Firehose (S3, Redshift, ElasticSearch, Splunk)
+- AWS Lambda (custom processing)
+- Kinesis Data Streams (re-ingest or further processing)
+- Use Cases - Real Time Dashboards, Anomaly Detection, Real Time Metrics, Real Time Alerts
+- Streaming data needing real time SQL processing
+- Time-series analytics ... elections / e-sports
+- Real-time dashboards - leaderboards, stock prices
+- Real-time metrics - monitoring, health checks, security
