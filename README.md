@@ -2180,3 +2180,12 @@ Amazon Kinesis Data Analytics is the easiest way to analyze streaming data, gain
 - Time-series analytics ... elections / e-sports
 - Real-time dashboards - leaderboards, stock prices
 - Real-time metrics - monitoring, health checks, security
+
+## AWS MapReduce
+
+- Data Analysis Architecture - huge scale, parallel processing
+- Two Main Phases - Map and Reduce
+- Optional - Combine & Partition
+- Data is separated into 'splits' .. each assigned to a mapper
+- Perform Operations at scale - Customisable
+- Recombine Data into Results
