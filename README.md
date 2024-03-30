@@ -2189,3 +2189,11 @@ Amazon Kinesis Data Analytics is the easiest way to analyze streaming data, gain
 - Data is separated into 'splits' .. each assigned to a mapper
 - Perform Operations at scale - Customisable
 - Recombine Data into Results
+
+### HDFS - Hadoop Distributed File System
+
+- Hadoop Distributed File System
+- Traditional File Systems - Stored across multiple nodes
+- Highly Fault Tolerant - Data Replication between nodes
+- Name Node - provides the `namespace` for the file system and controls access to HDFS
+- Block .. segment of data on HDFS .. generally 64MB
