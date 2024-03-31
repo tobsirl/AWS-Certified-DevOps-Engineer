@@ -2231,3 +2231,13 @@ Its designed for OLTP products within AWS/on-premises to add data to for long te
 - Compute Nodes - store data, perform queries
 - VPC Security, IAM Permissions, KMS at rest encryption, CW Monitoring
 - Redshift Enhanced VPC Routing - VPC Networking
+
+## Amazon QuickSight
+
+QuickSight is a a BA/BI Visualisation and Dashboard tool which is capable of integrating with AWS and external data sources.
+
+- Business Analytics and Intelligence tool (BA/BI)
+- Visualisation and Dashboard tool
+- Ad-hoc Analysis
+- Discovery and Integration with AWS Data sources
+- .. and works with external data sources
