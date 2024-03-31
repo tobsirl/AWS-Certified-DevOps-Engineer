@@ -2208,3 +2208,11 @@ Elastic Map Reduce (EMR) is the AWS Managed implementation of EMR/Hadoop within 
 - Runs in ONE AZ in a VPC using EC2 instances for compute
 - Auto scales - Spot, Instance Fleet, Reserved, On-Demand
 - Big data processing, manipulation, analytics, indexing, transformation and more .. (data pipeline)
+
+### Amazon Redshift (Data Warehouse)
+
+Redshift is a column based, petabyte scale, data warehousing product within AWS
+
+- Petabyte-scale data warehousing
+- Designed for analytics and reporting
+- OLAP - Online Analytical Processing (Column based) not OLTP (row/tranactional)
