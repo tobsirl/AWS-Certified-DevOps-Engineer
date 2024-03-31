@@ -2241,3 +2241,11 @@ QuickSight is a a BA/BI Visualisation and Dashboard tool which is capable of int
 - Ad-hoc Analysis
 - Discovery and Integration with AWS Data sources
 - .. and works with external data sources
+
+### QuickSight - Data Sources
+
+- Athena, Aurora, RDS, Redshift, S3, Salesforce, Snowflake, SQL Server, TeraData
+- S3, AWS IOT
+- Jira, GitHub, Twitter, ServiceNow, Zendesk
+- Microsoft SQL Server, MySQL, PostgreSQL, MariaDB, Oracle, IBM DB2, SAP HANA
+- Apache Spark, Snowflake, Presto, Teradata, Cloudera, Databricks, Google BigQuery, IBM Netezza, Microsoft Azure SQL Data Warehouse, Microsoft Azure Synapse Analytics, Oracle Exadata, SAP HANA, Snowflake, Teradata
