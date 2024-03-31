@@ -2211,8 +2211,14 @@ Elastic Map Reduce (EMR) is the AWS Managed implementation of EMR/Hadoop within 
 
 ### Amazon Redshift (Data Warehouse)
 
-Redshift is a column based, petabyte scale, data warehousing product within AWS
+Redshift is a column based, petabyte scale, data warehousing product within AWS.
+Its designed for OLTP products within AWS/on-premises to add data to for long term processing, aggregation and tending.
 
 - Petabyte-scale data warehousing
 - Designed for analytics and reporting
 - OLAP - Online Analytical Processing (Column based) not OLTP (row/tranactional)
+- Pay as you use ... similar structure to RDS
+- Direct Query S3 using Redshift Spectrum
+- Direct Query other DBs using Redshift Federated Query
+- Integrates with AWS tooling such as Quicksight
+- SQL-like interface JDBC/ODBC connections
