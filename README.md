@@ -2197,3 +2197,14 @@ Amazon Kinesis Data Analytics is the easiest way to analyze streaming data, gain
 - Highly Fault Tolerant - Data Replication between nodes
 - Name Node - provides the `namespace` for the file system and controls access to HDFS
 - Block .. segment of data on HDFS .. generally 64MB
+
+### Elastic Map Reduce
+
+Elastic Map Reduce (EMR) is the AWS Managed implementation of EMR/Hadoop within AWS.
+
+- AWS Managed implementation of Apache Hadoop
+- and Spark, HBase, Presto, Flink, Zeppelin, Jupyter, Pig
+- Can be operated long term .. or use ad-hoc (transient) clusters
+- Runs in ONE AZ in a VPC using EC2 instances for compute
+- Auto scales - Spot, Instance Fleet, Reserved, On-Demand
+- Big data processing, manipulation, analytics, indexing, transformation and more .. (data pipeline)
