@@ -2222,3 +2222,12 @@ Its designed for OLTP products within AWS/on-premises to add data to for long te
 - Direct Query other DBs using Redshift Federated Query
 - Integrates with AWS tooling such as Quicksight
 - SQL-like interface JDBC/ODBC connections
+
+#### Redshift - Architecture
+
+- Server based (not serverless)
+- One AZ in a VPC - network cost/performance
+- Leader Node - manages connections, query planning, optimisation
+- Compute Nodes - store data, perform queries
+- VPC Security, IAM Permissions, KMS at rest encryption, CW Monitoring
+- Redshift Enhanced VPC Routing - VPC Networking
