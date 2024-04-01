@@ -2255,3 +2255,10 @@ QuickSight is a a BA/BI Visualisation and Dashboard tool which is capable of int
 Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
 
 Athena is easy to use. Simply point to your data in Amazon S3, define the schema, and start querying using standard SQL. Most results are delivered within seconds. With Athena, there’s no need for complex ETL jobs to prepare your data for analysis.
+
+- Serverless Interactive Querying Service
+- Ad-hoc queries on data - pay only data consumed
+- Schema on Read - table like translation of data
+- Original data never changed - remains on S3
+- Schema translates data => relational-like when read
+- Output can be sent to other services - S3, QuickSight, Lambda, SNS, Kinesis, CloudWatch
