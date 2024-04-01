@@ -2262,3 +2262,8 @@ Athena is easy to use. Simply point to your data in Amazon S3, define the schema
 - Original data never changed - remains on S3
 - Schema translates data => relational-like when read
 - Output can be sent to other services - S3, QuickSight, Lambda, SNS, Kinesis, CloudWatch
+- Supports standard formats of structured, semi-structured and unstructured data
+- Source data is stored on S3
+- Athena can directly read many AWS data formats such as CloudTrail, ELB, S3, VPC Flow Logs, CloudFront, Route 53
+- Tables are defined in advance in a data catalog and data is projected through when read.
+- It allows SQL like queries on data without transforming source data
