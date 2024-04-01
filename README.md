@@ -2267,3 +2267,13 @@ Athena is easy to use. Simply point to your data in Amazon S3, define the schema
 - Athena can directly read many AWS data formats such as CloudTrail, ELB, S3, VPC Flow Logs, CloudFront, Route 53
 - Tables are defined in advance in a data catalog and data is projected through when read.
 - It allows SQL like queries on data without transforming source data
+
+### Athena - Use Cases
+
+- Queries where loading/transformation is too slow
+- Occasional / Ad-hoc queries on data in S3
+- Serverless querying scenarios - cost conscious
+- Querying AWS logs - VPC Flow Logs, CloudTrail, ELB, S3, CloudFront, Route 53
+- AWS Glue Data Catalog - metadata store for Athena
+- Web Server Logs, Application Logs, IoT Data, Clickstream Data, Data Lakes
+- With Athena Federated Query .. other data sources can be queried
