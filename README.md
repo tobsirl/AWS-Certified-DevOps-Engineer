@@ -2249,3 +2249,9 @@ QuickSight is a a BA/BI Visualisation and Dashboard tool which is capable of int
 - Jira, GitHub, Twitter, ServiceNow, Zendesk
 - Microsoft SQL Server, MySQL, PostgreSQL, MariaDB, Oracle, IBM DB2, SAP HANA
 - Apache Spark, Snowflake, Presto, Teradata, Cloudera, Databricks, Google BigQuery, IBM Netezza, Microsoft Azure SQL Data Warehouse, Microsoft Azure Synapse Analytics, Oracle Exadata, SAP HANA, Snowflake, Teradata
+
+## Amazon Athena
+
+Amazon Athena is an interactive query service that makes it easy to analyze data in Amazon S3 using standard SQL. Athena is serverless, so there is no infrastructure to manage, and you pay only for the queries that you run.
+
+Athena is easy to use. Simply point to your data in Amazon S3, define the schema, and start querying using standard SQL. Most results are delivered within seconds. With Athena, there’s no need for complex ETL jobs to prepare your data for analysis.
