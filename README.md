@@ -2288,3 +2288,17 @@ Systems Manager uses an agent architecture to allow communications between the s
 - Run commands and Manage Desired State
 - Parameter Store ... configuration and secrets
 - Session Manager - Securely connect to Ec2 instances .. even in private VPCs
+
+### AWS Systems Manager - Run Command
+
+Systems Manager Run Command is a foundational feature of Systems manager which allows for commands to be executed on managed instances at scale.
+
+[AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents.html)
+
+- Run `Command documents` on managed instances
+- No SSH/RDP Access required
+- Instance, Tag or Resource Groups
+- Command documents can be reused adn can have parameters
+- Rate Control - Concurrency and Error Threshold
+- Output Options - S3, CloudWatch Logs, SSM
+- EventBridge - Events for Success, Failure, Cancelled
