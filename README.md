@@ -2277,3 +2277,14 @@ Athena is easy to use. Simply point to your data in Amazon S3, define the schema
 - AWS Glue Data Catalog - metadata store for Athena
 - Web Server Logs, Application Logs, IoT Data, Clickstream Data, Data Lakes
 - With Athena Federated Query .. other data sources can be queried
+
+## AWS Systems Manager
+
+Systems Manager uses an agent architecture to allow communications between the systems manager service and managed instances.
+
+- View and control AWS and on-premises infrastructure.
+- Agent based - installed on windows and Linux AWS AMI's
+- Manage Inventory and Patch Assets
+- Run commands and Manage Desired State
+- Parameter Store ... configuration and secrets
+- Session Manager - Securely connect to Ec2 instances .. even in private VPCs
