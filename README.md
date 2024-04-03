@@ -2302,3 +2302,14 @@ Systems Manager Run Command is a foundational feature of Systems manager which a
 - Rate Control - Concurrency and Error Threshold
 - Output Options - S3, CloudWatch Logs, SSM
 - EventBridge - Events for Success, Failure, Cancelled
+
+### AWS SSM Documents
+
+An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances. Systems Manager includes more than 100 pre-configured documents that you can use by specifying parameters at runtime. Documents use JavaScript Object Notation (JSON) or YAML, and they include steps and parameters that you specify.
+
+- JSON or YAML
+- Stored in the SSM Document Store
+- Ask for Parameters and include Steps
+- Command Documents - Run Command, Maintenance Windows, State Manager
+- Automation Documents - Runbooks, Remediation, Workflow
+- Package Documents - Distribute Software, Install Software
