@@ -2324,3 +2324,13 @@ Patch Manager, a capability of AWS Systems Manager, automates the process of pat
 - Run Command - execute the patching
 - Concurrency and Error Thresholds - control patching
 - Compliance Reporting - Patch Compliance
+
+### AWS Systems Manager - Patch Manager Concepts
+
+- Predinfined Patch Baselines - Various OS types (you can create your own)
+- For Linux - AWS-[OS]-DefaultPatchBaseline, explicitly defined patches
+- AWS-AmazonLinux2DefaultPatchBaseline
+- AWS-UbuntuDefaultPatchBaseline
+- Windows - AWS-WindowsDefaultPatchBaseline - Critical, Security, Definition, Feature, Update Rollups
+- AWS-WindowsPredefinedPatchBaselineOS
+- AWS-WindowsPredefinedPatchBaseline-OS-Applications - Microsoft, Adobe, Java, Chrome, Firefox, etc
