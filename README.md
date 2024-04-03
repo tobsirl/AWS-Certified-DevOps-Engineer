@@ -2313,3 +2313,14 @@ An AWS Systems Manager document (SSM document) defines the actions that Systems 
 - Command Documents - Run Command, Maintenance Windows, State Manager
 - Automation Documents - Runbooks, Remediation, Workflow
 - Package Documents - Distribute Software, Install Software
+
+### AWS Systems Manager - Patch Manager
+
+Patch Manager, a capability of AWS Systems Manager, automates the process of patching managed instances with both security related and other types of updates.
+
+- Patch Baselines - define rules for patching
+- Patch Groups - define which instances to patch
+- Maintenance Windows - define when to patch
+- Run Command - execute the patching
+- Concurrency and Error Thresholds - control patching
+- Compliance Reporting - Patch Compliance
