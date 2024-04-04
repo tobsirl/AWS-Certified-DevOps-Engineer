@@ -2346,3 +2346,15 @@ AWS Config is capable of checking for compliance .. and generating notifications
 - Does not prevent changes happening ... no protection
 - Regional Service ... supports cross-region and account aggregation
 - Changes can generate SNS notifications and near-realtime events via EventBridge and Lambda
+
+## AWS Service Catalog
+
+AWS Service Catalog is an AWS implementation of a Service Catalog system,
+It provides an end-user portal where products and portfolios can be deployed in a self-service way as defined by technical administrators.
+
+- Document or Database created by an IT team
+- Organised collection of products
+- Offered by the IT Team
+- Key Product Information: Product Owner, Cost Requirements, Dependencies, Constraints, Support Information
+- Defines approval of provisioning from IT and Customer side
+- Manage costs and scale service delivery
