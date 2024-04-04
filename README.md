@@ -2334,3 +2334,15 @@ Patch Manager, a capability of AWS Systems Manager, automates the process of pat
 - Windows - AWS-WindowsDefaultPatchBaseline - Critical, Security, Definition, Feature, Update Rollups
 - AWS-WindowsPredefinedPatchBaselineOS
 - AWS-WindowsPredefinedPatchBaseline-OS-Applications - Microsoft, Adobe, Java, Chrome, Firefox, etc
+
+## AWS Config
+
+AWS Config is a service which records the configuration of resources over time (configuration items) into configuration histories.
+All the information is stored regionally in an S3 config bucket.
+AWS Config is capable of checking for compliance .. and generating notifications and events based on compliance.
+
+- Record configuration changes over time on resources
+- Auditing of changes, compliance with standards
+- Does not prevent changes happening ... no protection
+- Regional Service ... supports cross-region and account aggregation
+- Changes can generate SNS notifications and near-realtime events via EventBridge and Lambda
