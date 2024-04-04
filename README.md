@@ -2358,3 +2358,9 @@ It provides an end-user portal where products and portfolios can be deployed in 
 - Key Product Information: Product Owner, Cost Requirements, Dependencies, Constraints, Support Information
 - Defines approval of provisioning from IT and Customer side
 - Manage costs and scale service delivery
+- Self-Service Portal for 'end users'
+- ..launch predefined (by admin) products
+- End user permissions can be controlled
+- Admins can define those products...
+- ..and the permissoins required to launch them
+- Build products into portfolios
