@@ -2376,3 +2376,9 @@ Amazon Inspector is an automated security assessment service that helps improve 
 - Provides a report of findings ordered by priority
 - Network Assessment (Agentless) - EC2, VPC, Subnets, Security Groups, NACLs
 - Network and Host Assessment (Agent Based) - EC2, OS, Applications
+- Rules packages determine what is checked
+- Network Reachability (Agentless) - EC2, VPC, Subnets, Security Groups, NACLs
+- Agent can provide additional OS visibility
+- Check reachability end to end. EC2, VPC, Subnets, Security Groups, NACLs, VPC Peering, IGW, ACLs, Route Tables
+- RecongnizedPortWithListener, RecongnizedPortNoListener, RecongnizedPortNoAgent
+- UnrecongizedPortWithListener, UnrecongizedPortNoListener, UnrecongizedPortNoAgent
