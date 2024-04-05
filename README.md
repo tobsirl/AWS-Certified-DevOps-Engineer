@@ -2386,3 +2386,15 @@ Amazon Inspector is an automated security assessment service that helps improve 
 - Common vulnerabilities and exposures (CVE)
 - Center for Internet Security (CIS) Benchmarks
 - Security Best Practices for Amazon Inspector
+
+## Amazon GuardDuty
+
+Amazon GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads.
+
+- Continuous Monitoring for malicious activity
+- Analyses supported Data Sources - VPC Flow Logs, CloudTrail, DNS Logs
+- Uses Machine Learning to detect anomalies, plus threat intelligence feeds
+- Identifies unexpected and unauthorized behaviour
+- Generates Findings - High, Medium, Low
+- Notify or Event driven protection/remediation
+- Supports multiple accounts (master/member)
