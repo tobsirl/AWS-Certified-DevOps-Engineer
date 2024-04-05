@@ -2398,3 +2398,23 @@ Amazon GuardDuty is a threat detection service that continuously monitors for ma
 - Generates Findings - High, Medium, Low
 - Notify or Event driven protection/remediation
 - Supports multiple accounts (master/member)
+
+## AWS Trusted Advisor
+
+AWS Trusted Advisor is an online tool that provides you real time guidance to help you provision your resources following AWS best practices.
+Trusted Advisor checks help optimize your AWS infrastructure, increase security and performance, reduce your overall costs, and monitor service limits.
+
+- Account level - no agents to install
+- Cost Optimisation, Performance, Security, Fault Tolerance, Service Limits
+- 7 Core checks with basic and developer support plans
+- Anything beyond requires Business or Enterprise support
+
+### AWS Trusted Advisor - Core Checks
+
+- S3 Bucket Permissions - Public Read, Public Write, Cross Account Access
+- Security Groups - Unrestricted Access, Specific Ports, Specific IPs
+- IAM Use - Access Keys, MFA, Root Account Use
+- MFA on Root Account - Not Enabled
+- EBS Public Snapshots - Public Snapshots
+- RDS Public Snapshots - Public Snapshots
+- Service Limits - EC2, EBS, VPC, RDS, Route 53, SES, Lambda, etc
