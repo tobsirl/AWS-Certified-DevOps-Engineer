@@ -2382,3 +2382,7 @@ Amazon Inspector is an automated security assessment service that helps improve 
 - Check reachability end to end. EC2, VPC, Subnets, Security Groups, NACLs, VPC Peering, IGW, ACLs, Route Tables
 - RecongnizedPortWithListener, RecongnizedPortNoListener, RecongnizedPortNoAgent
 - UnrecongizedPortWithListener, UnrecongizedPortNoListener, UnrecongizedPortNoAgent
+- Packages (.. Host Assessments, Agent required)
+- Common vulnerabilities and exposures (CVE)
+- Center for Internet Security (CIS) Benchmarks
+- Security Best Practices for Amazon Inspector
