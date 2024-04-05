@@ -2364,3 +2364,15 @@ It provides an end-user portal where products and portfolios can be deployed in 
 - Admins can define those products...
 - ..and the permissoins required to launch them
 - Build products into portfolios
+
+## Amazon Inspector
+
+Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS. Amazon Inspector automatically assesses applications for exposure, vulnerabilities, and deviations from best practices.
+
+- Scans EC2 instances and the instances OS
+- Also containers and applications
+- Vulnerabilities and deviations against best practice
+- Length 15mins, 1 hour, 24 hours
+- Provides a report of findings ordered by priority
+- Network Assessment (Agentless) - EC2, VPC, Subnets, Security Groups, NACLs
+- Network and Host Assessment (Agent Based) - EC2, OS, Applications
