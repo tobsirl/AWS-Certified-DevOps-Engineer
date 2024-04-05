@@ -2409,7 +2409,7 @@ Trusted Advisor checks help optimize your AWS infrastructure, increase security 
 - 7 Core checks with basic and developer support plans
 - Anything beyond requires Business or Enterprise support
 
-### AWS Trusted Advisor - Core Checks
+### AWS Trusted Advisor - Core Checks (Basic/Developer)
 
 - S3 Bucket Permissions - Public Read, Public Write, Cross Account Access
 - Security Groups - Unrestricted Access, Specific Ports, Specific IPs
@@ -2418,3 +2418,9 @@ Trusted Advisor checks help optimize your AWS infrastructure, increase security 
 - EBS Public Snapshots - Public Snapshots
 - RDS Public Snapshots - Public Snapshots
 - Service Limits - EC2, EBS, VPC, RDS, Route 53, SES, Lambda, etc
+
+### AWS Trusted Advisor - Core Checks (Business/Enterprise)
+
+- Core 7 checks plus additional checks
+- 115 Further checks (14 cost, 17 security, 24 fault tolerance, 10 performance, 50 service limits)
+- Access via the AWS Support API
