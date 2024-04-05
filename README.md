@@ -2424,3 +2424,4 @@ Trusted Advisor checks help optimize your AWS infrastructure, increase security 
 - Core 7 checks plus additional checks
 - 115 Further checks (14 cost, 17 security, 24 fault tolerance, 10 performance, 50 service limits)
 - Access via the AWS Support API
+- CloudWatch Integration - react to changes
