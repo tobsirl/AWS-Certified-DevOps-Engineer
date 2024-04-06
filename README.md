@@ -2471,3 +2471,19 @@ Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for
 - Up to 256,000 IOPS, 4000MB/s, 64TB max, 4GB-64TB, 4GB increments with BlockExpress
 - io1 50 IOPS per GB, io2 500 IOPS per GB
 - BlockExpress 1000 IOPS per GB
+
+#### EBS - Volume Types Throughput Optimised HDD (st1/sc1)
+
+##### Throughput Optimised HDD st1
+
+- A low-cost HDD designed for frequently accessed, throughput-intensive workloads.
+- 125 GB - 16 TB
+- Max IOPS 500
+- Max Throughput 500 MB/s
+- Baseline Throughput 40 MB/s per TB
+- Burst to 250 MB/s
+- Big data, Data Warehousing, Log Processing
+
+##### Cold HDD sc1
+
+- A low-cost HDD designed for less frequently accessed workloads.
