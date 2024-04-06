@@ -2441,3 +2441,15 @@ Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for
 - Snapshot (backup) into S3. Create volume from snapshot (migrate between AZs)
 - Different physical storage types, different sizes, different performance profiles
 - Billed based on GB-month (and in some cases performance)
+
+#### EBS - Volume Types General Purpose SSD (gp2)
+
+- General Purpose SSD (gp2) - 3 IOPS per GB, 3000 IOPS max, 16TB max, 1GB-16TB, 1GB increments
+- Burst to 3000 IOPS, 99.9% of the time 3 IOPS per GB
+- An IOPS is a measure of performance (Input/Output Operations Per Second)
+- An IO Credit is 16KB IOPS assume 16KB, 1 IOPS is 1 IO in 1 second
+- IO `Credit` Bucket Capacity - 5.4 million IOs Credits, Fills at rate of Baseline Performance
+- Bucket fills with min 100 IO Credits per second, regardless of volume size
+- Beyond the 100 minimum the bucket fills with 3 IO credits per second per GB of volume size (Baseline Performance)
+- Burst up to 3000 IOPS by depleting the bucket
+- All volumes get an initial 5.4 million IO credits. 30 minutes @ 3000 IOPS. Greate for boots and initial workloads
