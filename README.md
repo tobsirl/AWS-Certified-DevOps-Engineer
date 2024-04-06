@@ -2461,3 +2461,13 @@ Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for
 - 3000 IOPS, 125MB/s, 16TB max, 1GB-16TB, 1GB increments
 - Baseline Performance - 3000 IOPS, 125MB/s
 - More economical than gp2
+
+#### EBS - Volume Types Provisioned IOPS SSD (io1/2)
+
+- Provisioned IOPS SSD (io1/io2)
+- With io1/io2 BlockExpress IOPS can be adjusted independently of volume size
+- Consistent Low latency and jitter
+- Up to 64,000 IOPS, 1000MB/s, 16TB max, 4GB-16TB, 4GB increments
+- Up to 256,000 IOPS, 4000MB/s, 64TB max, 4GB-64TB, 4GB increments with BlockExpress
+- io1 50 IOPS per GB, io2 500 IOPS per GB
+- BlockExpress 1000 IOPS per GB
