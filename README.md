@@ -2425,3 +2425,13 @@ Trusted Advisor checks help optimize your AWS infrastructure, increase security 
 - 115 Further checks (14 cost, 17 security, 24 fault tolerance, 10 performance, 50 service limits)
 - Access via the AWS Support API
 - CloudWatch Integration - react to changes
+
+## STORAGE
+
+### Elastic Block Store (EBS)
+
+Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for use with EC2 instances. EBS volumes behave like raw, unformatted block devices. You can mount these volumes as devices on your instances. EBS volumes that are attached to an instance are exposed as storage volumes that persist independently from the life of the instance. You can create a file system on top of these volumes, or use them in any way you would use a block device (such as a hard drive).
+
+- Block Storage - raw disk allocations (volume) for EC2 instances
+- Can be encrypted at rest using KMS
+- instances see block device and create file system on this device (ext3/4, xfs)
