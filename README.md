@@ -2435,3 +2435,9 @@ Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for
 - Block Storage - raw disk allocations (volume) for EC2 instances
 - Can be encrypted at rest using KMS
 - instances see block device and create file system on this device (ext3/4, xfs)
+- Storage is provisioned in ONE AZ (Resilient in that AZ)
+- Attached to one EC2 instance (or other service) over a storage network (See Multi-Attach)
+- Detached and reattached, not lifecycle linked to one instance .. persistent
+- Snapshot (backup) into S3. Create volume from snapshot (migrate between AZs)
+- Different physical storage types, different sizes, different performance profiles
+- Billed based on GB-month (and in some cases performance)
