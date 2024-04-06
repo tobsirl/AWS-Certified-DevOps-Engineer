@@ -2487,3 +2487,10 @@ Amazon Elastic Block Store (Amazon EBS) provides block level storage volumes for
 ##### Cold HDD sc1
 
 - A low-cost HDD designed for less frequently accessed workloads.
+- Max IOPS 250
+- 125 GB - 16 TB
+- Max Throughput 250 MB/s
+- Baseline Throughput 12 MB/s per TB
+- Burst to 80 MB/s
+- Scenarios where the lowest storage cost is important
+- File Servers, Infrequently accessed workloads
