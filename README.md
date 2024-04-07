@@ -2528,3 +2528,15 @@ Storage gateway is a product which integrates local infrastructure and AWS stora
 - Presents storage using iSCSI protocol, NFS or SMB
 - Integrates with S3, Glacier, EBS Snapshots
 - Migrations, Extensions, Storage Tiering, DR and Replacement of backup systems
+
+#### Volume Gateway - Stored Volumes
+
+- Entire dataset is stored on site and asynchronously backed up to S3
+- Low latency access to the entire dataset
+- Data is stored in S3 as EBS snapshots
+- 1GB - 16TB volumes
+- 32 volumes per gateway
+- 512TB per gateway
+- All data is stored on site, S3 is backup
+- Doesn't improve datacenter storage capacity
+- Main copy of data is stored on the gateway
