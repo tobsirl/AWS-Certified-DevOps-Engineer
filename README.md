@@ -2519,3 +2519,12 @@ The virtual devices for instance store volumes are ephemeral[0-23]. Instance typ
 - Add at launch time ONLY
 - Lost on instance move, resize or hardware failure
 - High Performance, Low Latency, Temporary Storage
+
+### Storage Gateway - Volume Gateway
+
+Storage gateway is a product which integrates local infrastructure and AWS storage such as S3, EBS Snapshots and Glacier.
+
+- Virtual machine or hardware appliance
+- Presents storage using iSCSI protocol, NFS or SMB
+- Integrates with S3, Glacier, EBS Snapshots
+- Migrations, Extensions, Storage Tiering, DR and Replacement of backup systems
