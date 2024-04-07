@@ -2502,3 +2502,10 @@ An instance store provides temporary block-level storage for your instance. This
 An instance store consists of one or more instance store volumes exposed as block devices. The size of an instance store as well as the number of devices available varies by instance type.
 
 The virtual devices for instance store volumes are ephemeral[0-23]. Instance types that support one instance store volume have ephemeral0. Instance types that support two instance store volumes have ephemeral0 and ephemeral1, and so on.
+
+- Block Storage Devices
+- Physical Disks attached to an EC2 instance
+- Instances on that host can access them
+- Highest storage performance in AWS
+- Included in instance price
+- Attached at launch time
