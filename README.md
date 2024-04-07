@@ -2540,3 +2540,14 @@ Storage gateway is a product which integrates local infrastructure and AWS stora
 - All data is stored on site, S3 is backup
 - Doesn't improve datacenter storage capacity
 - Main copy of data is stored on the gateway
+
+#### Volume Gateway - Cached Volumes
+
+- Entire dataset is stored in S3 and the most frequently accessed data is cached on site
+- Low latency access to the most frequently accessed data
+- 1GB - 32TB volumes
+- 32 volumes per gateway
+- 1PB per gateway
+- All data is stored in S3, cache is on site
+- Improves datacenter storage capacity
+- Storage appears on-premises, but is stored in S3
