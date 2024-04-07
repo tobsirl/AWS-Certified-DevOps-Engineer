@@ -2551,3 +2551,15 @@ Storage gateway is a product which integrates local infrastructure and AWS stora
 - All data is stored in S3, cache is on site
 - Improves datacenter storage capacity
 - Storage appears on-premises, but is stored in S3
+
+### Storage Gateway - Tape Gateway - Virtual Tape Library (VTL)
+
+Storage gateway in VTL mode allows the product to replace a tape based backup solution with one which uses S3 and Glacier rather than physical tape media.
+
+- Large backups => tape backups
+- LTO-9 Media can hold 24TB of raw data
+- Up to 60TB compressed
+- 1 Tape Drive can use 1 tape at a time
+- Loaders (robotics) can hold multiple tapes
+- A Library is 1+ drives, 1+ slots and loaders
+- Drive ... library ... shelf (anywhere but the library)
