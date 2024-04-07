@@ -2569,8 +2569,11 @@ Storage gateway in VTL mode allows the product to replace a tape based backup so
 File gateway bridges local file storage over NFS and SMB with S3 Storage
 It supports multi site, maintains storage structure, integrates with other AWS products and supports S3 object lifecycle Management
 
+[NotifyWhenUploaded](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_NotifyWhenUploaded.html)
+
 - Bridges on-premises file storage with S3
 - Mount Points(shares) available over NFS and SMB
 - Map directly onto an S3 bucket
 - Files stored into a mount point, are visible as objects in an S3 bucket
 - Read and Write Caching ensure LAN-like performance
+- File Gateway doesn't support Object Locking- use read only mode on other shares or tightly control file access
