@@ -2509,3 +2509,13 @@ The virtual devices for instance store volumes are ephemeral[0-23]. Instance typ
 - Highest storage performance in AWS
 - Included in instance price
 - Attached at launch time
+
+#### Instance Store - Volume Types
+
+- D3 = 4.6 GB/s throughput
+- I3 = 16 GB/s throughput
+- More IOPS and Throughput than EBS
+- Local on EC2 Host
+- Add at launch time ONLY
+- Lost on instance move, resize or hardware failure
+- High Performance, Low Latency, Temporary Storage
