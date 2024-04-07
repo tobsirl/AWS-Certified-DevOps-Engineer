@@ -2563,3 +2563,14 @@ Storage gateway in VTL mode allows the product to replace a tape based backup so
 - Loaders (robotics) can hold multiple tapes
 - A Library is 1+ drives, 1+ slots and loaders
 - Drive ... library ... shelf (anywhere but the library)
+
+### Storage Gateway - File Gateway - File Mode
+
+File gateway bridges local file storage over NFS and SMB with S3 Storage
+It supports multi site, maintains storage structure, integrates with other AWS products and supports S3 object lifecycle Management
+
+- Bridges on-premises file storage with S3
+- Mount Points(shares) available over NFS and SMB
+- Map directly onto an S3 bucket
+- Files stored into a mount point, are visible as objects in an S3 bucket
+- Read and Write Caching ensure LAN-like performance
