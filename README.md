@@ -2608,9 +2608,15 @@ S3 Security is controlled via a combination of Identity Policies, Bucket Policie
 }
 ```
 
-### S3 - ACLs
+### S3 - Access Control Lists(ACLs)
 
 - ACLs on objects and buckets
 - A subresource
 - Legacy - use Bucket Policies instead
 - Inflexible and only allow basic permissions
+
+### Block Public Access
+
+- Block Public Access is a setting on a bucket
+- Blocks all public access to the bucket
+- Overrides any public access settings on objects
