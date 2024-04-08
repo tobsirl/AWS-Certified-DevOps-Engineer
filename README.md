@@ -2591,3 +2591,26 @@ S3 Security is controlled via a combination of Identity Policies, Bucket Policie
 - Resource perspective permissons
 - ALLOW/DENY same or different accounts
 - ALLOW/DENY Anonymous principals
+
+### S3 - Bucket Policy Example
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::mybucket/*"
+    }
+  ]
+}
+```
+
+### S3 - ACLs
+
+- ACLs on objects and buckets
+- A subresource
+- Legacy - use Bucket Policies instead
+- Inflexible and only allow basic permissions
