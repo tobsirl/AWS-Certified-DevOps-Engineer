@@ -2577,3 +2577,14 @@ It supports multi site, maintains storage structure, integrates with other AWS p
 - Files stored into a mount point, are visible as objects in an S3 bucket
 - Read and Write Caching ensure LAN-like performance
 - File Gateway doesn't support Object Locking- use read only mode on other shares or tightly control file access
+
+## S3 Security (Resource Policies & ACLs)
+
+S3 Security is controlled via a combination of Identity Policies, Bucket Policies (Resource Policies) and Legacy Bucket and Object ACLs
+
+- S3 is private by default
+
+### S3 - Bucket Policies
+
+- A form of resource policy
+- Like identity policies, but attached to a bucket
