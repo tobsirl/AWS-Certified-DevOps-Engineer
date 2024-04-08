@@ -2588,3 +2588,6 @@ S3 Security is controlled via a combination of Identity Policies, Bucket Policie
 
 - A form of resource policy
 - Like identity policies, but attached to a bucket
+- Resource perspective permissons
+- ALLOW/DENY same or different accounts
+- ALLOW/DENY Anonymous principals
