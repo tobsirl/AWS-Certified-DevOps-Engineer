@@ -2620,3 +2620,13 @@ S3 Security is controlled via a combination of Identity Policies, Bucket Policie
 - Block Public Access is a setting on a bucket
 - Blocks all public access to the bucket
 - Overrides any public access settings on objects
+
+## S3 Static Website Hosting
+
+S3 can be used to host static websites, this is a cost effective way to host a website with low traffic.
+
+- Normal access is via AWS APIs
+- This feature allows access via HTTP/HTTPS
+- Index and Error documents can be set
+- Website endpoint is in the format `bucketname.s3-website-region.amazonaws.com`
+- Custom domain via Route 53 or CloudFront
