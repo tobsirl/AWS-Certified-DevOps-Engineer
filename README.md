@@ -2630,3 +2630,20 @@ S3 can be used to host static websites, this is a cost effective way to host a w
 - Index and Error documents can be set
 - Website endpoint is in the format `bucketname.s3-website-region.amazonaws.com`
 - Custom domain via Route 53 or CloudFront
+
+[Amazon S3 pricing](https://aws.amazon.com/s3/pricing/)
+
+### S3 - Static Website Hosting - Offloading
+
+- Offload static content from web servers
+- Reduce load on web servers
+- Reduce latency for users
+- Reduce costs for serving static content
+- Use CloudFront for global distribution
+- Use S3 for storage
+
+### S3 - Static Website Hosting - Out-of-band pages
+
+- Out-of-band pages - 404, 403, 500
+- Custom error pages
+- Use case - maintenance, error, compliance
