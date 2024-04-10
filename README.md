@@ -2647,3 +2647,11 @@ S3 can be used to host static websites, this is a cost effective way to host a w
 - Out-of-band pages - 404, 403, 500
 - Custom error pages
 - Use case - maintenance, error, compliance
+
+### S3 - Object Versioning & MFA Delete
+
+Object versioning is a feature which can be enabled on an S3 bucket - allowing the bucket to store multi versions of objects
+These objects can be referenced by their version ID to interact directly - or omit this to reference the latest version of an object
+Objects aren't deleted - object deletion markers are put in place to hide objects.
+
+Versioning lets you store multiple versions of objects within a bucket. Operations which would modify objects generate a new version.
