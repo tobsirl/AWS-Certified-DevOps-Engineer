@@ -2655,3 +2655,15 @@ These objects can be referenced by their version ID to interact directly - or om
 Objects aren't deleted - object deletion markers are put in place to hide objects.
 
 Versioning lets you store multiple versions of objects within a bucket. Operations which would modify objects generate a new version.
+
+- cannot be disabled once enabled - only suspended
+- Space is consumed by ALL versions
+- You are billed for All versions
+- Only way to 0 costs - is to delete the bucket
+
+### S3 - MFA Delete
+
+- Enabled in versioning configuration
+- MFA is required to change bucket versioning state
+- MFA is required to delete versions of objects
+- Serial number (MFA) + Code passed with API Calls
