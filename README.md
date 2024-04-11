@@ -2667,3 +2667,12 @@ Versioning lets you store multiple versions of objects within a bucket. Operatio
 - MFA is required to change bucket versioning state
 - MFA is required to delete versions of objects
 - Serial number (MFA) + Code passed with API Calls
+
+### S3 - Performance Optimisation
+
+#### Single PUT Upload
+
+- Single data stream to S3
+- Stream fails - entire upload fails
+- Retry entire upload
+- Speed and reliability = limit of 1 stream
