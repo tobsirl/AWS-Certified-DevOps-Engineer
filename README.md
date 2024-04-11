@@ -2682,3 +2682,7 @@ Versioning lets you store multiple versions of objects within a bucket. Operatio
 
 - Data is split into parts
 - Min data size 100MB for multipart
+- 10000 parts max, 5MB -> 5GB
+- Last part can be smaller than 5MB
+- Parts can fail, and be restarted
+- Transfer rate = speeds of all parts
