@@ -2686,3 +2686,8 @@ Versioning lets you store multiple versions of objects within a bucket. Operatio
 - Last part can be smaller than 5MB
 - Parts can fail, and be restarted
 - Transfer rate = speeds of all parts
+
+#### S3 Accelerated Transfer (S3 Transfer Acceleration)
+
+- Use of CloudFront Edge Locations
+- Speeds up uploads to S3
