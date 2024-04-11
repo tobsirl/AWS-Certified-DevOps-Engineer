@@ -2676,3 +2676,9 @@ Versioning lets you store multiple versions of objects within a bucket. Operatio
 - Stream fails - entire upload fails
 - Retry entire upload
 - Speed and reliability = limit of 1 stream
+- Any upload up to 5GB
+
+#### Multipart Upload
+
+- Data is split into parts
+- Min data size 100MB for multipart
