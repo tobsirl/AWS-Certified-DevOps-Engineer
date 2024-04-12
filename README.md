@@ -2708,3 +2708,12 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Backed by physical key material
 - Generated or Imported
 - KMS Keys can be used for up to 4KB of data
+
+### KMS - Data Encryption Keys (DEK)
+
+- GenerateDataKey - works on > 4KB
+- Plaintext Version
+- Ciphertext Version
+- Plaintext Version is used to encrypt data
+- Discard Plaintext Version
+- Store Ciphertext Version with data
