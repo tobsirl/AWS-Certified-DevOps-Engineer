@@ -2717,3 +2717,14 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Plaintext Version is used to encrypt data
 - Discard Plaintext Version
 - Store Ciphertext Version with data
+
+### KMS - Key Concepts
+
+- KMS Keys are isolated to a region and never leave
+- Multi-region keys are possible
+- AWS Owned Keys - Customer Owned
+- With Customer Owned Keys AWS Managed or Customer Managed Keys
+- Customer managed keys are more configurable
+- KMS Keys can be rotated
+- Backing Key (and previous backing keys)
+- Aliases - friendly names for keys
