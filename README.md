@@ -2728,3 +2728,10 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - KMS Keys can be rotated
 - Backing Key (and previous backing keys)
 - Aliases - friendly names for keys
+
+### KMS - Key Policies and Security
+
+- Key Policies - IAM like policies for keys
+- Every Key has one
+- Key Policies + IAM Policies = Access Control
+- Key Policies + Grants
