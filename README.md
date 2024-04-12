@@ -2701,3 +2701,10 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - **Symmetric** and **Asymmetric** Keys
 - Cryptographic Operations - Encrypt, Decrypt, Sign, Verify
 - Keys never leave KMS - Provides FIPS 140-2 Level 2
+
+### KMS Keys
+
+- KMS Keys are logical - ID, date, policy, description
+- Backed by physical key material
+- Generated or Imported
+- KMS Keys can be used for up to 4KB of data
