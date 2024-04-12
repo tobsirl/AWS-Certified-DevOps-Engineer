@@ -2695,3 +2695,9 @@ Versioning lets you store multiple versions of objects within a bucket. Operatio
 ## AWS Key Management Service (KMS)
 
 AWS Key Management Service (AWS KMS) makes it easy for you to create and manage cryptographic keys and control their use across a wide range of AWS services and in your applications. AWS KMS is a secure and resilient service that uses hardware security modules that have been validated under FIPS 140-2, or are in the process of being validated, to protect your keys.
+
+- Regional and Public Service
+- Create, Store and Manage Keys
+- **Symmetric** and **Asymmetric** Keys
+- Cryptographic Operations - Encrypt, Decrypt, Sign, Verify
+- Keys never leave KMS - Provides FIPS 140-2 Level 2
