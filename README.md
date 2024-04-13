@@ -2780,3 +2780,11 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Cipertext object and Encrypted Object Key are stored
 
 #### S3 - Server Side Encryption with KMS Managed Keys (SSE-KMS)
+
+- KMS Managed Keys
+- Created by you within KMS
+- Managed by you within KMS
+- Isoalted Permissions Configurable
+- Plaintext and Ciphertext Data Encryption Key (DEK)
+- Only generates keys doesn't store them
+- Logging and Auditing with CloudTrail
