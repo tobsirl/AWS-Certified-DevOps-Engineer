@@ -2749,3 +2749,9 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 [Using server-side encryption with customer-provided keys (SSE-C)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerSideEncryptionCustomerKeys.html)
 
 ### S3 - Client Side Encryption (CSE)
+
+- Encrypt data client side before upload
+- Decrypt data client side after download
+- Data is encrypted before it reaches S3
+- Data is decrypted after it leaves S3
+- Data is encrypted in transit
