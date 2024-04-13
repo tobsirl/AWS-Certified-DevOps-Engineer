@@ -3011,3 +3011,10 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Plaintext and Ciphertext Data Encryption Key (DEK)
 - Only generates keys doesn't store them
 - Logging and Auditing with CloudTrail
+
+| **Method**             | **Key Management** | **Encryption** | **Extras**                           |
+| ---------------------- | ------------------ | -------------- | ------------------------------------ |
+| Client Side Encryption | You                | You            | S3 never sees plaintext              |
+| SSE-C                  | You                | S3             |                                      |
+| SSE-S3                 | S3                 | S3             | No Key control No role separation    |
+| SSE-KMS                | S3 & KMS           | S3             | Key rotation control Role separation |
