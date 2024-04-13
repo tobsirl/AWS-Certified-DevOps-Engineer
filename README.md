@@ -2735,3 +2735,17 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Every Key has one
 - Key Policies + IAM Policies = Access Control
 - Key Policies + Grants
+
+## S3 Object Encryption CSE/SSE
+
+[Configuring default encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/default-bucket-encryption.html)
+
+[How Amazon Simple Storage Service (Amazon S3) uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-s3.html)
+
+[Using server-side encryption with AWS KMS keys (SSE-KMS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html)
+
+[Using server-side encryption with Amazon S3 managed keys (SSE-S3)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html)
+
+[Using server-side encryption with customer-provided keys (SSE-C)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerSideEncryptionCustomerKeys.html)
+
+### S3 - Client Side Encryption (CSE)
