@@ -2770,6 +2770,13 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Key is not stored with the data
 - Cipher text object and Key Hash are stored
 
-#### S3 - Server Side Encryption with S3 Managed Keys (SSE-S3) (Default)
+#### S3 - Server Side Encryption with S3 Managed Keys (SSE-S3 AES256) (Default)
+
+- AWS Managed Keys
+- Key is used to encrypt data
+- Key is not stored by AWS
+- Plaintext Key is not stored with the data
+- Object Key is not stored with the data
+- Cipertext object and Encrypted Object Key are stored
 
 #### S3 - Server Side Encryption with KMS Managed Keys (SSE-KMS)
