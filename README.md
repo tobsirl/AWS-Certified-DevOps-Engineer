@@ -2755,3 +2755,21 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 - Data is encrypted before it reaches S3
 - Data is decrypted after it leaves S3
 - Data is encrypted in transit
+
+### S3 - Server Side Encryption (SSE)
+
+- Data is encrypted at rest
+- Data is decrypted when accessed
+- Data is encrypted in transit
+
+#### S3 - Server Side Encryption with Customer Provided Keys (SSE-C)
+
+- Customer provides the key
+- Key is used to encrypt data
+- Key is not stored by AWS
+- Key is not stored with the data
+- Cipher text object and Key Hash are stored
+
+#### S3 - Server Side Encryption with S3 Managed Keys (SSE-S3) (Default)
+
+#### S3 - Server Side Encryption with KMS Managed Keys (SSE-KMS)
