@@ -232,6 +232,7 @@
     - [S3 - One Zone-IA (Infrequent Access)](#s3---one-zone-ia-infrequent-access)
     - [S3 - S3 Glacier - Instant Retrieval](#s3---s3-glacier---instant-retrieval)
     - [S3 - Glacier - Flexible Retrieval](#s3---glacier---flexible-retrieval)
+    - [S3 - Glacier Deep Archive](#s3---glacier-deep-archive)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3113,3 +3114,14 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Faster is more expensive, slower is cheaper
 - First byte latency is 1-5 minutes for expedited, 3-5 hours for standard and 5-12 hours for bulk
 - Best for archival data, backups, long term storage, data that is accessed once per quarter or less
+
+### S3 - Glacier Deep Archive
+
+- S3 Glacier Deep Archive is designed for long term storage of data that is infrequently accessed.
+- 40KB minimum object size and 180 day minimum storage duration
+- Data is in a frozen state and can take 12 hours to restore
+- Objects cannot be made publicly accessible, any access of data requires a retrieval request.
+- Data in Glacier Deep Archive is retrieved to S3 Standard or S3 Standard-IA temporarily.
+- Standard 12 hour retrieval time, 180 day minimum storage duration
+- Bulk 48 hour retrieval time, 180 day minimum storage duration
+- First byte latency is 12 hours for standard and 48 hours for bulk
