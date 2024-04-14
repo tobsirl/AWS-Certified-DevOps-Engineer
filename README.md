@@ -3111,3 +3111,5 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Standard retrieval is available for a lower cost
 - Bulk retrieval is available for the lowest cost
 - Faster is more expensive, slower is cheaper
+- First byte latency is 1-5 minutes for expedited, 3-5 hours for standard and 5-12 hours for bulk
+- Best for archival data, backups, long term storage, data that is accessed once per quarter or less
