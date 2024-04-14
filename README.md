@@ -229,6 +229,7 @@
   - [S3 - Object Storage Classes](#s3---object-storage-classes)
     - [S3 - Standard](#s3---standard)
     - [S3 - Standard-IA (Infrequent Access)](#s3---standard-ia-infrequent-access)
+    - [S3 - One Zone-IA (Infrequent Access)](#s3---one-zone-ia-infrequent-access)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3079,3 +3080,13 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Standard-IA has a minimum duration charge of 30 days, objects can be stored for less but the minimum billing always applies.
 - Standard-IA has a minimum capacity charge of 128KB per object, objects smaller than this are charged at this rate.
 - Standard-IA should be used for long-lived data, which is important but where access is infrequent.
+
+### S3 - One Zone-IA (Infrequent Access)
+
+- One Zone-IA is similar to Standard-IA but data is stored in a single AZ
+- One Zone-IA has a per GB data retrieval fee, overall cost increases with frequent data access.
+- One Zone-IA jas a minimum duration charge of 30 days, objects can be stored for less but the minimum billing always applies.
+- One Zone-IA has a minimum capacity charge of 128KB per object, objects smaller than this are charged at this rate.
+- One Zone-IA does not provide the multi-AZ resilience of Standard-IA. Instead only one AZ is used within the region.
+- 11 9s of durability, 1 object loss in 10000 years but reduced resilience compared to Standard-IA
+- One Zone-IA should be used for **long lived data**, which is **NON-CRITICAL** and **REPLACABLE** and where access is **infrequent**.
