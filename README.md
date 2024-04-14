@@ -233,6 +233,7 @@
     - [S3 - S3 Glacier - Instant Retrieval](#s3---s3-glacier---instant-retrieval)
     - [S3 - Glacier - Flexible Retrieval](#s3---glacier---flexible-retrieval)
     - [S3 - Glacier Deep Archive](#s3---glacier-deep-archive)
+    - [S3 - Intelligent Tiering](#s3---intelligent-tiering)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3125,3 +3126,18 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Standard 12 hour retrieval time, 180 day minimum storage duration
 - Bulk 48 hour retrieval time, 180 day minimum storage duration
 - First byte latency is 12 hours for standard and 48 hours for bulk
+
+### S3 - Intelligent Tiering
+
+- Intelligent Tiering is designed for data that has changing access patterns.
+- S3 Intelligent Tiering moves objects between the different storage classes based on access patterns.
+- Intelligent Tiering monitors and automatically moves any objects not accessed for 30 days to a low cost infrequent acess tier.
+- The avaiable tiers are
+- Frequent Access - Standard
+- Infrequent Access - Standard-IA
+- Archive Instant Access - Glacier - moved after 90 days
+- Archive Access - Glacier Deep Archive - moved after 90 -> 270 days - optional
+- Deep Archive Access - Glacier Deep Archive - moved after 180 -> 730 days - optional
+- Intelligent Tiering has a monitoring and automation cost per 1,000 objects.
+- The frequent access tier costs the same as S3 Standard, the infrequent access tier costs the same as S3 Standard-IA.
+- Archive Instant Access costs the same as S3 Glacier Instant, Archive Access costs the same as S3 Glacier Flexible Retrieval and Deep Archive Access costs the same as S3 Glacier Deep Archive.
