@@ -231,6 +231,7 @@
     - [S3 - Standard-IA (Infrequent Access)](#s3---standard-ia-infrequent-access)
     - [S3 - One Zone-IA (Infrequent Access)](#s3---one-zone-ia-infrequent-access)
     - [S3 - S3 Glacier - Instant Retrieval](#s3---s3-glacier---instant-retrieval)
+    - [S3 - Glacier - Flexible Retrieval](#s3---glacier---flexible-retrieval)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3099,3 +3100,14 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Glacier Instant should be used for long-lived data, accessed once per quarter or less with millisecond access times.
 - Glacier Instant has a minimum storage duration of 90 days, objects can be stored for less but the minimum billing always applies.
 - Glacier Instant has a per GB data retrieval fee, overall cost increases with frequent data access.
+
+### S3 - Glacier - Flexible Retrieval
+
+- S3 Glacier Flexible Retrieval is designed for long term storage of data that is infrequently accessed.
+- Cold storage, cheaper storage, more expensive retrieval, longer minimum storage duration.
+- Objects cannot be made publicly accessible, any access of data requires a retrieval request.
+- Data in Glacier Flexible Retrieval is stored in Glacier and can be restored to S3 Standard or S3 Standard-IA.
+- Expedited retrieval is available for a higher cost
+- Standard retrieval is available for a lower cost
+- Bulk retrieval is available for the lowest cost
+- Faster is more expensive, slower is cheaper
