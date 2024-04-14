@@ -226,6 +226,8 @@
     - [Without Bucket Keys](#without-bucket-keys)
     - [With Bucket Keys](#with-bucket-keys)
       - [S3 - Bucket Keys - things to remember](#s3---bucket-keys---things-to-remember)
+  - [S3 - Object Storage Classes](#s3---object-storage-classes)
+    - [S3 - Standard](#s3---standard)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3048,4 +3050,21 @@ Amazon S3 Bucket Keys reduce the cost of Amazon S3 server-side encryption using 
 - CloudTrail KMS events now show the bucket not the object
 - Works with replication ..the object encryption is maintained
 - If replicating plaintext to a bucket using bucket keys the object is encrypted at the destination side (ETAG changes)
--
+
+## S3 - Object Storage Classes
+
+Amazon S3 offers a range of storage classes designed for different use cases.
+
+[Amazon S3 pricing](https://aws.amazon.com/s3/pricing/)
+
+[Amazon S3 Storage Classes](https://aws.amazon.com/s3/storage-classes/)
+
+### S3 - Standard
+
+- Objects are replicated across at least 3 AZs in the AWS region
+- 11 9s of durability, 1 object loss in 10000 years
+- Replication over 3 AZs & Content-MDS Checksums and Cyclic Redundancy Checks (CRCs) are used to detect and fix any data corruption
+- When objects are stored a HTTP/1.1 200 OK response is provided by the S3 API Endpoint
+- S3 Standard, you are billed a GB-month rate for the amount of data stored in your S3 buckets
+- A $ per GB for transfer OUT (IN is free) and a price per 1,000 requests.
+- No specific retrieval fee, no minimum storage duration, no minimum storage size
