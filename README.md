@@ -225,6 +225,7 @@
   - [S3 - Bucket Keys](#s3---bucket-keys)
     - [Without Bucket Keys](#without-bucket-keys)
     - [With Bucket Keys](#with-bucket-keys)
+      - [S3 - Bucket Keys - things to remember](#s3---bucket-keys---things-to-remember)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3041,3 +3042,10 @@ Amazon S3 Bucket Keys reduce the cost of Amazon S3 server-side encryption using 
 - Bucket Kesy significantly reduce the number of KMS requests which reduces the cost of using SSE-KMS
 - Increases scalability and performance of SSE-KMS
 - Not Retroactice, only effects objects added after the bucket key is enabled
+
+#### S3 - Bucket Keys - things to remember
+
+- CloudTrail KMS events now show the bucket not the object
+- Works with replication ..the object encryption is maintained
+- If replicating plaintext to a bucket using bucket keys the object is encrypted at the destination side (ETAG changes)
+-
