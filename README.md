@@ -222,6 +222,7 @@
       - [S3 - Server Side Encryption with Customer Provided Keys (SSE-C)](#s3---server-side-encryption-with-customer-provided-keys-sse-c)
       - [S3 - Server Side Encryption with S3 Managed Keys (SSE-S3 AES256) (Default)](#s3---server-side-encryption-with-s3-managed-keys-sse-s3-aes256-default)
       - [S3 - Server Side Encryption with KMS Managed Keys (SSE-KMS)](#s3---server-side-encryption-with-kms-managed-keys-sse-kms)
+  - [S3 - Bucket Keys](#s3---bucket-keys)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3018,3 +3019,14 @@ AWS Key Management Service (AWS KMS) makes it easy for you to create and manage 
 | SSE-C                  | You                | S3             |                                      |
 | SSE-S3                 | S3                 | S3             | No Key control No role separation    |
 | SSE-KMS                | S3 & KMS           | S3             | Key rotation control Role separation |
+
+## S3 - Bucket Keys
+
+Amazon S3 Bucket Keys reduce the cost of Amazon S3 server-side encryption using AWS Key Management Service (SSE-KMS). Bucket-level keys for SSE can reduce AWS KMS request costs by up to 99 percent by decreasing the request traffic from Amazon S3 to AWS KMS.
+
+- Each Object "Put" using sse-kms uses a unique DEK
+- Unique DEK stored with the object
+- Each Data Encryption Key (DEK) is an API call to KMS
+- Calls to KMS have a cost & levels where throttling can occur
+- 5,500 requests per second per account
+- 10,000 or 50,000 requests per second per region
