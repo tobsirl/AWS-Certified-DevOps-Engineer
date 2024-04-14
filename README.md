@@ -228,6 +228,7 @@
       - [S3 - Bucket Keys - things to remember](#s3---bucket-keys---things-to-remember)
   - [S3 - Object Storage Classes](#s3---object-storage-classes)
     - [S3 - Standard](#s3---standard)
+    - [S3 - Standard-IA (Infrequent Access)](#s3---standard-ia-infrequent-access)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3068,3 +3069,13 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - S3 Standard, you are billed a GB-month rate for the amount of data stored in your S3 buckets
 - A $ per GB for transfer OUT (IN is free) and a price per 1,000 requests.
 - No specific retrieval fee, no minimum storage duration, no minimum storage size
+- S3 Standard has a millisecond first byte latency and objects can be made publicly accessible
+
+### S3 - Standard-IA (Infrequent Access)
+
+- Reduction in storage cost
+- Standard-IA has a per GB data retrieval fee, overall cost increases with frequent data access.
+- Standard-IA is designed for data that is accessed less frequently, but requires rapid access when needed.
+- Standard-IA has a minimum duration charge of 30 days, objects can be stored for less but the minimum billing always applies.
+- Standard-IA has a minimum capacity charge of 128KB per object, objects smaller than this are charged at this rate.
+- Standard-IA should be used for long-lived data, which is important but where access is infrequent.
