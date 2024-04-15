@@ -235,6 +235,7 @@
     - [S3 - Glacier Deep Archive](#s3---glacier-deep-archive)
     - [S3 - Intelligent Tiering](#s3---intelligent-tiering)
   - [S3 Lifecycle Configuration](#s3-lifecycle-configuration)
+    - [S3 - Lifecycle Configuration - Transition Actions](#s3---lifecycle-configuration---transition-actions)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3152,3 +3153,8 @@ S3 Lifecycle Configuration allows you to define rules to automatically transitio
 - On a Bucket or group of objects
 - Transition Actions - Move objects between storage classes
 - Expiration Actions - Delete objects
+
+### S3 - Lifecycle Configuration - Transition Actions
+
+- Transition Actions - Move objects between storage classes
+- Transitions travel down like a waterfall
