@@ -234,6 +234,7 @@
     - [S3 - Glacier - Flexible Retrieval](#s3---glacier---flexible-retrieval)
     - [S3 - Glacier Deep Archive](#s3---glacier-deep-archive)
     - [S3 - Intelligent Tiering](#s3---intelligent-tiering)
+  - [S3 Lifecycle Configuration](#s3-lifecycle-configuration)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3141,3 +3142,13 @@ Amazon S3 offers a range of storage classes designed for different use cases.
 - Intelligent Tiering has a monitoring and automation cost per 1,000 objects.
 - The frequent access tier costs the same as S3 Standard, the infrequent access tier costs the same as S3 Standard-IA.
 - Archive Instant Access costs the same as S3 Glacier Instant, Archive Access costs the same as S3 Glacier Flexible Retrieval and Deep Archive Access costs the same as S3 Glacier Deep Archive.
+
+## S3 Lifecycle Configuration
+
+S3 Lifecycle Configuration allows you to define rules to automatically transition objects between storage classes, archive objects and delete objects.
+
+- A Lifecycle Configuration is a set of rules
+- Rules consist of actions and conditions
+- On a Bucket or group of objects
+- Transition Actions - Move objects between storage classes
+- Expiration Actions - Delete objects
