@@ -236,6 +236,9 @@
     - [S3 - Intelligent Tiering](#s3---intelligent-tiering)
   - [S3 Lifecycle Configuration](#s3-lifecycle-configuration)
     - [S3 - Lifecycle Configuration - Transition Actions](#s3---lifecycle-configuration---transition-actions)
+  - [S3 Replication](#s3-replication)
+    - [S3 - Replication - Cross Region Replication (CRR)](#s3---replication---cross-region-replication-crr)
+    - [S3 - Replication - Same Region Replication (SRR)](#s3---replication---same-region-replication-srr)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3158,3 +3161,15 @@ S3 Lifecycle Configuration allows you to define rules to automatically transitio
 
 - Transition Actions - Move objects between storage classes
 - Transitions travel down like a waterfall
+
+## S3 Replication
+
+S3 Replication allows you to replicate objects between S3 buckets in different regions.
+
+### S3 - Replication - Cross Region Replication (CRR)
+
+- Cross Region Replication (CRR) - Replicate objects between S3 buckets in different regions
+
+### S3 - Replication - Same Region Replication (SRR)
+
+- Same Region Replication (SRR) - Replicate objects between S3 buckets in the same region
