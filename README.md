@@ -240,6 +240,7 @@
     - [S3 - Replication - Cross Region Replication (CRR)](#s3---replication---cross-region-replication-crr)
     - [S3 - Replication - Same Region Replication (SRR)](#s3---replication---same-region-replication-srr)
       - [S3 - Replication Options](#s3---replication-options)
+      - [S3 - Replication Considerations](#s3---replication-considerations)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3181,3 +3182,13 @@ S3 Replication allows you to replicate objects between S3 buckets in different r
 - Storage Class - default is to maintain
 - Ownership - default is the source account
 - Replication Time Control - default is as fast as possible
+
+#### S3 - Replication Considerations
+
+- By Default Not retroactive & Versioning need to be ON
+- Batch replication can be used to replicate existing objects
+- One-way replication Source to Destination (or bi-directional)
+- Unencrypted, SSE-S3, SSE-KMS (with extra config), SSE-C
+- Source bucket owner needs permissions to objects
+- No system events, Glacier or Glacier Deep Archive
+- No Deletes (But this can be added - DeleteMarkerReplication)
