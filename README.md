@@ -239,6 +239,7 @@
   - [S3 Replication](#s3-replication)
     - [S3 - Replication - Cross Region Replication (CRR)](#s3---replication---cross-region-replication-crr)
     - [S3 - Replication - Same Region Replication (SRR)](#s3---replication---same-region-replication-srr)
+      - [S3 - Replication Options](#s3---replication-options)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3173,3 +3174,10 @@ S3 Replication allows you to replicate objects between S3 buckets in different r
 ### S3 - Replication - Same Region Replication (SRR)
 
 - Same Region Replication (SRR) - Replicate objects between S3 buckets in the same region
+
+#### S3 - Replication Options
+
+- All objects or a subset
+- Storage Class - default is to maintain
+- Ownership - default is the source account
+- Replication Time Control - default is as fast as possible
