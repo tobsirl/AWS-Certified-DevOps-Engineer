@@ -241,6 +241,7 @@
     - [S3 - Replication - Same Region Replication (SRR)](#s3---replication---same-region-replication-srr)
       - [S3 - Replication Options](#s3---replication-options)
       - [S3 - Replication Considerations](#s3---replication-considerations)
+      - [S3 - Replication - Why use replication?](#s3---replication---why-use-replication)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3192,3 +3193,11 @@ S3 Replication allows you to replicate objects between S3 buckets in different r
 - Source bucket owner needs permissions to objects
 - No system events, Glacier or Glacier Deep Archive
 - No Deletes (But this can be added - DeleteMarkerReplication)
+
+#### S3 - Replication - Why use replication?
+
+- SRR - Log Aggregation, Data Processing, Data Sharing
+- SRR - PROD and TEST Sync
+- SRR - Resilience with strict sovereignty requirements
+- CRR - Global Resilience Improvements
+- CRR - Latency Reduction
