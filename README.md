@@ -242,6 +242,7 @@
       - [S3 - Replication Options](#s3---replication-options)
       - [S3 - Replication Considerations](#s3---replication-considerations)
       - [S3 - Replication - Why use replication?](#s3---replication---why-use-replication)
+  - [S3 Pre-Signed URLs](#s3-pre-signed-urls)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3201,3 +3202,7 @@ S3 Replication allows you to replicate objects between S3 buckets in different r
 - SRR - Resilience with strict sovereignty requirements
 - CRR - Global Resilience Improvements
 - CRR - Latency Reduction
+
+## S3 Pre-Signed URLs
+
+S3 Pre-Signed URLs allow you to generate a URL which can be used to access an object in S3 for a limited time.
