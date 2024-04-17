@@ -3206,3 +3206,8 @@ S3 Replication allows you to replicate objects between S3 buckets in different r
 ## S3 Pre-Signed URLs
 
 S3 Pre-Signed URLs allow you to generate a URL which can be used to access an object in S3 for a limited time.
+
+- You can create a URL for an object you have no access to
+- When using the URL, the permissions match the identity of the creator
+- Access denied could mean the generating ID never had access or doesn't now
+- Don't generate with a role URL stops working when temporary credentials expire
