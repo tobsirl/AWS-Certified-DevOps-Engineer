@@ -3238,3 +3238,11 @@ S3 and Glacier Select allow you to use a SQL-Like statement to retrieve partial 
 Cross-origin resource sharing (CORS) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain. With CORS support, you can build rich client-side web applications with Amazon S3 and selectively allow cross-origin access to your Amazon S3 resources.
 
 [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+
+- Simple Requests
+- Preflight Requests and Preflighted requests
+- Access-Control-Allow-Origin - Origin
+- Access-Control-Max-Age - Time
+- Access-Control-Allow-Methods - Methods
+- Access-Control-Allow-Headers - Headers
+- Define Origin (original URL used) other domains need CORS
