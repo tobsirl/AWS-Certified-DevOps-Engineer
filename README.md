@@ -243,6 +243,7 @@
       - [S3 - Replication Considerations](#s3---replication-considerations)
       - [S3 - Replication - Why use replication?](#s3---replication---why-use-replication)
   - [S3 Pre-Signed URLs](#s3-pre-signed-urls)
+  - [S3 Select and Glacier Select](#s3-select-and-glacier-select)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3211,3 +3212,15 @@ S3 Pre-Signed URLs allow you to generate a URL which can be used to access an ob
 - When using the URL, the permissions match the identity of the creator
 - Access denied could mean the generating ID never had access or doesn't now
 - Don't generate with a role URL stops working when temporary credentials expire
+
+## S3 Select and Glacier Select
+
+S3 and Glacier Select allow you to use a SQL-Like statement to retrieve partial objects from S3 and Glacier.
+
+- S3 can store HUGE objects (up to 5TB)
+- You often want to retrieve the entire object
+- Retrieving a 5TB object takes time, uses 5TB of data transfer
+- Filtering at the client side doesn't redcue the amount of data transferred
+- S3/Glacier Select let you use SQL-Like statements to filter the data
+- To select part of the object, pre-filtered by S3
+- CSV, JSON, Parquet, BZIP2 compression for CSV and JSON
