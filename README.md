@@ -245,6 +245,7 @@
   - [S3 Pre-Signed URLs](#s3-pre-signed-urls)
   - [S3 Select and Glacier Select](#s3-select-and-glacier-select)
     - [S3 Select and Glacier Select - How it works](#s3-select-and-glacier-select---how-it-works)
+  - [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3231,3 +3232,9 @@ S3 and Glacier Select allow you to use a SQL-Like statement to retrieve partial 
 - SQL-like expression provided to S3 Select, selection happens at the S3 service
 - With S3 Select, filtering occurs on the service side and only the filtered data is returned
 - Up to 400% faster and 80% cheaper than full object retrieval
+
+## Cross-Origin Resource Sharing (CORS)
+
+Cross-origin resource sharing (CORS) defines a way for client web applications that are loaded in one domain to interact with resources in a different domain. With CORS support, you can build rich client-side web applications with Amazon S3 and selectively allow cross-origin access to your Amazon S3 resources.
+
+[Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
