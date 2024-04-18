@@ -244,6 +244,7 @@
       - [S3 - Replication - Why use replication?](#s3---replication---why-use-replication)
   - [S3 Pre-Signed URLs](#s3-pre-signed-urls)
   - [S3 Select and Glacier Select](#s3-select-and-glacier-select)
+    - [S3 Select and Glacier Select - How it works](#s3-select-and-glacier-select---how-it-works)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3224,3 +3225,9 @@ S3 and Glacier Select allow you to use a SQL-Like statement to retrieve partial 
 - S3/Glacier Select let you use SQL-Like statements to filter the data
 - To select part of the object, pre-filtered by S3
 - CSV, JSON, Parquet, BZIP2 compression for CSV and JSON
+
+### S3 Select and Glacier Select - How it works
+
+- SQL-like expression provided to S3 Select, selection happens at the S3 service
+- With S3 Select, filtering occurs on the service side and only the filtered data is returned
+- Up to 400% faster and 80% cheaper than full object retrieval
