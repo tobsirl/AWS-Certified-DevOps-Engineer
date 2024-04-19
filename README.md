@@ -3318,3 +3318,4 @@ Amazon S3 Access Points, a feature of S3, simplifies managing data access at sca
 - each with different network access controls
 - multiple access points with multiple policies
 - each access point has its own endpoint address
+- Created via Console or `aws s3control create-access-point --name secretcats --account-id 123456789012 --bucket catpics`
