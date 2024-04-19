@@ -3298,3 +3298,9 @@ You can use S3 Object Lock to store objects using a _write-once-read-many_ (WORM
 - x-amz-bypass-governance-retention:true - Header to bypass governance retention (console default)
 
 ### S3 Object Lock - Legal Hold
+
+- Set on an object version - ON or OFF
+- no retention period
+- No Deletes or Changes until removed
+- s3:PutObjectLegalHold is required to add or remove
+- Prevent accidental deletion of critical object versions
