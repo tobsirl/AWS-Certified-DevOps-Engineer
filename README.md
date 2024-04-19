@@ -249,6 +249,8 @@
   - [S3 Event Notifications](#s3-event-notifications)
   - [S3 Access Logs](#s3-access-logs)
   - [S3 Object Lock](#s3-object-lock)
+    - [S3 Object Lock - Retention Period](#s3-object-lock---retention-period)
+    - [S3 Object Lock - Legal Hold](#s3-object-lock---legal-hold)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3285,3 +3287,14 @@ You can use S3 Object Lock to store objects using a _write-once-read-many_ (WORM
 - 2 - Legal Hold
 - Both, One or the other, or none
 - A Bucket can have default Object Lock Settings
+
+### S3 Object Lock - Retention Period
+
+- Specify Days or Years - A Retention Period
+- COMPLIANCE - Can't be adjusted, deleted or overwritten
+- Even by the account root user until retention period expires
+- GOVERNANCE - special permissions can be granted allowing lock settings to be adjusted
+- s3:BypassGovernanceRetention - Allows objects to be deleted or overwritten
+- x-amz-bypass-governance-retention:true - Header to bypass governance retention (console default)
+
+### S3 Object Lock - Legal Hold
