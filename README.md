@@ -248,6 +248,7 @@
   - [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
   - [S3 Event Notifications](#s3-event-notifications)
   - [S3 Access Logs](#s3-access-logs)
+  - [S3 Object Lock](#s3-object-lock)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3271,3 +3272,16 @@ Server access logging provides detailed records for the requests that are made t
 - S3 Log Delivery - S3, CloudWatch Logs, Kinesis Firehose
 - Best Efforts log delivery, accesses to Source Bucket are usually logged in Target bucket within a few hours
 - Logs Files consists of Log Records, Records are newline delimited, Attributes are space delimited
+- Bucket ACL Allows "S3 Log Delivery" permission to the target bucket
+
+## S3 Object Lock
+
+You can use S3 Object Lock to store objects using a _write-once-read-many_ (WORM) model. It can help you prevent objects from being deleted or overwritten for a fixed amount of time or indefinitely. You can use S3 Object Lock to meet regulatory requirements that require WORM storage, or add an extra layer of protection against object changes and deletion.
+
+- Object Lock enabled on `new` buckets (Support req for existing)
+- Write-Once-Read-Many (WORM) model - No Delete, No Overwrite
+- Requires versioning - individual versions are locked
+- 1 - Retention Period
+- 2 - Legal Hold
+- Both, One or the other, or none
+- A Bucket can have default Object Lock Settings
