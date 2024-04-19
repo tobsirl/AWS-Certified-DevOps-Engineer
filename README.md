@@ -3311,3 +3311,10 @@ You can use S3 Object Lock to store objects using a _write-once-read-many_ (WORM
 Amazon S3 Access Points, a feature of S3, simplifies managing data access at scale for applications using shared data sets on S3. Access points are unique hostnames that customers create to enforce distinct permissions and network controls for any request made through the access point.
 
 [Creating access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-access-points.html#access-points-policies)
+
+- Simplify managing access to S3 Buckets/Objects
+- Rather than 1 bucket with 1 bucket policy
+- Create many access points with different policies
+- each with different network access controls
+- multiple access points with multiple policies
+- each access point has its own endpoint address
