@@ -246,6 +246,7 @@
   - [S3 Select and Glacier Select](#s3-select-and-glacier-select)
     - [S3 Select and Glacier Select - How it works](#s3-select-and-glacier-select---how-it-works)
   - [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
+  - [S3 Event Notifications](#s3-event-notifications)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3246,3 +3247,9 @@ Cross-origin resource sharing (CORS) defines a way for client web applications t
 - Access-Control-Allow-Methods - Methods
 - Access-Control-Allow-Headers - Headers
 - Define Origin (original URL used) other domains need CORS
+
+## S3 Event Notifications
+
+The Amazon S3 notification feature enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration that identifies the events you want Amazon S3 to publish and the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that is associated with a bucket.
+
+- Notifications generated when events occur in a bucket
