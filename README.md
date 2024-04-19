@@ -251,6 +251,7 @@
   - [S3 Object Lock](#s3-object-lock)
     - [S3 Object Lock - Retention Period](#s3-object-lock---retention-period)
     - [S3 Object Lock - Legal Hold](#s3-object-lock---legal-hold)
+  - [S3 Access Points](#s3-access-points)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3304,3 +3305,9 @@ You can use S3 Object Lock to store objects using a _write-once-read-many_ (WORM
 - No Deletes or Changes until removed
 - s3:PutObjectLegalHold is required to add or remove
 - Prevent accidental deletion of critical object versions
+
+## S3 Access Points
+
+Amazon S3 Access Points, a feature of S3, simplifies managing data access at scale for applications using shared data sets on S3. Access points are unique hostnames that customers create to enforce distinct permissions and network controls for any request made through the access point.
+
+[Creating access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-access-points.html#access-points-policies)
