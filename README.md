@@ -247,6 +247,7 @@
     - [S3 Select and Glacier Select - How it works](#s3-select-and-glacier-select---how-it-works)
   - [Cross-Origin Resource Sharing (CORS)](#cross-origin-resource-sharing-cors)
   - [S3 Event Notifications](#s3-event-notifications)
+  - [S3 Access Logs](#s3-access-logs)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3258,3 +3259,15 @@ The Amazon S3 notification feature enables you to receive notifications when cer
 - Object Delete (\*, Delete, DeleteMarkerCreated)
 - Object Restore (Post(Initiated), Completed)
 - Replication (OperationMissedThreshold, OperationReplicatedAfterThreshold, OperationNotTracked, OperationFailedReplication)
+
+## S3 Access Logs
+
+Server access logging provides detailed records for the requests that are made to a bucket. Server access logs are useful for many applications. For example, access log information can be useful in security and access audits. It can also help you learn about your customer base and understand your Amazon S3 bill.
+
+- Access logs are stored in another bucket
+- Logs are delivered in a common log format
+- Bucket and Object Access
+- Access Logging can be enabled via the console UI or via PUT Bucket logging
+- S3 Log Delivery - S3, CloudWatch Logs, Kinesis Firehose
+- Best Efforts log delivery, accesses to Source Bucket are usually logged in Target bucket within a few hours
+- Logs Files consists of Log Records, Records are newline delimited, Attributes are space delimited
