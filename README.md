@@ -3253,3 +3253,8 @@ Cross-origin resource sharing (CORS) defines a way for client web applications t
 The Amazon S3 notification feature enables you to receive notifications when certain events happen in your bucket. To enable notifications, you must first add a notification configuration that identifies the events you want Amazon S3 to publish and the destinations where you want Amazon S3 to send the notifications. You store this configuration in the notification subresource that is associated with a bucket.
 
 - Notifications generated when events occur in a bucket
+- Can be delivered to SNS, SQS and Lambda functions
+- Object Created (Put, Post, Copy, CompleteMultipartUpload)
+- Object Delete (\*, Delete, DeleteMarkerCreated)
+- Object Restore (Post(Initiated), Completed)
+- Replication (OperationMissedThreshold, OperationReplicatedAfterThreshold, OperationNotTracked, OperationFailedReplication)
