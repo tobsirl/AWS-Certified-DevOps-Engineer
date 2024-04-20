@@ -3332,3 +3332,4 @@ Amazon S3 inventory provides a flat file list of your objects and metadata, whic
 - Output - CSV, ORC, Parquet
 - Multiple inventories can be set up, and they go to a target bucket
 - Same account or different account ... needs a bucket policy
+- Audit, Compliance, Cost Management or any specific regulatory requirements
