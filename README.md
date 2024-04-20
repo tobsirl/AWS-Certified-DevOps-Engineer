@@ -253,6 +253,7 @@
     - [S3 Object Lock - Legal Hold](#s3-object-lock---legal-hold)
   - [S3 Access Points](#s3-access-points)
   - [S3 Inventory](#s3-inventory)
+  - [Elastic File System (EFS)](#elastic-file-system-efs)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3333,3 +3334,17 @@ Amazon S3 inventory provides a flat file list of your objects and metadata, whic
 - Multiple inventories can be set up, and they go to a target bucket
 - Same account or different account ... needs a bucket policy
 - Audit, Compliance, Cost Management or any specific regulatory requirements
+
+## Elastic File System (EFS)
+
+The Elastic File System (EFS) is an AWS managed implementation of NFS which allows for the creation of shared 'filesystems' which can be mounted within multi EC2 instances.
+
+EFS can play an essential part in building scalable and resilient systems.
+
+[File-system permissions](https://en.wikipedia.org/wiki/File-system_permissions)
+
+[Amazon EFS performance](https://docs.aws.amazon.com/efs/latest/ug/performance.html)
+
+[What is Amazon Elastic File System?](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
+
+[Managing file system storage](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html)
