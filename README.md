@@ -3354,3 +3354,13 @@ EFS can play an essential part in building scalable and resilient systems.
 - Shared between many EC2 instances
 - Private service, via mount targets inside a VPC
 - Can be accessed from on-premises via Direct Connect or VPN
+- Only supported for Linux systems
+- General Purpose and Max I/O Performance Modes
+- General Purpose - default for most workloads
+- Bursting and Provisioned Throughput Modes
+- Bursting - 1TB-8TB, 50MB/s per TB, Burst to 100MB/s
+- Provisioned - 1TB-8TB, 50MB/s per TB, 100MB/s-1000MB/s
+- Standard and Infrequent Access Storage Classes
+- Standard - default, Infrequent Access - cost effective
+- Lifecycle Management - move files to IA after 30 days
+- Lifecycle Policies - move files between storage classes
