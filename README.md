@@ -3324,3 +3324,11 @@ Amazon S3 Access Points, a feature of S3, simplifies managing data access at sca
 ## S3 Inventory
 
 Amazon S3 inventory provides a flat file list of your objects and metadata, which is a scheduled alternative to the Amazon S3 synchronous List API operation. Amazon S3 inventory provides comma-separated values (CSV) or Apache optimized row columnar (ORC) or Apache Parquet (Parquet) output files that list your objects and their corresponding metadata on a daily or weekly basis for an S3 bucket or for objects that share a prefix.
+
+- Helps you manage your storage
+- Inventory of objects & various optional fields
+- Encryption, Size, Last Modified, Storage Class, ETag, Version ID, Replication Status, Object Lock, etc..
+- Generate daily or weekly (can't be forced)
+- Output - CSV, ORC, Parquet
+- Multiple inventories can be set up, and they go to a target bucket
+- Same account or different account ... needs a bucket policy
