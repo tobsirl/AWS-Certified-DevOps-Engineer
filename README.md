@@ -252,6 +252,7 @@
     - [S3 Object Lock - Retention Period](#s3-object-lock---retention-period)
     - [S3 Object Lock - Legal Hold](#s3-object-lock---legal-hold)
   - [S3 Access Points](#s3-access-points)
+  - [S3 Inventory](#s3-inventory)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3319,3 +3320,7 @@ Amazon S3 Access Points, a feature of S3, simplifies managing data access at sca
 - multiple access points with multiple policies
 - each access point has its own endpoint address
 - Created via Console or `aws s3control create-access-point --name secretcats --account-id 123456789012 --bucket catpics`
+
+## S3 Inventory
+
+Amazon S3 inventory provides a flat file list of your objects and metadata, which is a scheduled alternative to the Amazon S3 synchronous List API operation. Amazon S3 inventory provides comma-separated values (CSV) or Apache optimized row columnar (ORC) or Apache Parquet (Parquet) output files that list your objects and their corresponding metadata on a daily or weekly basis for an S3 bucket or for objects that share a prefix.
