@@ -3348,3 +3348,9 @@ EFS can play an essential part in building scalable and resilient systems.
 [What is Amazon Elastic File System?](https://docs.aws.amazon.com/efs/latest/ug/whatisefs.html)
 
 [Managing file system storage](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html)
+
+- EFS is an implementation of NFSv4
+- EFS Filesystems can be mounted in Linux
+- Shared between many EC2 instances
+- Private service, via mount targets inside a VPC
+- Can be accessed from on-premises via Direct Connect or VPN
