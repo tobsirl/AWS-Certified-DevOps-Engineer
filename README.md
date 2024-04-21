@@ -257,7 +257,8 @@
   - [FSx for Windows File Server](#fsx-for-windows-file-server)
     - [FSx for Windows File Server - Features and Benefits](#fsx-for-windows-file-server---features-and-benefits)
   - [FSx for Lustre](#fsx-for-lustre)
-    - [FSx for Lustre - How it works](#fsx-for-lustre---how-it-works)
+    - [FSx for Lustre - Information](#fsx-for-lustre---information)
+    - [FSx for Lustre - Scratch](#fsx-for-lustre---scratch)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3411,7 +3412,7 @@ It delivers extreme performance for scenarios such as Big Data, Machine Learning
 - Persistent - longer term, HA (in one AZ), self-healing, backups
 - Accessible over VPN or Direct Connect
 
-### FSx for Lustre - How it works
+### FSx for Lustre - Information
 
 - Metadata stored on Metadata Targets (MST)
 - Objects are stored on called object storage targets (OSTs) (1.13TIB)
@@ -3420,3 +3421,13 @@ It delivers extreme performance for scenarios such as Big Data, Machine Learning
 - For Scratch - Base 200MB/s per TiB of storage
 - Persistents offers 50MB/s per TiB, 100MB/s per TiB, 200MB/s per TiB
 - Burst up to 1,300 MB/s per TiB (Credit System)
+
+### FSx for Lustre - Scratch
+
+- Scratch - Highly optimised for Short term no replication and fast
+- Short term or temp workloads
+- No HA .. No replication
+- Larger file systems means more servers, more disks and more chance of failure
+- Persistent has replication, backups, self-healing within ONE AZ only
+- Auto-heals when hardware failure occurs
+- You can backup to S3 with both!! (Manual or Automatic 0-35 day retention)
