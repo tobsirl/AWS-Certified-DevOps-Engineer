@@ -3401,3 +3401,11 @@ It delivers extreme performance for scenarios such as Big Data, Machine Learning
 [Aggregate file system performance](https://docs.aws.amazon.com/fsx/latest/LustreGuide/performance.html#fsx-aggregate-perf)
 
 [Persistent storage for high-performance workloads using Amazon FSx for Lustre](https://aws.amazon.com/blogs/storage/persistent-storage-for-high-performance-workloads-using-amazon-fsx-for-lustre/)
+
+- Managed Lustre File System - Designed for HPC - Linux Clients (POSIX)
+- Machine Learning, Financial Modelling, Big Data
+- 100's GB/s throughput and sub millisecond latency
+- Deployment types - Persistent and Scratch
+- Scratch - Highly optimised for Short term no replication and fast
+- Persistent - longer term, HA (in one AZ), self-healing, backups
+- Accessible over VPN or Direct Connect
