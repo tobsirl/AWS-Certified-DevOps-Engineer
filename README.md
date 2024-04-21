@@ -257,6 +257,7 @@
   - [FSx for Windows File Server](#fsx-for-windows-file-server)
     - [FSx for Windows File Server - Features and Benefits](#fsx-for-windows-file-server---features-and-benefits)
   - [FSx for Lustre](#fsx-for-lustre)
+    - [FSx for Lustre - How it works](#fsx-for-lustre---how-it-works)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3409,3 +3410,13 @@ It delivers extreme performance for scenarios such as Big Data, Machine Learning
 - Scratch - Highly optimised for Short term no replication and fast
 - Persistent - longer term, HA (in one AZ), self-healing, backups
 - Accessible over VPN or Direct Connect
+
+### FSx for Lustre - How it works
+
+- Metadata stored on Metadata Targets (MST)
+- Objects are stored on called object storage targets (OSTs) (1.13TIB)
+- Baseline performance based on size
+- Size - min 1.2TiB then increments of 2.4TiB
+- For Scratch - Base 200MB/s per TiB of storage
+- Persistents offers 50MB/s per TiB, 100MB/s per TiB, 200MB/s per TiB
+- Burst up to 1,300 MB/s per TiB (Credit System)
