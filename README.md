@@ -255,6 +255,7 @@
   - [S3 Inventory](#s3-inventory)
   - [Elastic File System (EFS)](#elastic-file-system-efs)
   - [FSx for Windows File Server](#fsx-for-windows-file-server)
+    - [FSx for Windows File Server - Features and Benefits](#fsx-for-windows-file-server---features-and-benefits)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3380,3 +3381,12 @@ It provides advanced features such as VSS, Data de-duplication, backups, encrypt
 - Single or Multi-AZ within a VPC
 - On-demand and Scheduled backups
 - Accessible using VPC, Peering, VPN, Direct Connect
+
+### FSx for Windows File Server - Features and Benefits
+
+- VSS - User-Driven Restores
+- Native file system accessible over SMB
+- Windows permission model
+- Supports DFS .. scale-out file share structure
+- Managed - no file server admin
+- Integrations with DS AND your own directory
