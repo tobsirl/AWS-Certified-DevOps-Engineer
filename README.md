@@ -254,6 +254,7 @@
   - [S3 Access Points](#s3-access-points)
   - [S3 Inventory](#s3-inventory)
   - [Elastic File System (EFS)](#elastic-file-system-efs)
+  - [FSx for Windows File Server](#fsx-for-windows-file-server)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3364,3 +3365,18 @@ EFS can play an essential part in building scalable and resilient systems.
 - Standard - default, Infrequent Access - cost effective
 - Lifecycle Management - move files to IA after 30 days
 - Lifecycle Policies - move files between storage classes
+
+## FSx for Windows File Server
+
+FSx for Windows Servers provides a native windows file system as a service which can be used within AWS, or from on-premises environments via VPN or Direct Connect
+
+FSx is an advanced shared file system accessible over SMB, and integrates with Active Directory (either managed, or self-hosted).
+
+It provides advanced features such as VSS, Data de-duplication, backups, encryption at rest and forced encryption in transit.
+
+- Fully managed native windows file servers/shares
+- Designed for integration with windows environments
+- Integrates with Directory Service or Self-Managed AD
+- Single or Multi-AZ within a VPC
+- On-demand and Scheduled backups
+- Accessible using VPC, Peering, VPN, Direct Connect
