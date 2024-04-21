@@ -256,6 +256,7 @@
   - [Elastic File System (EFS)](#elastic-file-system-efs)
   - [FSx for Windows File Server](#fsx-for-windows-file-server)
     - [FSx for Windows File Server - Features and Benefits](#fsx-for-windows-file-server---features-and-benefits)
+  - [FSx for Lustre](#fsx-for-lustre)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3390,3 +3391,13 @@ It provides advanced features such as VSS, Data de-duplication, backups, encrypt
 - Supports DFS .. scale-out file share structure
 - Managed - no file server admin
 - Integrations with DS AND your own directory
+
+## FSx for Lustre
+
+FSx for Lustre is a managed file system which uses the FSx product designed for high performance computing
+
+It delivers extreme performance for scenarios such as Big Data, Machine Learning and Financial Modeling
+
+[Aggregate file system performance](https://docs.aws.amazon.com/fsx/latest/LustreGuide/performance.html#fsx-aggregate-perf)
+
+[Persistent storage for high-performance workloads using Amazon FSx for Lustre](https://aws.amazon.com/blogs/storage/persistent-storage-for-high-performance-workloads-using-amazon-fsx-for-lustre/)
