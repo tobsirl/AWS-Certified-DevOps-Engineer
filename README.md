@@ -260,6 +260,7 @@
     - [FSx for Lustre - Information](#fsx-for-lustre---information)
     - [FSx for Lustre - Scratch](#fsx-for-lustre---scratch)
   - [CloudFront](#cloudfront)
+    - [CloudFront - Behaviours](#cloudfront---behaviours)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3442,3 +3443,9 @@ Amazon CloudFront is a fast content delivery network (CDN) service that securely
 - Distribution - The `configuration` unit of CloudFront
 - Edge Location - Local cache of your data
 - Regional Edge Cache - Larger version of an edge location. Provides another layer of caching.
+
+### CloudFront - Behaviours
+
+CloudFront Behaviours control much of the TTL, protocol and privacy settings within CloudFront
+
+[Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html)
