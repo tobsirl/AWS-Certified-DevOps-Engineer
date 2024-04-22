@@ -259,6 +259,7 @@
   - [FSx for Lustre](#fsx-for-lustre)
     - [FSx for Lustre - Information](#fsx-for-lustre---information)
     - [FSx for Lustre - Scratch](#fsx-for-lustre---scratch)
+  - [CloudFront](#cloudfront)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3431,3 +3432,12 @@ It delivers extreme performance for scenarios such as Big Data, Machine Learning
 - Persistent has replication, backups, self-healing within ONE AZ only
 - Auto-heals when hardware failure occurs
 - You can backup to S3 with both!! (Manual or Automatic 0-35 day retention)
+
+## CloudFront
+
+Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency, high transfer speeds, all within a developer-friendly environment.
+
+- Origin - The source location of your content
+- S3 Origin or Custom Origin
+- Distribution - The `configuration` unit of CloudFront
+- Edge Location - Local cache of your data
