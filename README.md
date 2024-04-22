@@ -3441,3 +3441,4 @@ Amazon CloudFront is a fast content delivery network (CDN) service that securely
 - S3 Origin or Custom Origin
 - Distribution - The `configuration` unit of CloudFront
 - Edge Location - Local cache of your data
+- Regional Edge Cache - Larger version of an edge location. Provides another layer of caching.
