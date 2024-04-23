@@ -3460,3 +3460,4 @@ CloudFront Behaviours control much of the TTL, protocol and privacy settings wit
 - Origin Headers: Cache-Control max-age (seconds)
 - Origin Headers: Cache-Control s-maxage (seconds)
 - Origin Headers: Expires (Date and Time)
+- Custom Origin or S3 (via object metadata)
