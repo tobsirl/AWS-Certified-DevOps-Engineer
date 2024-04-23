@@ -3483,3 +3483,11 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - Data is encrypted in transit
 - Certificates prove identity of the server
 - Chain of trust - Signed by a trusted authority
+- ACM lets you run a public or private Certificate Authority (CA)
+- Private CA - Applications need to trust your private CA
+- Public CA - Browsers trust a list of providers, which can trust other providers
+- ACM can generate or import Certificates
+- If generated ... it can automatically renew
+- If imported .. you are responsible for renewal
+- Certificates can be deployed out to supported services
+- Supported AWS Services ONLY (e.g. CloudFront and ALBs... NOT EC2)
