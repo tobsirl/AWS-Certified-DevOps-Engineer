@@ -263,6 +263,7 @@
     - [CloudFront - Behaviours](#cloudfront---behaviours)
     - [CloudFront - TTL](#cloudfront---ttl)
     - [CloudFront - Invalidations](#cloudfront---invalidations)
+  - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3472,3 +3473,13 @@ CloudFront Behaviours control much of the TTL, protocol and privacy settings wit
 - /images/\*
 - /\*
 - Versioned file names ... whiskers1_v1.jpg
+
+## AWS Certificate Manager (ACM)
+
+AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
+
+- HTTP - Simple and Insecure
+- HTTPS - SSL/TLS Layer of Encryption added to HTTP
+- Data is encrypted in transit
+- Certificates prove identity of the server
+- Chain of trust - Signed by a trusted authority
