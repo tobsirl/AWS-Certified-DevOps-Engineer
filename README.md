@@ -3491,3 +3491,7 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - If imported .. you are responsible for renewal
 - Certificates can be deployed out to supported services
 - Supported AWS Services ONLY (e.g. CloudFront and ALBs... NOT EC2)
+- ACM is a regional service
+- Certs cannot leave the region they are generated or imported in
+- To use a cert with an ALB in ap-southeast-2 you need a cert in ACM in ap-southeast-2
+- Global Services such as CloudFront operate as though within `us-east-1`
