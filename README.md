@@ -261,6 +261,7 @@
     - [FSx for Lustre - Scratch](#fsx-for-lustre---scratch)
   - [CloudFront](#cloudfront)
     - [CloudFront - Behaviours](#cloudfront---behaviours)
+    - [CloudFront - TTL and Invalidations](#cloudfront---ttl-and-invalidations)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3449,3 +3450,9 @@ Amazon CloudFront is a fast content delivery network (CDN) service that securely
 CloudFront Behaviours control much of the TTL, protocol and privacy settings within CloudFront
 
 [Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html)
+
+### CloudFront - TTL and Invalidations
+
+- More frequent cache HITS = lower origin load
+- Deault TTL (behaviour) 24 hours (validity period)
+- You can set Minimum and Maximum TTLs
