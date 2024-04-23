@@ -3456,3 +3456,7 @@ CloudFront Behaviours control much of the TTL, protocol and privacy settings wit
 - More frequent cache HITS = lower origin load
 - Deault TTL (behaviour) 24 hours (validity period)
 - You can set Minimum and Maximum TTLs
+- Origin Headers can be used to set TTLs
+- Origin Headers: Cache-Control max-age (seconds)
+- Origin Headers: Cache-Control s-maxage (seconds)
+- Origin Headers: Expires (Date and Time)
