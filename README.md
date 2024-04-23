@@ -261,7 +261,8 @@
     - [FSx for Lustre - Scratch](#fsx-for-lustre---scratch)
   - [CloudFront](#cloudfront)
     - [CloudFront - Behaviours](#cloudfront---behaviours)
-    - [CloudFront - TTL and Invalidations](#cloudfront---ttl-and-invalidations)
+    - [CloudFront - TTL](#cloudfront---ttl)
+    - [CloudFront - Invalidations](#cloudfront---invalidations)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3451,7 +3452,7 @@ CloudFront Behaviours control much of the TTL, protocol and privacy settings wit
 
 [Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html)
 
-### CloudFront - TTL and Invalidations
+### CloudFront - TTL
 
 - More frequent cache HITS = lower origin load
 - Deault TTL (behaviour) 24 hours (validity period)
@@ -3461,3 +3462,13 @@ CloudFront Behaviours control much of the TTL, protocol and privacy settings wit
 - Origin Headers: Cache-Control s-maxage (seconds)
 - Origin Headers: Expires (Date and Time)
 - Custom Origin or S3 (via object metadata)
+
+### CloudFront - Invalidations
+
+- Cahce Invalidation .. performed on a distribution
+- ... applies to all edge locations ... takes time
+- /images/whiskers1.jpg
+- /images/whiskers\*
+- /images/\*
+- /\*
+- Versioned file names ... whiskers1_v1.jpg
