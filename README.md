@@ -264,6 +264,7 @@
     - [CloudFront - TTL](#cloudfront---ttl)
     - [CloudFront - Invalidations](#cloudfront---invalidations)
   - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
+  - [CloudFront and SSL](#cloudfront-and-ssl)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3495,3 +3496,5 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - Certs cannot leave the region they are generated or imported in
 - To use a cert with an ALB in ap-southeast-2 you need a cert in ACM in ap-southeast-2
 - Global Services such as CloudFront operate as though within `us-east-1`
+
+## CloudFront and SSL
