@@ -3498,3 +3498,5 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - Global Services such as CloudFront operate as though within `us-east-1`
 
 ## CloudFront and SSL
+
+AWS Certificate Manager is a service that lets you easily provision, manage, and deploy public and private Secure Sockets Layer/Transport Layer Security (SSL/TLS) certificates for use with AWS services and your internal connected resources.
