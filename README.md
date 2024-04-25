@@ -265,6 +265,7 @@
     - [CloudFront - Invalidations](#cloudfront---invalidations)
   - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
   - [CloudFront and SSL](#cloudfront-and-ssl)
+  - [CloudFront - Origin Types and Origin Architecture](#cloudfront---origin-types-and-origin-architecture)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3517,3 +3518,11 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - SNI is a TLS extension, allowing a host to be included
 - Resulting in many SSL Certs/Hosts using a shared IP
 - Old browsers don't support SNI ... CF charges extra for dedicated IP
+
+## CloudFront - Origin Types and Origin Architecture
+
+CloudFront origins store content distributed via edge locations.
+
+The features available differ based on using S3 origins vs Custom origins
+
+[Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html#secure-connections-supported-ciphers)
