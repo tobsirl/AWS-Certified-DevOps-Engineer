@@ -3504,4 +3504,6 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - CloudFront Default Domain Name (CNAME) - https://d1234.cloudfront.net
 - SSL Supported by default ... \*.cloudfront.net certificate
 - Alternate Domain Name (CNAMES) - e.g. cdn.mydomain.com
+- Verify Ownership (optionally HTTPS) using a matching certificate
+- Generate or import in ACM .. in us-east-1
 -
