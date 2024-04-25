@@ -3509,3 +3509,11 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - HTTP or HTTPS, HTTP => HTTPS, HTTPS Only
 - Two SSL Connections: Viewer => CloudFront and CloudFront => Origin
 - Both Need valid public certificates (and intermediate certs)
+
+- Historically every SSL enabled site needed its own IP
+- Encryption starts at the TCP connection
+- Host headers happens after that - Layer 7 // Application Layer
+- SNI - Server Name Indication - allows multiple SSL sites on one IP
+- SNI is a TLS extension, allowing a host to be included
+- Resulting in many SSL Certs/Hosts using a shared IP
+- Old browsers don't support SNI ... CF charges extra for dedicated IP
