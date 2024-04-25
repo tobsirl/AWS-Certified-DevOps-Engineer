@@ -3506,4 +3506,6 @@ AWS Certificate Manager is a service that lets you easily provision, manage, and
 - Alternate Domain Name (CNAMES) - e.g. cdn.mydomain.com
 - Verify Ownership (optionally HTTPS) using a matching certificate
 - Generate or import in ACM .. in us-east-1
--
+- HTTP or HTTPS, HTTP => HTTPS, HTTPS Only
+- Two SSL Connections: Viewer => CloudFront and CloudFront => Origin
+- Both Need valid public certificates (and intermediate certs)
