@@ -267,7 +267,8 @@
   - [CloudFront and SSL](#cloudfront-and-ssl)
   - [CloudFront - Origin Types and Origin Architecture](#cloudfront---origin-types-and-origin-architecture)
   - [CloudFront - Security](#cloudfront---security)
-    - [CloudFront - Origin Access Identity (OAI)](#cloudfront---origin-access-identity-oai)
+    - [CloudFront - Origin Access Identity (OAI) - S3 Origins](#cloudfront---origin-access-identity-oai---s3-origins)
+    - [CloudFront - Origin Access Identity (OAI) - Custom Origins](#cloudfront---origin-access-identity-oai---custom-origins)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3531,10 +3532,17 @@ The features available differ based on using S3 origins vs Custom origins
 
 ## CloudFront - Security
 
-### CloudFront - Origin Access Identity (OAI)
+### CloudFront - Origin Access Identity (OAI) - S3 Origins
 
 - An OAI is a type of identity
 - It can be associated with CloudFront Distributions
 - CloudFront becomes that OAI
 - That OAI can be used in S3 Bucket Policies
 - Deny all but one or more OAI's
+
+### CloudFront - Origin Access Identity (OAI) - Custom Origins
+
+- OAI can be used to restrict access to Custom Origins
+- OAI can be used in the Origin Policy
+- Requires custom headers to be set on the Origin
+- Custom Origins can use either approch or a combination of both
