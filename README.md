@@ -266,6 +266,8 @@
   - [AWS Certificate Manager (ACM)](#aws-certificate-manager-acm)
   - [CloudFront and SSL](#cloudfront-and-ssl)
   - [CloudFront - Origin Types and Origin Architecture](#cloudfront---origin-types-and-origin-architecture)
+  - [CloudFront - Security](#cloudfront---security)
+    - [CloudFront - Origin Access Identity (OAI)](#cloudfront---origin-access-identity-oai)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3526,3 +3528,13 @@ CloudFront origins store content distributed via edge locations.
 The features available differ based on using S3 origins vs Custom origins
 
 [Supported protocols and ciphers between viewers and CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html#secure-connections-supported-ciphers)
+
+## CloudFront - Security
+
+### CloudFront - Origin Access Identity (OAI)
+
+- An OAI is a type of identity
+- It can be associated with CloudFront Distributions
+- CloudFront becomes that OAI
+- That OAI can be used in S3 Bucket Policies
+- Deny all but one or more OAI's
