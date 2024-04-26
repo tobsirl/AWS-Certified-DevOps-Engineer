@@ -269,6 +269,8 @@
   - [CloudFront - Security](#cloudfront---security)
     - [CloudFront - Origin Access Identity (OAI) - S3 Origins](#cloudfront---origin-access-identity-oai---s3-origins)
     - [CloudFront - Origin Access Identity (OAI) - Custom Origins](#cloudfront---origin-access-identity-oai---custom-origins)
+    - [CloudFront - Private Distributions](#cloudfront---private-distributions)
+    - [CloudFront - Signed URLs and Signed Cookies](#cloudfront---signed-urls-and-signed-cookies)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3546,3 +3548,15 @@ The features available differ based on using S3 origins vs Custom origins
 - OAI can be used in the Origin Policy
 - Requires custom headers to be set on the Origin
 - Custom Origins can use either approch or a combination of both
+
+### CloudFront - Private Distributions
+
+- Public - Open Access to objects
+- Private - requests require Signed Cookie or URL
+- 1 Behaviour - Whole Distribution PUBLIC or PRIVATE
+- Multiple Behaviours - each is PUBLIC or PRIVATE
+- OLD - A CloudFront Key is created by an Account Root User
+- OLD - The account is added as a TRUSTED SIGNER
+- NEW - TRUSTED KEY GROUPS
+
+### CloudFront - Signed URLs and Signed Cookies
