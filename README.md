@@ -3560,3 +3560,10 @@ The features available differ based on using S3 origins vs Custom origins
 - NEW - TRUSTED KEY GROUPS
 
 ### CloudFront - Signed URLs and Signed Cookies
+
+- SignedURLs provides access to one object
+- Historically RTMP distributions couldn't use cookies
+- Use URL's if your client doesn't support cookies
+- Cookies provides access to groups of objects
+- Use for groups of files / all files of a type - e.g. all cat gifs
+- Or if maintaining application URL's is important
