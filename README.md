@@ -275,6 +275,7 @@
     - [CloudFront - Geo Restriction - White List / Black List](#cloudfront---geo-restriction---white-list--black-list)
     - [CloudFront - 3rd Party Geolocation](#cloudfront---3rd-party-geolocation)
   - [CloudFront - Lambda@Edge](#cloudfront---lambdaedge)
+    - [CloudFront - Lambda@Edge - Use Cases](#cloudfront---lambdaedge---use-cases)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3607,3 +3608,13 @@ Lambda@Edge allows CloudFront to run lambda function at CloudFront edge location
 - Run in the AWS Public Space (Not VPC)
 - Layers are not supported
 - Different Limits vs Normal Lambda Functions
+
+### CloudFront - Lambda@Edge - Use Cases
+
+- A/B Testing - Viewer Request
+- Migration Between S3 Origins - Origin Request
+- Different Objects Based on Device - Origin Request
+- Content By Country - Origin Request
+- Security Headers - Viewer Response
+- Custom Headers - Viewer Request
+- Custom Error Pages - Viewer Response
