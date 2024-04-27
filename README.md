@@ -3603,3 +3603,7 @@ Lambda@Edge allows CloudFront to run lambda function at CloudFront edge location
 
 - You can run lightweight Lambda at edge locations
 - Adjust data between the Viewer and Origin
+- Currently support Node.js and Python
+- Run in the AWS Public Space (Not VPC)
+- Layers are not supported
+- Different Limits vs Normal Lambda Functions
