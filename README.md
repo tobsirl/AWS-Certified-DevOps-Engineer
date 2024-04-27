@@ -3600,3 +3600,6 @@ The built in feature set - CloudFront Geo Restriction allows for White or Black 
 Lambda@Edge allows CloudFront to run lambda function at CloudFront edge locations to modify traffic between the viewer and edge location and edge locations and origins.
 
 [Example: Redirecting viewer requests to a country-specific URL](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-examples.html#lambda-examples-redirecting-examples)
+
+- You can run lightweight Lambda at edge locations
+- Adjust data between the Viewer and Origin
