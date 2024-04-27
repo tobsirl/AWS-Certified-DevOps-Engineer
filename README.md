@@ -271,6 +271,9 @@
     - [CloudFront - Origin Access Identity (OAI) - Custom Origins](#cloudfront---origin-access-identity-oai---custom-origins)
     - [CloudFront - Private Distributions](#cloudfront---private-distributions)
     - [CloudFront - Signed URLs and Signed Cookies](#cloudfront---signed-urls-and-signed-cookies)
+  - [CloudFront - Geo Restriction](#cloudfront---geo-restriction)
+    - [CloudFront - Geo Restriction - White List / Black List](#cloudfront---geo-restriction---white-list--black-list)
+    - [CloudFront - 3rd Party Geolocation](#cloudfront---3rd-party-geolocation)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3567,3 +3570,23 @@ The features available differ based on using S3 origins vs Custom origins
 - Cookies provides access to groups of objects
 - Use for groups of files / all files of a type - e.g. all cat gifs
 - Or if maintaining application URL's is important
+
+## CloudFront - Geo Restriction
+
+There are two common architectures for restricting access to content via CloudFront.
+
+The built in feature set - CloudFront Geo Restriction allows for White or Black list restrictions based on ONLY Country Code
+
+3rd Party Geolocation requires a compute instance, a private distribution and the generation of signed URLs or Cookies - but can restrict based on almost anything (licensing, user login status, user profile fields and much more)
+
+### CloudFront - Geo Restriction - White List / Black List
+
+- White List - Allow only these countries
+- Black List - Deny only these countries
+- Countries only - No IP ranges
+- GeoIP Database 99.8%+ Accurate
+- Applies to the entire distribution
+
+### CloudFront - 3rd Party Geolocation
+
+- Completely customisable
