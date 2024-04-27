@@ -274,6 +274,7 @@
   - [CloudFront - Geo Restriction](#cloudfront---geo-restriction)
     - [CloudFront - Geo Restriction - White List / Black List](#cloudfront---geo-restriction---white-list--black-list)
     - [CloudFront - 3rd Party Geolocation](#cloudfront---3rd-party-geolocation)
+  - [CloudFront - Lambda@Edge](#cloudfront---lambdaedge)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3593,3 +3594,9 @@ The built in feature set - CloudFront Geo Restriction allows for White or Black 
 - Requires a compute instance
 - Requires a private distribution
 - Requires signed URLs or Cookies
+
+## CloudFront - Lambda@Edge
+
+Lambda@Edge allows CloudFront to run lambda function at CloudFront edge locations to modify traffic between the viewer and edge location and edge locations and origins.
+
+[Example: Redirecting viewer requests to a country-specific URL](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/lambda-examples.html#lambda-examples-redirecting-examples)
