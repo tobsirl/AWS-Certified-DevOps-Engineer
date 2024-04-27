@@ -3590,3 +3590,6 @@ The built in feature set - CloudFront Geo Restriction allows for White or Black 
 ### CloudFront - 3rd Party Geolocation
 
 - Completely customisable
+- Requires a compute instance
+- Requires a private distribution
+- Requires signed URLs or Cookies
