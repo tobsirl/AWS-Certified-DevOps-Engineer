@@ -277,6 +277,7 @@
   - [CloudFront - Lambda@Edge](#cloudfront---lambdaedge)
     - [CloudFront - Lambda@Edge - Use Cases](#cloudfront---lambdaedge---use-cases)
   - [Amazon DynamoDB](#amazon-dynamodb)
+    - [DynamoDB - Tables](#dynamodb---tables)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3631,3 +3632,13 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - Really fast .. single-digit millisecond latency (SSD based)
 - Backups, point-in-time recovery, encryption at rest
 - Event-Driven integration ... do things when data changes
+
+### DynamoDB - Tables
+
+- A Table is a grouping of ITEMS with the same PRIMARY KEY
+- Simple (Partition Key) or Composite (Partition Key and Sort Key)
+- Each item must have a unique value for PK and SK
+- No rigid attribute schema - each item can have different attributes
+- No fixed schema - each item can have different attributes
+- Item size limit 400KB
+- Capacity Modes - On-Demand or Provisioned
