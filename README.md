@@ -276,6 +276,7 @@
     - [CloudFront - 3rd Party Geolocation](#cloudfront---3rd-party-geolocation)
   - [CloudFront - Lambda@Edge](#cloudfront---lambdaedge)
     - [CloudFront - Lambda@Edge - Use Cases](#cloudfront---lambdaedge---use-cases)
+  - [Amazon DynamoDB](#amazon-dynamodb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3618,3 +3619,15 @@ Lambda@Edge allows CloudFront to run lambda function at CloudFront edge location
 - Security Headers - Viewer Response
 - Custom Headers - Viewer Request
 - Custom Error Pages - Viewer Response
+
+## Amazon DynamoDB
+
+DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product available within AWS.
+
+- NoSQL Public Database-as-a-Service (DBaaS) - Key/Value and Document
+- No self-managed server or infrastructure
+- Manual / Automatic provisioned performance IN/OUT or On-Demand
+- Highly Resilient ... across AZs and optionally global
+- Really fast .. single-digit millisecond latency (SSD based)
+- Backups, point-in-time recovery, encryption at rest
+- Event-Driven integration ... do things when data changes
