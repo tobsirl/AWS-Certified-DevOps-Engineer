@@ -279,6 +279,7 @@
   - [Amazon DynamoDB](#amazon-dynamodb)
     - [DynamoDB - Tables](#dynamodb---tables)
     - [DynamoDB - On-Demand Backups](#dynamodb---on-demand-backups)
+    - [DynamoDB - Reading and Writing](#dynamodb---reading-and-writing)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3655,3 +3656,14 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - Retention Period - 35 days
 - Backups are stored in S3
 - 1 second granularity for PITR - need to enable
+
+### DynamoDB - Reading and Writing
+
+- On-Demand - Pay per request, best for unpredictable workloads, low admin overhead
+- On-Demand - price per million RCU/WCU
+- Provisioned - Pay for capacity, best for predictable workloads
+- Provisioned - price per RCU/WCU per hour set on a per table basis
+- Every operation consumes at least 1 RCU or WCU
+- 1 RCU is 1 x 4KB read operation per second
+- 1 WCU is 1 x 1KB write operation per second
+- Every table has a RCU and WCU burst pool (300 seconds)
