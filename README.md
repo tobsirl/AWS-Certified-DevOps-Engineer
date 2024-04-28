@@ -3694,4 +3694,5 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - One Leader Node - Writes to all 3 copies
 - Writes are always directed at the leader node
 - The Leader node replicates data to the storage nodes
-- Eventually Consistent Reads - Default
+- Eventually Consistent Reads - Read from any of the 3 nodes
+- Potential for stale data
