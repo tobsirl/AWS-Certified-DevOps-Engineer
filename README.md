@@ -3659,6 +3659,8 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 
 ### DynamoDB - Reading and Writing
 
+[Capacity unit consumption for writes](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/ProvisionedThroughput.html#ItemSizeCalculations.Writes)
+
 - On-Demand - Pay per request, best for unpredictable workloads, low admin overhead
 - On-Demand - price per million RCU/WCU
 - Provisioned - Pay for capacity, best for predictable workloads
