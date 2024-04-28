@@ -3654,3 +3654,4 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - Point-in-Time Recovery - Restore to any point in time
 - Retention Period - 35 days
 - Backups are stored in S3
+- 1 second granularity for PITR - need to enable
