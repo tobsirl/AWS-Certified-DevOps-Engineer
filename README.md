@@ -3642,3 +3642,6 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - No fixed schema - each item can have different attributes
 - Item size limit 400KB
 - Capacity Modes - On-Demand or Provisioned
+- Capacity Units - Read Capacity Units (RCU) and Write Capacity Units (WCU)
+- 1 RCU = 4KB/s Read
+- 1 WCU = 1KB/s Write
