@@ -280,7 +280,8 @@
     - [DynamoDB - Tables](#dynamodb---tables)
     - [DynamoDB - On-Demand Backups](#dynamodb---on-demand-backups)
     - [DynamoDB - Reading and Writing](#dynamodb---reading-and-writing)
-    - [DynamoDB - Query and Scan](#dynamodb---query-and-scan)
+    - [DynamoDB - Query](#dynamodb---query)
+    - [DynamoDB - Scan](#dynamodb---scan)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3671,9 +3672,17 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - 1 WCU is 1 x 1KB write operation per second
 - Every table has a RCU and WCU burst pool (300 seconds)
 
-### DynamoDB - Query and Scan
+### DynamoDB - Query
 
 - Query accepts a single PK value and optionally a SK value or range
 - Capacity consumed is the size of all returned items
 - Further filtering discards data - capacity is still consumed
 - Can ONLY query on PK or PK and SK
+
+### DynamoDB - Scan
+
+- Scan reads every item in the table
+- Scan moves through a table consuming the capacity of every item.
+- You have complete control on what data is selected, any attributes can be used and any filters.
+- Scans can be expensive in terms of capacity and time
+- Scan is not efficient for large tables
