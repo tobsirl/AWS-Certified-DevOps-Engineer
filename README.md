@@ -278,6 +278,7 @@
     - [CloudFront - Lambda@Edge - Use Cases](#cloudfront---lambdaedge---use-cases)
   - [Amazon DynamoDB](#amazon-dynamodb)
     - [DynamoDB - Tables](#dynamodb---tables)
+    - [DynamoDB - On-Demand Backups](#dynamodb---on-demand-backups)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3645,3 +3646,11 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - Capacity Units - Read Capacity Units (RCU) and Write Capacity Units (WCU)
 - 1 RCU = 4KB/s Read
 - 1 WCU = 1KB/s Write
+
+### DynamoDB - On-Demand Backups
+
+- On-Demand Backups - Full copy of the table
+- Restore - Same or Cross Region, with or without indexes, adjust encryption settings
+- Point-in-Time Recovery - Restore to any point in time
+- Retention Period - 35 days
+- Backups are stored in S3
