@@ -282,6 +282,7 @@
     - [DynamoDB - Reading and Writing](#dynamodb---reading-and-writing)
     - [DynamoDB - Query](#dynamodb---query)
     - [DynamoDB - Scan](#dynamodb---scan)
+    - [DynamoDB - Consistency Model](#dynamodb---consistency-model)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3686,3 +3687,11 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - You have complete control on what data is selected, any attributes can be used and any filters.
 - Scans can be expensive in terms of capacity and time
 - Scan is not efficient for large tables
+
+### DynamoDB - Consistency Model
+
+- Storage Nodes - 3 copies of data in 3 AZs
+- One Leader Node - Writes to all 3 copies
+- Writes are always directed at the leader node
+- The Leader node replicates data to the storage nodes
+- Eventually Consistent Reads - Default
