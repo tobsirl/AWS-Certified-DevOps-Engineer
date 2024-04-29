@@ -3705,3 +3705,10 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 Local Secondary Indexes (LSI) and Global Secondary Indexes (GSI) allow for an alternative presentation of data stored in a base table.
 
 LSI allow for alternative SK's whereas with GSIs you can use alternative PK and SK.
+
+- Query is the most efficient operation in DDB
+- Query can only work on 1 PK value at a time
+- and optionally 1 SK value or range
+- Indexes are alternative views on the table data
+- Different SK (LSI) or Different PK and SK (GSI)
+- Some or all attributes can be projected into the index
