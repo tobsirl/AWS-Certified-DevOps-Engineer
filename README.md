@@ -3722,3 +3722,4 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Alternative SK on the table
 - Shares the RCU and WCU with the table
 - Attributes - All, KEYS_ONLY, INCLUDE
+- LSI's are an alternative view on the base table data using the same PK and a different SK
