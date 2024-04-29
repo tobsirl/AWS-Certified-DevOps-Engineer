@@ -285,6 +285,7 @@
     - [DynamoDB - Consistency Model](#dynamodb---consistency-model)
     - [DynamoDB - Indexes (LSI and GSI)](#dynamodb---indexes-lsi-and-gsi)
       - [DynamoDB - LSI](#dynamodb---lsi)
+      - [DynamoDB - GSI](#dynamodb---gsi)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3723,3 +3724,12 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Shares the RCU and WCU with the table
 - Attributes - All, KEYS_ONLY, INCLUDE
 - LSI's are an alternative view on the base table data using the same PK and a different SK
+- Indexes are sparse, only items which have a value in the index alternative sort key are added to the index
+
+#### DynamoDB - GSI
+
+- Can be created at any time
+- Default limit of 20 per base table
+- Alternative PK and SK
+- GSI's have their own RCU and WCU allocations
+- Attributes - ALL, KEYS_ONLY, INCLUDE
