@@ -283,6 +283,7 @@
     - [DynamoDB - Query](#dynamodb---query)
     - [DynamoDB - Scan](#dynamodb---scan)
     - [DynamoDB - Consistency Model](#dynamodb---consistency-model)
+    - [DynamoDB - Indexes (LSI and GSI)](#dynamodb---indexes-lsi-and-gsi)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3698,3 +3699,9 @@ DynamoDB is a NoSQL fully managed Database-as-a-Service (DBaaS) product availabl
 - Potential for stale data
 - Strongly Consistent Reads - Read from the leader node
 - Not every application or access type tolerates eventual consistency
+
+### DynamoDB - Indexes (LSI and GSI)
+
+Local Secondary Indexes (LSI) and Global Secondary Indexes (GSI) allow for an alternative presentation of data stored in a base table.
+
+LSI allow for alternative SK's whereas with GSIs you can use alternative PK and SK.
