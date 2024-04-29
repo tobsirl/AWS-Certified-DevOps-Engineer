@@ -284,6 +284,7 @@
     - [DynamoDB - Scan](#dynamodb---scan)
     - [DynamoDB - Consistency Model](#dynamodb---consistency-model)
     - [DynamoDB - Indexes (LSI and GSI)](#dynamodb---indexes-lsi-and-gsi)
+      - [DynamoDB - LSI](#dynamodb---lsi)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3712,3 +3713,12 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Indexes are alternative views on the table data
 - Different SK (LSI) or Different PK and SK (GSI)
 - Some or all attributes can be projected into the index
+
+#### DynamoDB - LSI
+
+- LSI is an alternative view for a table
+- MUST be created with a table
+- 5 LSI's per base table
+- Alternative SK on the table
+- Shares the RCU and WCU with the table
+- Attributes - All, KEYS_ONLY, INCLUDE
