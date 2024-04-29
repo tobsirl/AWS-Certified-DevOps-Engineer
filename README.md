@@ -287,6 +287,7 @@
       - [DynamoDB - LSI](#dynamodb---lsi)
       - [DynamoDB - GSI](#dynamodb---gsi)
       - [DynamoDB - Considertions](#dynamodb---considertions)
+  - [DynamoDB - Streams and Triggers](#dynamodb---streams-and-triggers)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3744,3 +3745,11 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Queries on attributes NOT projected are expensive
 - Use GSIs as default, LSI only when strong consistency is required
 - Use indexes for alternative access patterns
+
+## DynamoDB - Streams and Triggers
+
+- Time ordered list of ITEM CHANGES in a table
+- 24-hour rolling window
+- Enabled on a per table basis
+- Records INSERTS, UPDATES, DELETES
+- Different view types influence what is in the stream
