@@ -3753,3 +3753,4 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Enabled on a per table basis
 - Records INSERTS, UPDATES, DELETES
 - Different view types influence what is in the stream
+- View types - KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES
