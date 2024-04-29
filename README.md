@@ -286,6 +286,7 @@
     - [DynamoDB - Indexes (LSI and GSI)](#dynamodb---indexes-lsi-and-gsi)
       - [DynamoDB - LSI](#dynamodb---lsi)
       - [DynamoDB - GSI](#dynamodb---gsi)
+      - [DynamoDB - Considertions](#dynamodb---considertions)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3736,3 +3737,10 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - GSI's are an alternative view on the base table with alternative PK and SK they have their own RCU and WRU and can be created at any time
 - GSI's are sparse, only items which have values in the new PK and optional SK are added
 - GSI's are always eventually consistent, replication between base and GSI is Asynchronous
+
+#### DynamoDB - Considertions
+
+- Careful with projection (ALL, KEYS_ONLY, INCLUDE)
+- Queries on attributes NOT projected are expensive
+- Use GSIs as default, LSI only when strong consistency is required
+- Use indexes for alternative access patterns
