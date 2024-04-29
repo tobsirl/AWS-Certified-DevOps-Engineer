@@ -289,6 +289,7 @@
       - [DynamoDB - Considertions](#dynamodb---considertions)
   - [DynamoDB - Streams and Triggers](#dynamodb---streams-and-triggers)
     - [DynamoDB - Trigger Concepts](#dynamodb---trigger-concepts)
+  - [](#)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3767,3 +3768,5 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - 1. ITEM change occurs in a table with streams enabled
 - 2. Stream Record is added onto stream
 - 3. Lambda function is invoked when stream event occurs. Function is passed the VIEW data as an event
+
+##
