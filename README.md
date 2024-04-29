@@ -288,6 +288,7 @@
       - [DynamoDB - GSI](#dynamodb---gsi)
       - [DynamoDB - Considertions](#dynamodb---considertions)
   - [DynamoDB - Streams and Triggers](#dynamodb---streams-and-triggers)
+    - [DynamoDB - Trigger Concepts](#dynamodb---trigger-concepts)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3754,3 +3755,15 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - Records INSERTS, UPDATES, DELETES
 - Different view types influence what is in the stream
 - View types - KEYS_ONLY, NEW_IMAGE, OLD_IMAGE, NEW_AND_OLD_IMAGES
+
+### DynamoDB - Trigger Concepts
+
+- ITEM changes generate an event
+- That event contains the data which changed
+- An action is taken using that data
+- AWS = Streams + Lambda
+- Reporting and Analytics
+- Aggregation, Messaging, Notifications
+- 1. ITEM change occurs in a table with streams enabled
+- 2. Stream Record is added onto stream
+- 3. Lambda function is invoked when stream event occurs. Function is passed the VIEW data as an event
