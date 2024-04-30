@@ -3814,6 +3814,8 @@ DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache
 
 ## DynamoDB Global Tables
 
+DynamoDB Global Tables provides multi-master global replication of DynamoDB tables which can be used for performance, HA or DR/BC reasons.
+
 - Global tables provides multi-master cross-region replication
 - Tables are created in multiple regions and added to the same global table (becoming replica tables)
 - Last writer wins is used for conflict resolution
