@@ -294,6 +294,7 @@
     - [DAX SDK](#dax-sdk)
     - [DAX Architecture](#dax-architecture)
       - [DAX Considerations](#dax-considerations)
+  - [DynamoDB Global Tables](#dynamodb-global-tables)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3810,3 +3811,12 @@ DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache
 - Scale UP and Scale OUT (Bigger or More)
 - Supports write-through
 - DAX Deployed WITHIN a VPC
+
+## DynamoDB Global Tables
+
+- Global tables provides multi-master cross-region replication
+- Tables are created in multiple regions and added to the same global table (becoming replica tables)
+- Last writer wins is used for conflict resolution
+- Reads and Writes can occur to any region
+- Generally sub-second replication between regions
+- Strongly consistent reads ONLY in the same region as writes
