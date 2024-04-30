@@ -3833,3 +3833,5 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - A Per-Partition process periodically runs, checking the current time (in seconds since epoch) to the value in the TTL attribute
 - ITEMS where the TTL attribute is older than the current time are set to expired
 - Another per-partition background process scans for expired items and removes them from tables and indexes and a delete is added to streams if enabled
+- Any DELETE operations caused by TTL are background system processes and don't impact table performance and aren't chargeable
+- A stream of TTL delections can be enabled (24 hour window)
