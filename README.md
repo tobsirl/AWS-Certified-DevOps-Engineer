@@ -290,6 +290,8 @@
   - [DynamoDB - Streams and Triggers](#dynamodb---streams-and-triggers)
     - [DynamoDB - Trigger Concepts](#dynamodb---trigger-concepts)
   - [DynamoDB - Accelerator (DAX)](#dynamodb---accelerator-dax)
+    - [Traditional Cache](#traditional-cache)
+    - [DAX SDK](#dax-sdk)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3773,6 +3775,14 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 
 DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement - from milliseconds to microseconds - even at millions of requests per second.
 
+### Traditional Cache
+
 - 1. Application checks the cache for data - a CACHE MISS occurs if data isn't cached
 - 2. Data is loaded from the database with a separate operation and SDK
 - 3. Cache is updated with retrieved data. Subsequent queries will load data from cache as a CACHE HIT
+
+### DAX SDK
+
+- 1. Application uses the DAX SDK and makes a single call for the data which is returned by DAX
+- 2. DAX either returns the data from its cache or retrieves it from the database and then caches it
+- Less complexity for the app developer - tighter integration with DynamoDB
