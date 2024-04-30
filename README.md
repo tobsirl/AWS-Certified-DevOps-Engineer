@@ -292,6 +292,7 @@
   - [DynamoDB - Accelerator (DAX)](#dynamodb---accelerator-dax)
     - [Traditional Cache](#traditional-cache)
     - [DAX SDK](#dax-sdk)
+    - [DAX Architecture](#dax-architecture)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3786,3 +3787,16 @@ DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache
 - 1. Application uses the DAX SDK and makes a single call for the data which is returned by DAX
 - 2. DAX either returns the data from its cache or retrieves it from the database and then caches it
 - Less complexity for the app developer - tighter integration with DynamoDB
+
+### DAX Architecture
+
+- DAX is a cluster of nodes
+- Each node is an EC2 instance
+- Each node has a copy of the data
+- Item cache holds results of (Batch) GetItem and Query operations
+- The query cache holds data based on query/scan parameters
+- Read replicas in other AZs can be used to increase read capacity
+- DAX is accessed via an endpoint in the VPC
+- Cache HITS are returned in microseconds ... MISSES in milliseconds
+- Write-Through is supported, data is written to DDB then DAX
+- If a CACHE MISS occurs data is also written to the primary node of the cluster
