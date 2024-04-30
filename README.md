@@ -289,7 +289,7 @@
       - [DynamoDB - Considertions](#dynamodb---considertions)
   - [DynamoDB - Streams and Triggers](#dynamodb---streams-and-triggers)
     - [DynamoDB - Trigger Concepts](#dynamodb---trigger-concepts)
-  - [](#)
+  - [DynamoDB - Accelerator (DAX)](#dynamodb---accelerator-dax)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3769,4 +3769,10 @@ LSI allow for alternative SK's whereas with GSIs you can use alternative PK and 
 - 2. Stream Record is added onto stream
 - 3. Lambda function is invoked when stream event occurs. Function is passed the VIEW data as an event
 
-##
+## DynamoDB - Accelerator (DAX)
+
+DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for DynamoDB that delivers up to a 10x performance improvement - from milliseconds to microseconds - even at millions of requests per second.
+
+- 1. Application checks the cache for data - a CACHE MISS occurs if data isn't cached
+- 2. Data is loaded from the database with a separate operation and SDK
+- 3. Cache is updated with retrieved data. Subsequent queries will load data from cache as a CACHE HIT
