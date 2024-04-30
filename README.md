@@ -295,6 +295,7 @@
     - [DAX Architecture](#dax-architecture)
       - [DAX Considerations](#dax-considerations)
   - [DynamoDB Global Tables](#dynamodb-global-tables)
+  - [DynamoDB TTL](#dynamodb-ttl)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3822,3 +3823,13 @@ DynamoDB Global Tables provides multi-master global replication of DynamoDB tabl
 - Reads and Writes can occur to any region
 - Generally sub-second replication between regions
 - Strongly consistent reads ONLY in the same region as writes
+
+## DynamoDB TTL
+
+Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to determine when an item is no longer needed. Shortly after the date and time of the specified timestamp, DynamoDB deletes the item from your table without consuming any write throughput. TTL is provided at no extra cost as a means to reduce stored data volumes by retaining only the items that remain current for your workload’s needs.
+
+- Timestamp for automatic DELETE of ITEMS
+- When TTL is enabled on a table a specific attribute is selected for TTL
+- A Per-Partition process periodically runs, checking the current time (in seconds since epoch) to the value in the TTL attribute
+- ITEMS where the TTL attribute is older than the current time are set to expired
+- Another per-partition background process scans for expired items and removes them from tables and indexes and a delete is added to streams if enabled
