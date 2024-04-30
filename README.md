@@ -293,6 +293,7 @@
     - [Traditional Cache](#traditional-cache)
     - [DAX SDK](#dax-sdk)
     - [DAX Architecture](#dax-architecture)
+      - [DAX Considerations](#dax-considerations)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3800,3 +3801,12 @@ DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache
 - Cache HITS are returned in microseconds ... MISSES in milliseconds
 - Write-Through is supported, data is written to DDB then DAX
 - If a CACHE MISS occurs data is also written to the primary node of the cluster
+
+#### DAX Considerations
+
+- Primary NODE (Writes) and Replicas (Reads)
+- Nodes are HA .. Primary failure = election
+- In-Memory Cache - Scaling .. Much faster reads, reduced costs
+- Scale UP and Scale OUT (Bigger or More)
+- Supports write-through
+- DAX Deployed WITHIN a VPC
