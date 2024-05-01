@@ -3845,6 +3845,7 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 ### High Availability
 
 - Aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period
+- High-Availability - Minimise downtime
 
 ### Fault Tolerance
 
@@ -3852,9 +3853,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Fault tolerance is achieved by redundancy in hardware and software
 - Fault tolerance enables a system to continue operating properly in the event of the failure of some of its components
 - Fault tolerance is particularly important in high-availability systems
+- Fault tolerance - Operate Through Faults
 
 ### Disaster Recovery
 
 - Set of policies, tools and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster
 - Pre-planning and testing is essential
 - DR Process - Risk Assessment, Business Impact Analysis, Strategy Development, Plan Development, Testing and Training, Maintenance
+- Disaster Recover - Used when High-Availability and Fault Tolerance fail
