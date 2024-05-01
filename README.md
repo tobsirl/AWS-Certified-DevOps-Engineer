@@ -299,6 +299,7 @@
   - [High Availability vs Fault Tolerance vs Disaster Recovery](#high-availability-vs-fault-tolerance-vs-disaster-recovery)
     - [High Availability](#high-availability)
     - [Fault Tolerance](#fault-tolerance)
+    - [Disaster Recovery](#disaster-recovery)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3850,3 +3851,8 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - The ability of a system to continue operating in the event of a failure of a component
 - Fault tolerance is achieved by redundancy in hardware and software
 - Fault tolerance enables a system to continue operating properly in the event of the failure of some of its components
+- Fault tolerance is particularly important in high-availability systems
+
+### Disaster Recovery
+
+- Set of policies, tools and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster
