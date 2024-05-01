@@ -296,6 +296,7 @@
       - [DAX Considerations](#dax-considerations)
   - [DynamoDB Global Tables](#dynamodb-global-tables)
   - [DynamoDB TTL](#dynamodb-ttl)
+  - [High Availability vs Fault Tolerance vs Disaster Recovery](#high-availability-vs-fault-tolerance-vs-disaster-recovery)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3835,3 +3836,5 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Another per-partition background process scans for expired items and removes them from tables and indexes and a delete is added to streams if enabled
 - Any DELETE operations caused by TTL are background system processes and don't impact table performance and aren't chargeable
 - A stream of TTL delections can be enabled (24 hour window)
+
+## High Availability vs Fault Tolerance vs Disaster Recovery
