@@ -3856,3 +3856,5 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 ### Disaster Recovery
 
 - Set of policies, tools and procedures to enable the recovery or continuation of vital technology infrastructure and systems following a natural or human-induced disaster
+- Pre-planning and testing is essential
+- DR Process - Risk Assessment, Business Impact Analysis, Strategy Development, Plan Development, Testing and Training, Maintenance
