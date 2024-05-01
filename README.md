@@ -297,6 +297,7 @@
   - [DynamoDB Global Tables](#dynamodb-global-tables)
   - [DynamoDB TTL](#dynamodb-ttl)
   - [High Availability vs Fault Tolerance vs Disaster Recovery](#high-availability-vs-fault-tolerance-vs-disaster-recovery)
+    - [High Availability](#high-availability)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3838,3 +3839,7 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - A stream of TTL delections can be enabled (24 hour window)
 
 ## High Availability vs Fault Tolerance vs Disaster Recovery
+
+### High Availability
+
+- Aims to ensure an agreed level of operational performance, usually uptime, for a higher than normal period
