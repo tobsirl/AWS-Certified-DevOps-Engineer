@@ -3894,3 +3894,9 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Critical components such as Databases are always syncing ready to go
 
 #### Warm Standby
+
+- Warm Standby - A scaled down version of the primary site
+- Smaller sized but fully functional version of your primary infrastructure is running 24/7/365
+- Ready to be increased in size when failover is required
+- Faster than pilot light but more expensive
+- Cheaper than ful active-active
