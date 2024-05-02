@@ -306,6 +306,7 @@
       - [Pilot Light](#pilot-light)
       - [Warm Standby](#warm-standby)
       - [Multi-Site Active/Active](#multi-site-activeactive)
+    - [Disaster Recovery / Business Continuity - Considerations](#disaster-recovery--business-continuity---considerations)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3909,3 +3910,12 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Costs are generally 200% of the primary site
 - A full copy is running all the time
 - You can load balance across environments improving HA and performance
+
+### Disaster Recovery / Business Continuity - Considerations
+
+- How important is it to your business?
+- How quickly do you need to recovery?
+- Backups - Cheap and Slow
+- Pilot Light - Fairly Cheap and Faster
+- Warm Standby - costly but quick to recover
+- Multi-Site Active/Active - Most expensive but fastest but no recovery time
