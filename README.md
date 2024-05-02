@@ -303,6 +303,7 @@
   - [Disaster Recovery / Business Continuity](#disaster-recovery--business-continuity)
     - [Disaster Recovery / Business Continuity - Types](#disaster-recovery--business-continuity---types)
       - [Backup and Restore](#backup-and-restore)
+      - [Pilot Light](#pilot-light)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3882,3 +3883,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - The only costs are backup media and management
 - No ongoing spare infrastructure costs
 - Restores require new hardware or a lenghty restore process
+
+#### Pilot Light
+
+- Pilot Light - A small version of the primary site
+- A secondary environment is provisioned in advance
+- Running the absolute minimum of infrastructure
+- It can be powered on mucvh quicker than backup and restore
+- Critical components such as Databases are always syncing ready to go
