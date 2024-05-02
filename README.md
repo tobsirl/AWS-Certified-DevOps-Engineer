@@ -304,6 +304,7 @@
     - [Disaster Recovery / Business Continuity - Types](#disaster-recovery--business-continuity---types)
       - [Backup and Restore](#backup-and-restore)
       - [Pilot Light](#pilot-light)
+      - [Warm Standby](#warm-standby)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3891,3 +3892,5 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Running the absolute minimum of infrastructure
 - It can be powered on mucvh quicker than backup and restore
 - Critical components such as Databases are always syncing ready to go
+
+#### Warm Standby
