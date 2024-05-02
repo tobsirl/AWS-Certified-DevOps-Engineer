@@ -300,6 +300,7 @@
     - [High Availability](#high-availability)
     - [Fault Tolerance](#fault-tolerance)
     - [Disaster Recovery](#disaster-recovery)
+  - [Disaster Recovery / Business Continuity](#disaster-recovery--business-continuity)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3861,3 +3862,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Pre-planning and testing is essential
 - DR Process - Risk Assessment, Business Impact Analysis, Strategy Development, Plan Development, Testing and Training, Maintenance
 - Disaster Recover - Used when High-Availability and Fault Tolerance fail
+
+## Disaster Recovery / Business Continuity
+
+- Effective DR/BC costs money all the time
+- You need some type of extra resource
+- Executing a DR/BC process takes time
+- How long .. depends on the type of DR/BC
+-
