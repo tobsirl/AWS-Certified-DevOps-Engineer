@@ -305,6 +305,7 @@
       - [Backup and Restore](#backup-and-restore)
       - [Pilot Light](#pilot-light)
       - [Warm Standby](#warm-standby)
+      - [Multi-Site Active/Active](#multi-site-activeactive)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3900,3 +3901,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Ready to be increased in size when failover is required
 - Faster than pilot light but more expensive
 - Cheaper than ful active-active
+
+#### Multi-Site Active/Active
+
+- Multi-Site Active/Active - Both sites are active all the time
+- Data is constantly replicated from the primary site to backup.
+- Costs are generally 200% of the primary site
+- A full copy is running all the time
+- You can load balance across environments improving HA and performance
