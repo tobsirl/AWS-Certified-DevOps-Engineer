@@ -301,6 +301,8 @@
     - [Fault Tolerance](#fault-tolerance)
     - [Disaster Recovery](#disaster-recovery)
   - [Disaster Recovery / Business Continuity](#disaster-recovery--business-continuity)
+    - [Disaster Recovery / Business Continuity - Types](#disaster-recovery--business-continuity---types)
+      - [Backup and Restore](#backup-and-restore)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3869,4 +3871,14 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - You need some type of extra resource
 - Executing a DR/BC process takes time
 - How long .. depends on the type of DR/BC
--
+
+### Disaster Recovery / Business Continuity - Types
+
+#### Backup and Restore
+
+- Backup - Copy of data
+- Restore - Copy data back
+- Data is constantly backed up at the primary site
+- The only costs are backup media and management
+- No ongoing spare infrastructure costs
+- Restores require new hardware or a lenghty restore process
