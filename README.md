@@ -3974,4 +3974,8 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 
 ##### DR - ECS
 
--
+- ECS clusters can be in EC2 Mode or Fargate Mode
+- In EC2 Mode the DR characteristics are the same as EC2
+- AZ failure will result in ECS container failure
+- In fargate mode containers use ENI's in a VPC
+- Services can be used to achieve a similar architecture to auto scaling groups
