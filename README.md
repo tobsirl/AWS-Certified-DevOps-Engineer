@@ -308,7 +308,9 @@
       - [Multi-Site Active/Active](#multi-site-activeactive)
     - [Disaster Recovery / Business Continuity - Considerations](#disaster-recovery--business-continuity---considerations)
       - [Disaster Recovery Storage](#disaster-recovery-storage)
-        - [Instance Store](#instance-store-1)
+        - [DR - Instance Store](#dr---instance-store)
+        - [DR - EBS](#dr---ebs)
+        - [DR - S3](#dr---s3)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3924,8 +3926,21 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 
 #### Disaster Recovery Storage
 
-##### Instance Store
+##### DR - Instance Store
 
 - Instance store volumes are attached to the host that is running the instance
 - This instance runs inside an AZ
 - Failure of the host or AZ will result in the loss of the instance store volume
+
+##### DR - EBS
+
+- EBS volumes are network-attached storage
+- EBS replicates whitin an AZ
+- Failure of an AZ means failure of a volume
+- Snapshots can be stored in S3 and copied to another AZ
+
+##### DR - S3
+
+- S3 is a regional service
+- Data is replicated across multiple AZs
+- S3 can provide regional resilience
