@@ -4008,6 +4008,13 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 
 ##### DR - Aurora
 
+- Aurora isn't limited to Primary and Standby
+- Aurora can have up to 15 read replicas
+- Aurora can have replicas in different AZs
+- Aurora Cluster Storage is replicated 6+ times across 3 AZs at the storage level
+- Only region failure would significantly impact service
+- Aurora can have replicas in all AZs in a region storage is handled by the shared cluster storage
+
 ##### DR - DynamoDB
 
 - DynamoDB is a regional service
