@@ -311,6 +311,7 @@
         - [DR - Instance Store](#dr---instance-store)
         - [DR - EBS](#dr---ebs)
         - [DR - S3](#dr---s3)
+        - [DR - EFS](#dr---efs)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3944,3 +3945,10 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - S3 is a regional service
 - Data is replicated across multiple AZs
 - S3 can provide regional resilience
+
+##### DR - EFS
+
+- EFS is a regional service
+- EFS file systmes are replicated across multiple AZs
+- They are by default regionally resillient
+- Failure of the region means failure of the file system
