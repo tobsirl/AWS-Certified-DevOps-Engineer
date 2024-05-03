@@ -4014,8 +4014,10 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Aurora Cluster Storage is replicated 6+ times across 3 AZs at the storage level
 - Only region failure would significantly impact service
 - Aurora can have replicas in all AZs in a region storage is handled by the shared cluster storage
+- Aurora Global Databases storage level replication across regions (1s or less lag)
 
 ##### DR - DynamoDB
 
 - DynamoDB is a regional service
 - Regional failure would need to occur to impact service
+- DynamoDB Global Tables can be used to replicate data to other regions
