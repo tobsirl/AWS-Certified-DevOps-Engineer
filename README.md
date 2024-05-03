@@ -316,6 +316,7 @@
       - [Disaster Recovery - Compute](#disaster-recovery---compute)
         - [DR - EC2](#dr---ec2)
         - [DR - ECS](#dr---ecs)
+        - [DR - Lambda](#dr---lambda)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3979,3 +3980,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - AZ failure will result in ECS container failure
 - In fargate mode containers use ENI's in a VPC
 - Services can be used to achieve a similar architecture to auto scaling groups
+
+##### DR - Lambda
+
+- Lambda can run in public or private mode
+- VPC Lambda functions are allocated an ENI in each subnet
+- Failure of an AZ will result in other subnets being used
+- Public Lambda functions operate from all AZs in a region
+- A region failure would be required to impact service
