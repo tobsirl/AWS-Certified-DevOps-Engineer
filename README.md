@@ -4005,6 +4005,7 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Syncronous replication between both
 - Failover is automatic
 - Failure of both primary and standby AZs would impact service
+- Cross Region Read Replica Asynchronous Replication can be used for DR
 
 ##### DR - Aurora
 
