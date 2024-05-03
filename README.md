@@ -312,7 +312,10 @@
         - [DR - EBS](#dr---ebs)
         - [DR - S3](#dr---s3)
         - [DR - EFS](#dr---efs)
-        - [DR - S3 Snapshots](#dr---s3-snapshots)
+        - [DR - S3 Snapshot Copy](#dr---s3-snapshot-copy)
+      - [Disaster Recovery - Compute](#disaster-recovery---compute)
+        - [DR - EC2](#dr---ec2)
+        - [DR - ECS](#dr---ecs)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3954,8 +3957,21 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - They are by default regionally resillient
 - Failure of the region means failure of the file system
 
-##### DR - S3 Snapshots
+##### DR - S3 Snapshot Copy
 
 - Snapshots are stored in S3
 - They can be copied between regions
 - This provide global resilience
+
+#### Disaster Recovery - Compute
+
+##### DR - EC2
+
+- EC2 runs within an one AZ
+- EC2 can be moved to another host
+- An ASG can be used to move instances to another AZ
+- ASG can use launch templates/AMIs to launch in another AZ
+
+##### DR - ECS
+
+-
