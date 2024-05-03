@@ -307,6 +307,8 @@
       - [Warm Standby](#warm-standby)
       - [Multi-Site Active/Active](#multi-site-activeactive)
     - [Disaster Recovery / Business Continuity - Considerations](#disaster-recovery--business-continuity---considerations)
+      - [Disaster Recovery Storage](#disaster-recovery-storage)
+        - [Instance Store](#instance-store-1)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3919,3 +3921,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Pilot Light - Fairly Cheap and Faster
 - Warm Standby - costly but quick to recover
 - Multi-Site Active/Active - Most expensive but fastest but no recovery time
+
+#### Disaster Recovery Storage
+
+##### Instance Store
+
+- Instance store volumes are attached to the host that is running the instance
+- This instance runs inside an AZ
+- Failure of the host or AZ will result in the loss of the instance store volume
