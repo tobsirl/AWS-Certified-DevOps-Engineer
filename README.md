@@ -4032,3 +4032,5 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - VPC are regionally resillient
 - Region failure means VPC failure
 - VPC Router and IGW also are region resilient
+- Subnets are in '1' AZ - AZ Failure means subnet failure
+- Load balancers have LB nodes in 2+ AZs - as long as one node is functional the LB is functional
