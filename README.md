@@ -3999,6 +3999,12 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 
 - Databases on EC2 dependant on EC2 Host and AZ
 - No resillence beyond snapshots
+- RDS runs in a Subnet Group
+- RDS can be Multi-AZ
+- Primary or Standby in another AZ
+- Syncronous replication between both
+- Failover is automatic
+- Failure of both primary and standby AZs would impact service
 
 ##### DR - Aurora
 
