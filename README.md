@@ -317,6 +317,10 @@
         - [DR - EC2](#dr---ec2)
         - [DR - ECS](#dr---ecs)
         - [DR - Lambda](#dr---lambda)
+      - [Disaster Recovery - Databases](#disaster-recovery---databases)
+        - [DR - RDS](#dr---rds)
+        - [DR - Aurora](#dr---aurora)
+        - [DR - DynamoDB](#dr---dynamodb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3988,3 +3992,17 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Failure of an AZ will result in other subnets being used
 - Public Lambda functions operate from all AZs in a region
 - A region failure would be required to impact service
+
+#### Disaster Recovery - Databases
+
+##### DR - RDS
+
+- Databases on EC2 dependant on EC2 Host and AZ
+- No resillence beyond snapshots
+
+##### DR - Aurora
+
+##### DR - DynamoDB
+
+- DynamoDB is a regional service
+- Regional failure would need to occur to impact service
