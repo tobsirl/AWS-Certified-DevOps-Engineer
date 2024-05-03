@@ -312,6 +312,7 @@
         - [DR - EBS](#dr---ebs)
         - [DR - S3](#dr---s3)
         - [DR - EFS](#dr---efs)
+        - [DR - S3 Snapshots](#dr---s3-snapshots)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -3952,3 +3953,9 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - EFS file systmes are replicated across multiple AZs
 - They are by default regionally resillient
 - Failure of the region means failure of the file system
+
+##### DR - S3 Snapshots
+
+- Snapshots are stored in S3
+- They can be copied between regions
+- This provide global resilience
