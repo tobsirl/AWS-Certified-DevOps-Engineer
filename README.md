@@ -321,6 +321,8 @@
         - [DR - RDS](#dr---rds)
         - [DR - Aurora](#dr---aurora)
         - [DR - DynamoDB](#dr---dynamodb)
+      - [Disaster Recovery - Networking](#disaster-recovery---networking)
+        - [DR - VPC](#dr---vpc)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4022,3 +4024,11 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - DynamoDB is a regional service
 - Regional failure would need to occur to impact service
 - DynamoDB Global Tables can be used to replicate data to other regions
+
+#### Disaster Recovery - Networking
+
+##### DR - VPC
+
+- VPC are regionally resillient
+- Region failure means VPC failure
+- VPC Router and IGW also are region resilient
