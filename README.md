@@ -327,6 +327,7 @@
   - [EC2 - Auto Scaling Groups](#ec2---auto-scaling-groups)
     - [Auto Scaling - Scaling Policies](#auto-scaling---scaling-policies)
     - [ASG + Load Balancer](#asg--load-balancer)
+    - [Scaling Processes](#scaling-processes)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4082,3 +4083,14 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
 
 - ASG instances are automatically added to or removed from the target group
 - ASG can use the Load Balancer Health Checks rather than EC2 status checks Application Awareness
+
+### Scaling Processes
+
+- Launch and Terminate - SUSPEND and RESUME
+- AddToLoadBalancer - add to LB on launch
+- AlarmNotification - accept notifications from CloudWatch
+- AZRebalance - balance instances across AZs
+- HealthCheck - check instances are healthy
+- ReplaceUnhealthy - replace unhealthy instances
+- ScheduledActions - accept scheduled actions
+- Standby - remove from service but keep in ASG
