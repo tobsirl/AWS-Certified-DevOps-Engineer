@@ -4094,3 +4094,10 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
 - ReplaceUnhealthy - replace unhealthy instances
 - ScheduledActions - accept scheduled actions
 - Standby - remove from service but keep in ASG
+
+- Autoscaling Groups are free
+- Only the resources created are billed
+- Use cool downs to avoid rapid scaling
+- Think about more, smaller instances - granularity
+- Use with ALB's for elasticity - abstraction
+- ASG defines WHEN and WHERE, LT defines WHAT
