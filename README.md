@@ -324,6 +324,7 @@
       - [Disaster Recovery - Networking](#disaster-recovery---networking)
         - [DR - VPC](#dr---vpc)
   - [EC2 - Launch Configurations and Launch Templates](#ec2---launch-configurations-and-launch-templates)
+  - [EC2 - Auto Scaling Groups](#ec2---auto-scaling-groups)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4054,3 +4055,12 @@ The AMI, the Instance Type, the networking & security, the key pair to use, the 
 - Userdata and IAM Role
 - Both are NOT editable - defined once. LT has versions
 - LT provide newer features - including T2/T3 Unlimited, Placement Groups, Capacity Reservations, Elastic Graphics
+
+## EC2 - Auto Scaling Groups
+
+An Auto Scaling group contains a collection of Amazon EC2 instances that are treated as a logical grouping for the purposes of automatic scaling and management. An Auto Scaling group also enables you to use Amazon EC2 Auto Scaling features such as health check replacements and scaling policies. Both maintaining the number of instances in an Auto Scaling group and automatic scaling are the core functionality of the Amazon EC2 Auto Scaling service.
+
+- Automatic Scaling and Self-Healing for EC2
+- Uses Launch Templates or Configurations
+- Has a Minimum, Desired and Maximum number of instances (e.g 1:2:4)
+- Keep running instances at the Desired capacity by provisioning or terminating instances
