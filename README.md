@@ -323,6 +323,7 @@
         - [DR - DynamoDB](#dr---dynamodb)
       - [Disaster Recovery - Networking](#disaster-recovery---networking)
         - [DR - VPC](#dr---vpc)
+  - [EC2 - Launch Configurations and Launch Templates](#ec2---launch-configurations-and-launch-templates)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4038,3 +4039,18 @@ Amazon DynamoDB Time to Live (TTL) allows you to define a per-item timestamp to 
 - Public services run from all AZs in a region, only region failure would cause service failure
 - Interface Endpoints reside in one AZ. AZ failure means VPCE failure
 - Multiple VPCE can be added for regional HA
+
+## EC2 - Launch Configurations and Launch Templates
+
+Launch Configurations and Launch Templates provide the WHAT to Auto scaling groups.
+
+They define WHAT gets provisioned
+
+The AMI, the Instance Type, the networking & security, the key pair to use, the userdata to inject and IAM Role to attach.
+
+- Allow you to define the configuration of an EC2 instance in advance
+- AMI, Instance Type, Storage and Key pair
+- Networking and Security Groups
+- Userdata and IAM Role
+- Both are NOT editable - defined once. LT has versions
+- LT provide newer features - including T2/T3 Unlimited, Placement Groups, Capacity Reservations, Elastic Graphics
