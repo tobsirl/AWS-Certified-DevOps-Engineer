@@ -4064,3 +4064,4 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
 - Uses Launch Templates or Configurations
 - Has a Minimum, Desired and Maximum number of instances (e.g 1:2:4)
 - Keep running instances at the Desired capacity by provisioning or terminating instances
+- Scaling Policies automate based on metrics
