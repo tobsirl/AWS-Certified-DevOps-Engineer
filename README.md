@@ -325,6 +325,7 @@
         - [DR - VPC](#dr---vpc)
   - [EC2 - Launch Configurations and Launch Templates](#ec2---launch-configurations-and-launch-templates)
   - [EC2 - Auto Scaling Groups](#ec2---auto-scaling-groups)
+    - [Auto Scaling - Scaling Policies](#auto-scaling---scaling-policies)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4065,3 +4066,13 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
 - Has a Minimum, Desired and Maximum number of instances (e.g 1:2:4)
 - Keep running instances at the Desired capacity by provisioning or terminating instances
 - Scaling Policies automate based on metrics
+
+### Auto Scaling - Scaling Policies
+
+- Manual Scaling - Manually adjust the desired capacity
+- Scheduled Scaling - Time based adjustment - e.g. Black Friday
+- Dynamic Scaling
+  - Simple Scaling - "CPU above 50% +1", "CPU below 20% -1"
+  - Stepped Scaling - Bigger +/- based on difference
+  - Target Tracking - Desired Aggregate CPU = 40% ..ASG handle it
+- Cooldown Period - Time between scaling actions
