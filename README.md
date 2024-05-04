@@ -326,6 +326,7 @@
   - [EC2 - Launch Configurations and Launch Templates](#ec2---launch-configurations-and-launch-templates)
   - [EC2 - Auto Scaling Groups](#ec2---auto-scaling-groups)
     - [Auto Scaling - Scaling Policies](#auto-scaling---scaling-policies)
+    - [ASG + Load Balancer](#asg--load-balancer)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4076,3 +4077,8 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
   - Stepped Scaling - Bigger +/- based on difference
   - Target Tracking - Desired Aggregate CPU = 40% ..ASG handle it
 - Cooldown Period - Time between scaling actions
+
+### ASG + Load Balancer
+
+- ASG instances are automatically added to or removed from the target group
+- ASG can use the Load Balancer Health Checks rather than EC2 status checks Application Awareness
