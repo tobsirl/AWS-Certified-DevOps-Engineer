@@ -4110,3 +4110,9 @@ With step scaling and simple scaling, you choose scaling metrics and threshold v
 Step scaling policies and simple scaling policies are two of the dynamic scaling options available for you to use. Both require you to create CloudWatch alarms for the scaling policies. Both require you to specify the high and low thresholds for the alarms. Both require you to define whether to add or remove instances, and how many, or set the group to an exact size.
 
 The main difference between the policy types is the step adjustments that you get with step scaling policies. When step adjustments are applied, and they increase or decrease the current capacity of your Auto Scaling group, the adjustments vary based on the size of the alarm breach.
+
+- ASGs don't NEED scaling policies - they can have none
+- Manual - Min, Max and Desired - Testing and Urgent
+- Simple Scaling - single metric, single threshold
+- Step Scaling - More granular than simple scaling
+- Target Tracking - CPU, Network, Memory, Custom Metrics
