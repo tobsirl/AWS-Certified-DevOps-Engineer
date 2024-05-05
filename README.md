@@ -4143,3 +4143,5 @@ Amazon EC2 Auto Scaling can determine the health status of an instance using one
 - ELB - HEALTHY = Running and passing ELB health check
 - Can be more application aware (Layer 7)
 - Custom - Instances marked healthy and unhealthy by an external system
+- Health check grace period (Default 300s) - Delay before starting checks
+- Allows system launch, bootstrapping and application startup
