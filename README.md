@@ -330,6 +330,7 @@
     - [Scaling Processes](#scaling-processes)
     - [ASG - Scaling Policies](#asg---scaling-policies)
     - [ASG - Lifecycle Hooks](#asg---lifecycle-hooks)
+    - [ASG - Health Checks](#asg---health-checks)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4129,3 +4130,11 @@ Lifecycle hooks enable you to perform custom actions by pausing instances as an 
 - Until a timeout (then either CONTINUE or ABANDON)
 - or you resume the ASG process `CompleteLifecycleAction`
 - EventBridge or SNS Notifications
+
+### ASG - Health Checks
+
+Amazon EC2 Auto Scaling can determine the health status of an instance using one or more of the following:
+
+- Status checks provided by Amazon EC2 to identify hardware and software issues that may impair an instance. The default health checks for an Auto Scaling group are EC2 status checks only.
+- Health checks provided by Elastic Load Balancing (ELB). These health checks are disabled by default but can be enabled.
+- Your custom health checks.
