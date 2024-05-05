@@ -4138,3 +4138,8 @@ Amazon EC2 Auto Scaling can determine the health status of an instance using one
 - Status checks provided by Amazon EC2 to identify hardware and software issues that may impair an instance. The default health checks for an Auto Scaling group are EC2 status checks only.
 - Health checks provided by Elastic Load Balancing (ELB). These health checks are disabled by default but can be enabled.
 - Your custom health checks.
+- EC2 (Default), ELB (Can be enabled) and Custom
+- EC2 - Stopping, Stopped, Terminatied, Shutting Down or Impaired (not 2/2 status) = UNHEALTHY
+- ELB - HEALTHY = Running and passing ELB health check
+- Can be more application aware (Layer 7)
+- Custom - Instances marked healthy and unhealthy by an external system
