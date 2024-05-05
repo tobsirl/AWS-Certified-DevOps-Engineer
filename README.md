@@ -328,6 +328,7 @@
     - [Auto Scaling - Scaling Policies](#auto-scaling---scaling-policies)
     - [ASG + Load Balancer](#asg--load-balancer)
     - [Scaling Processes](#scaling-processes)
+    - [ASG - Scaling Policies](#asg---scaling-policies)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4101,3 +4102,11 @@ An Auto Scaling group contains a collection of Amazon EC2 instances that are tre
 - Think about more, smaller instances - granularity
 - Use with ALB's for elasticity - abstraction
 - ASG defines WHEN and WHERE, LT defines WHAT
+
+### ASG - Scaling Policies
+
+With step scaling and simple scaling, you choose scaling metrics and threshold values for the CloudWatch alarms that trigger the scaling process. You also define how your Auto Scaling group should be scaled when a threshold is in breach for a specified number of evaluation periods.
+
+Step scaling policies and simple scaling policies are two of the dynamic scaling options available for you to use. Both require you to create CloudWatch alarms for the scaling policies. Both require you to specify the high and low thresholds for the alarms. Both require you to define whether to add or remove instances, and how many, or set the group to an exact size.
+
+The main difference between the policy types is the step adjustments that you get with step scaling policies. When step adjustments are applied, and they increase or decrease the current capacity of your Auto Scaling group, the adjustments vary based on the size of the alarm breach.
