@@ -329,6 +329,7 @@
     - [ASG + Load Balancer](#asg--load-balancer)
     - [Scaling Processes](#scaling-processes)
     - [ASG - Scaling Policies](#asg---scaling-policies)
+    - [ASG - Lifecycle Hooks](#asg---lifecycle-hooks)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4117,3 +4118,14 @@ The main difference between the policy types is the step adjustments that you ge
 - Step Scaling - More granular than simple scaling
 - Target Tracking - CPU, Network, Memory, Custom Metrics
 - Scaling Based on SQS - ApproximateNumberOfMessagesVisible
+
+### ASG - Lifecycle Hooks
+
+Lifecycle hooks enable you to perform custom actions by pausing instances as an Auto Scaling group launches or terminates them. When an instance is paused, it remains in a wait state either until you complete the lifecycle action using the complete-lifecycle-action command or the `CompleteLifecycleAction` operation, or until the timeout period ends (one hour by default).
+
+- Custom Actions on instances during ASG actions
+- Instance launch or Instance terminate transitions
+- Instances are paused within the flow .. they wait
+- Until a timeout (then either CONTINUE or ABANDON)
+- or you resume the ASG process `CompleteLifecycleAction`
+- EventBridge or SNS Notifications
