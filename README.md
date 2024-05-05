@@ -4116,3 +4116,4 @@ The main difference between the policy types is the step adjustments that you ge
 - Simple Scaling - single metric, single threshold
 - Step Scaling - More granular than simple scaling
 - Target Tracking - CPU, Network, Memory, Custom Metrics
+- Scaling Based on SQS - ApproximateNumberOfMessagesVisible
