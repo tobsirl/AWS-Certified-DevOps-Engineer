@@ -332,6 +332,7 @@
     - [ASG - Lifecycle Hooks](#asg---lifecycle-hooks)
     - [ASG - Health Checks](#asg---health-checks)
   - [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
+    - [Elastic Load Balancer Architecture (ELB)](#elastic-load-balancer-architecture-elb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4160,3 +4161,15 @@ Two new versions the v2 Application and v2 Network load balancers are now the re
 - Application Load Balancer (ALB) - v2 - HTTP/S/WebSocket
 - Network Load Balancer (NLB) - v2 - TCP/UDP/SSL/TLS
 - V2 = faster, cheaper, support target groups and rules
+
+### Elastic Load Balancer Architecture (ELB)
+
+Elastic Load Balancers are a core part of any scaling architecture within AWS.
+
+- Configured to run in 2+ AZ's
+- 1 + Nodes are placed into a subnet in each AZ and scale with load
+- Each ELB is configured with an (A) record DNS name. This resolves to the ELB Nodes
+- Internet-facing Nodes have public IPs
+- Internal Only have private IPs
+- Load Balancers (Nodes) are configured with listeners which accept traffic on a port and protocol and communicate with targets on a port and protocol
+- Internet-facing LB nodes can access public and private EC2 instances
