@@ -4185,3 +4185,7 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - LB's allow each tier to scale independently
 
 ### Elastic Load Balancer - Cross Zone Load Balancing
+
+- Cross Zone Load Balancing - Distribute traffic evenly across all instances in all AZs
+- LB nodes in all AZs can accept traffic for all instances
+- Enabled by default on ALB and NLB
