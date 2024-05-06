@@ -333,6 +333,7 @@
     - [ASG - Health Checks](#asg---health-checks)
   - [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
     - [Elastic Load Balancer Architecture (ELB)](#elastic-load-balancer-architecture-elb)
+      - [IMPORTANT](#important)
     - [Elastic Load Balancer Architecture - Three Tier Architecture (Web, Worker, Database)](#elastic-load-balancer-architecture---three-tier-architecture-web-worker-database)
     - [Elastic Load Balancer - Cross Zone Load Balancing](#elastic-load-balancer---cross-zone-load-balancing)
 
@@ -4175,6 +4176,16 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Internal Only have private IPs
 - Load Balancers (Nodes) are configured with listeners which accept traffic on a port and protocol and communicate with targets on a port and protocol
 - Internet-facing LB nodes can access public and private EC2 instances
+- 8+ free IPs per subnet and a /27 or larger subnet to allow for scale
+
+#### IMPORTANT
+
+- ELB is a DNS A Record pointing at 1+ Nodes per AZ
+- Nodes (in one subnet per AZ) can scale
+- Internet-facing means nodes have public IPv2 IPs
+- Internal is private only IPs
+- EC2 doesn't need to be public to work with a LB
+- Listener Configuration controls WHAT the LB does
 - 8+ free IPs per subnet and a /27 or larger subnet to allow for scale
 
 ### Elastic Load Balancer Architecture - Three Tier Architecture (Web, Worker, Database)
