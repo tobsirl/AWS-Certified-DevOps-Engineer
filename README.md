@@ -4173,3 +4173,4 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Internal Only have private IPs
 - Load Balancers (Nodes) are configured with listeners which accept traffic on a port and protocol and communicate with targets on a port and protocol
 - Internet-facing LB nodes can access public and private EC2 instances
+- 8+ free IPs per subnet and a /27 or larger subnet to allow for scale
