@@ -4157,3 +4157,5 @@ Two new versions the v2 Application and v2 Network load balancers are now the re
 - Split between v1 (avoid / migrate) and v2 (preferred)
 - Classic Load Balancer (CLB) - v1 - Introduced in 2009
 - Not really layer 7, lacking features, 1 SSL per CLB
+- Application Load Balancer (ALB) - v2 - HTTP/S/WebSocket
+- Network Load Balancer (NLB) - v2 - TCP/UDP/SSL/TLS
