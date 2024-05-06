@@ -331,6 +331,7 @@
     - [ASG - Scaling Policies](#asg---scaling-policies)
     - [ASG - Lifecycle Hooks](#asg---lifecycle-hooks)
     - [ASG - Health Checks](#asg---health-checks)
+  - [Elastic Load Balancer (ELB)](#elastic-load-balancer-elb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4145,3 +4146,14 @@ Amazon EC2 Auto Scaling can determine the health status of an instance using one
 - Custom - Instances marked healthy and unhealthy by an external system
 - Health check grace period (Default 300s) - Delay before starting checks
 - Allows system launch, bootstrapping and application startup
+
+## Elastic Load Balancer (ELB)
+
+The Elastic Load Balancer (ELB) was introduced in 2009 with the 'now called' Classic Load Balancer
+
+Two new versions the v2 Application and v2 Network load balancers are now the recommended solutions.
+
+- 3 Types of load balancers (ELB) available within AWS
+- Split between v1 (avoid / migrate) and v2 (preferred)
+- Classic Load Balancer (CLB) - v1 - Introduced in 2009
+- Not really layer 7, lacking features, 1 SSL per CLB
