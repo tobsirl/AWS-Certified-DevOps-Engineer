@@ -338,6 +338,7 @@
     - [Elastic Load Balancer - Cross Zone Load Balancing](#elastic-load-balancer---cross-zone-load-balancing)
     - [Application and Network Load Balancer (ALB vs NLB)](#application-and-network-load-balancer-alb-vs-nlb)
       - [Load Balancer Consolidation](#load-balancer-consolidation)
+      - [Application Load Balancer (ALB)](#application-load-balancer-alb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4211,3 +4212,10 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Every unique HTTPS name requires an individual CLB because SNI isn't supported
 - v2 load balancers support rules and target groups
 - Host based rules using SNI and a ALB allows consolidation
+
+#### Application Load Balancer (ALB)
+
+- Layer 7 Load balancer - HTTP/S, WebSockets
+- No other Layer 7 protocols (SMTP, SSH, Gaming)
+- No TCP/UDP/TLS Listeners
+- L7 content type, cookies, custom headers, user location and app behaviour
