@@ -340,6 +340,7 @@
       - [Load Balancer Consolidation](#load-balancer-consolidation)
       - [Application Load Balancer (ALB)](#application-load-balancer-alb)
       - [Application Load Balancer - Rules](#application-load-balancer---rules)
+      - [Network Load Balancer (NLB)](#network-load-balancer-nlb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4233,3 +4234,15 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Default rule = catchall
 - Rule Conditions: host-header, http-header, http-request-method, path-pattern, query-string and source-ip
 - Actions: forward, redirect, fixed-response, authenticate-oidc, authenticate-cognito
+
+#### Network Load Balancer (NLB)
+
+- Layer 4 Load Balancer - TCP, UDP, TLS, TCP_UDP
+- No visibility or understanding of HTTP or HTTPS
+- No headers, no cookies, no session stickiness
+- Really fast millions of rps, 25% of ALB latency
+- SMTP, SSH, Game Servers, financial services
+- Health checks JUST check ICMP / TCP Handshake Not app aware
+- NLB's can have static IP's - useful for whitelisting
+- Forward TCP to instances .. unbroken encryption
+- Used with private link to provide services to other VPCs
