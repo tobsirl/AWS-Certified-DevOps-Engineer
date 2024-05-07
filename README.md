@@ -341,6 +341,7 @@
       - [Application Load Balancer (ALB)](#application-load-balancer-alb)
       - [Application Load Balancer - Rules](#application-load-balancer---rules)
       - [Network Load Balancer (NLB)](#network-load-balancer-nlb)
+      - [ALB vs NLB](#alb-vs-nlb)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4246,3 +4247,12 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - NLB's can have static IP's - useful for whitelisting
 - Forward TCP to instances .. unbroken encryption
 - Used with private link to provide services to other VPCs
+
+#### ALB vs NLB
+
+- Unbroken encryption ... NLB
+- Static IP for whitelisting ... NLB
+- The fastest performance ... NLB (millions rps)
+- Protocols not HTTP or HTTPS ... NLB
+- Privatelink ... NLB
+- Otherwise ... ALB
