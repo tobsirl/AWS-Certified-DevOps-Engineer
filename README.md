@@ -336,6 +336,8 @@
       - [IMPORTANT](#important)
     - [Elastic Load Balancer Architecture - Three Tier Architecture (Web, Worker, Database)](#elastic-load-balancer-architecture---three-tier-architecture-web-worker-database)
     - [Elastic Load Balancer - Cross Zone Load Balancing](#elastic-load-balancer---cross-zone-load-balancing)
+    - [Application and Network Load Balancer (ALB vs NLB)](#application-and-network-load-balancer-alb-vs-nlb)
+      - [Load Balancer Consolidation](#load-balancer-consolidation)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4200,3 +4202,12 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Cross Zone Load Balancing - Distribute traffic evenly across all instances in all AZs
 - LB nodes in all AZs can accept traffic for all instances
 - Enabled by default on ALB and NLB
+
+### Application and Network Load Balancer (ALB vs NLB)
+
+#### Load Balancer Consolidation
+
+- CLBs don't scale well
+- Every unique HTTPS name requires an individual CLB because SNI isn't supported
+- v2 load balancers support rules and target groups
+- Host based rules using SNI and a ALB allows consolidation
