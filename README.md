@@ -4219,3 +4219,8 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - No other Layer 7 protocols (SMTP, SSH, Gaming)
 - No TCP/UDP/TLS Listeners
 - L7 content type, cookies, custom headers, user location and app behaviour
+- HTTP HTTPS (SSL/TLS) always terminated on the ALB - no unbroken SSL
+- A new connection is made to the application
+- ALBs MUST have SSL certs if HTTPS is used
+- ALBs are slower than NLB .. more levels of the network stack to process
+- Health checks evaluate application health ... Layer 7
