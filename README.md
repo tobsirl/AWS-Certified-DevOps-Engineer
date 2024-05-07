@@ -339,6 +339,7 @@
     - [Application and Network Load Balancer (ALB vs NLB)](#application-and-network-load-balancer-alb-vs-nlb)
       - [Load Balancer Consolidation](#load-balancer-consolidation)
       - [Application Load Balancer (ALB)](#application-load-balancer-alb)
+      - [Application Load Balancer - Rules](#application-load-balancer---rules)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4224,3 +4225,11 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - ALBs MUST have SSL certs if HTTPS is used
 - ALBs are slower than NLB .. more levels of the network stack to process
 - Health checks evaluate application health ... Layer 7
+
+#### Application Load Balancer - Rules
+
+- Rules direct connections which arrive at a listener
+- Processed in priority order
+- Default rule = catchall
+- Rule Conditions: host-header, http-header, http-request-method, path-pattern, query-string and source-ip
+- Actions: forward, redirect, fixed-response, authenticate-oidc, authenticate-cognito
