@@ -4265,3 +4265,5 @@ Session State is a data representation of the interaction between a user and an 
 - Server-side piece of information
 - Persists while you interact with that application
 - Shopping Cart, Workflow Position or Login State
+- Session State loss = User Experience (UX) Issues
+- Session state stored on a server or externally
