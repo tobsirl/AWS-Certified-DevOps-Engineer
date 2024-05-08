@@ -344,6 +344,7 @@
       - [ALB vs NLB](#alb-vs-nlb)
   - [User Sessoin State](#user-sessoin-state)
     - [User Session State - Session Stickiness](#user-session-state---session-stickiness)
+      - [Stickiness Key Points](#stickiness-key-points)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4276,6 +4277,13 @@ Session stickiness is a feature of AWS ELB's which allows applications which sto
 - With no Stickiness, connections are distributed across al in-service backend instances
 - Unless an application correctly handles user-state this could cause user logoffs or shopping cart losses
 - Stickiness is a feature of the ELB which allows connections from a user to be directed to the same backend instance
-- AWSALB cookie or custom cookie
-- 1s to 7 days
+- AWSALB cookie or custom cookie, 1s to 7 days
 - Stickiness generates a cookie which locks the device to a single backend instance for a duration
+
+#### Stickiness Key Points
+
+- Stickiness locks a session to 1 backend instance
+- Creates AWSALB .. which is held by the client
+- Sessions move on expiry or instance failure
+- Enable if an application doesn't use external sessions
+- Key words for exam - logout, lost carts, lost progress.. this suggests lost session state
