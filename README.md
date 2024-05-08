@@ -4276,3 +4276,6 @@ Session stickiness is a feature of AWS ELB's which allows applications which sto
 - With no Stickiness, connections are distributed across al in-service backend instances
 - Unless an application correctly handles user-state this could cause user logoffs or shopping cart losses
 - Stickiness is a feature of the ELB which allows connections from a user to be directed to the same backend instance
+- AWSALB cookie or custom cookie
+- 1s to 7 days
+- Stickiness generates a cookie which locks the device to a single backend instance for a duration
