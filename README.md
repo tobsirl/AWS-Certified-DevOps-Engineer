@@ -343,6 +343,7 @@
       - [Network Load Balancer (NLB)](#network-load-balancer-nlb)
       - [ALB vs NLB](#alb-vs-nlb)
   - [User Sessoin State](#user-sessoin-state)
+    - [User Session State - Session Stickiness](#user-session-state---session-stickiness)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4267,3 +4268,9 @@ Session State is a data representation of the interaction between a user and an 
 - Shopping Cart, Workflow Position or Login State
 - Session State loss = User Experience (UX) Issues
 - Session state stored on a server or externally
+
+### User Session State - Session Stickiness
+
+Session stickiness is a feature of AWS ELB's which allows applications which store session state internally on EC2 instances to function with load balancers
+
+-
