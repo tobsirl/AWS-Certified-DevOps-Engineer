@@ -342,6 +342,7 @@
       - [Application Load Balancer - Rules](#application-load-balancer---rules)
       - [Network Load Balancer (NLB)](#network-load-balancer-nlb)
       - [ALB vs NLB](#alb-vs-nlb)
+  - [User Sessoin State](#user-sessoin-state)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4256,3 +4257,11 @@ Elastic Load Balancers are a core part of any scaling architecture within AWS.
 - Protocols not HTTP or HTTPS ... NLB
 - Privatelink ... NLB
 - Otherwise ... ALB
+
+## User Sessoin State
+
+Session State is a data representation of the interaction between a user and an application.
+
+- Server-side piece of information
+- Persists while you interact with that application
+- Shopping Cart, Workflow Position or Login State
