@@ -4273,4 +4273,6 @@ Session State is a data representation of the interaction between a user and an 
 
 Session stickiness is a feature of AWS ELB's which allows applications which store session state internally on EC2 instances to function with load balancers
 
--
+- With no Stickiness, connections are distributed across al in-service backend instances
+- Unless an application correctly handles user-state this could cause user logoffs or shopping cart losses
+- Stickiness is a feature of the ELB which allows connections from a user to be directed to the same backend instance
