@@ -4315,3 +4315,4 @@ Gateway Load Balancers enable you to deploy, scale, and manage virtual appliance
 
 - GENEVE Encapsulation - Encapsulates traffic and metadata
 - Original packets remain unaltered encapsulated through to appliances and back
+- Ingress (gateway) route table directs any traffic destined for the ALB subnets at the Gateway Endpoint in the same AZ
