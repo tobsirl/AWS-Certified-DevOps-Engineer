@@ -4306,3 +4306,5 @@ Gateway Load Balancers enable you to deploy, scale, and manage virtual appliance
 - Help you run and scale 3rd party appliances
 - things like firewalls, intrusion detection and prevention systems
 - Inbound and Outbound traffic (transparent inspection and protection)
+- GWLB endpoints ... traffic enters/leaves via these endpoints
+- The GWLB balances across multiple backend appliances
