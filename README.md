@@ -345,6 +345,9 @@
   - [User Sessoin State](#user-sessoin-state)
     - [User Session State - Session Stickiness](#user-session-state---session-stickiness)
       - [Stickiness Key Points](#stickiness-key-points)
+  - [Gateway Load Balancer (GWLB)](#gateway-load-balancer-gwlb)
+    - [Why do we need a GWLB?](#why-do-we-need-a-gwlb)
+    - [Gateway Load Balancer - what is it?](#gateway-load-balancer---what-is-it)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4287,3 +4290,19 @@ Session stickiness is a feature of AWS ELB's which allows applications which sto
 - Sessions move on expiry or instance failure
 - Enable if an application doesn't use external sessions
 - Key words for exam - logout, lost carts, lost progress.. this suggests lost session state
+
+## Gateway Load Balancer (GWLB)
+
+Gateway Load Balancers enable you to deploy, scale, and manage virtual appliances, such as firewalls, intrusion detection and prevention systems, and deep packet inspection systems. It combines a transparent network gateway (that is, a single entry and exit point for all traffic) and distributes traffic while scaling your virtual appliances with the demand.
+
+### Why do we need a GWLB?
+
+- Transparent security appliance scans data after it leaves and before it enters the application instance
+- This type of solution is tightly coupled and doesn't scale, even in a single app environment
+- What about multi-tenent where a fleet of security appliances needs to protect many apps?
+
+### Gateway Load Balancer - what is it?
+
+- Help you run and scale 3rd party appliances
+- things like firewalls, intrusion detection and prevention systems
+- Inbound and Outbound traffic (transparent inspection and protection)
