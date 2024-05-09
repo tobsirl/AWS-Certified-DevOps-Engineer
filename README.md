@@ -4380,3 +4380,4 @@ AWS WAF is a web application firewall that helps protect your web applications o
 - Bot Control - $10 / month and $1 / 1million requests
 - Captcha - ($0.40/1,00 challenge attempts)
 - Fraud Control/Account Takeover ($10 / month and $1 / 1,000 login attempts)
+- Marketplace Rule Groups - Extra costs
