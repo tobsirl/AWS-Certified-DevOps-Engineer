@@ -349,6 +349,8 @@
     - [Why do we need a GWLB?](#why-do-we-need-a-gwlb)
     - [Gateway Load Balancer - what is it?](#gateway-load-balancer---what-is-it)
     - [Gateway Load Balancer - how it works](#gateway-load-balancer---how-it-works)
+  - [Devops Security](#devops-security)
+    - [Web Application Firewall (WAF)](#web-application-firewall-waf)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4319,3 +4321,14 @@ Gateway Load Balancers enable you to deploy, scale, and manage virtual appliance
 - Original SRC and DST are maintained
 - Packets are encapsulated and sent to the appliance
 - Any outbound return traffic from the ALB is sent via default route to the Gateway LB endpoint
+
+## Devops Security
+
+### Web Application Firewall (WAF)
+
+AWS WAF is a web application firewall that helps protect your web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources.
+
+- WAF is a Layer 7 Firewall
+- WEB ACL - Web Access Control List
+- Rules within Rule Groups
+- Rule Groups within WEBACL
