@@ -353,6 +353,7 @@
     - [Web Application Firewall (WAF)](#web-application-firewall-waf)
     - [Web Access Control Lists (WEBACL)](#web-access-control-lists-webacl)
     - [Rule groups](#rule-groups)
+    - [WAF Rules](#waf-rules)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4355,3 +4356,10 @@ AWS WAF is a web application firewall that helps protect your web applications o
 - Rule Groups contain rules
 - They don't have default actions ... that's defined when groups or rules are added to WEBACLs
 - Managed (AWS or Marketplace) Yours, Service Owned (i.e. Shield and Firewall Manager)
+- Rule groups can be referenced by multiple WEBACL
+- Have a WCU capacity (defined upfront, max 1500)
+
+### WAF Rules
+
+- Type, Statement, Action
+- Type: Regular or Rate-based
