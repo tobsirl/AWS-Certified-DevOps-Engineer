@@ -354,6 +354,7 @@
     - [Web Access Control Lists (WEBACL)](#web-access-control-lists-webacl)
     - [Rule groups](#rule-groups)
     - [WAF Rules](#waf-rules)
+    - [WAF Pricing](#waf-pricing)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4369,3 +4370,13 @@ AWS WAF is a web application firewall that helps protect your web applications o
 - Action: Allow, Block, Count, Captcha ... Custom Response (x-amzn-waf-), Label
 - Labels can be referenced later in the same WEBACL .. multi-stage flows
 - ALLOW and BLOCK stop processing, Count/Captcha actions continue
+
+### WAF Pricing
+
+- WEBACL - Monthly (per ACL) - $5 - these can be reused
+- RULE on WEBACL - Monthly (per rule) - $1
+- REQUESTS per WEBACL - $0.60 per million requests
+- Intelligent Threat Mitigation
+- Bot Control - $10 / month and $1 / 1million requests
+- Captcha - ($0.40/1,00 challenge attempts)
+- Fraud Control/Account Takeover ($10 / month and $1 / 1,000 login attempts)
