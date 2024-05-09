@@ -348,6 +348,7 @@
   - [Gateway Load Balancer (GWLB)](#gateway-load-balancer-gwlb)
     - [Why do we need a GWLB?](#why-do-we-need-a-gwlb)
     - [Gateway Load Balancer - what is it?](#gateway-load-balancer---what-is-it)
+    - [Gateway Load Balancer - how it works](#gateway-load-balancer---how-it-works)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4308,3 +4309,9 @@ Gateway Load Balancers enable you to deploy, scale, and manage virtual appliance
 - Inbound and Outbound traffic (transparent inspection and protection)
 - GWLB endpoints ... traffic enters/leaves via these endpoints
 - The GWLB balances across multiple backend appliances
+- Traffic and metadata is tunnelled using GENEVE protocol
+
+### Gateway Load Balancer - how it works
+
+- GENEVE Encapsulation - Encapsulates traffic and metadata
+- Original packets remain unaltered encapsulated through to appliances and back
