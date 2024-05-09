@@ -4363,3 +4363,7 @@ AWS WAF is a web application firewall that helps protect your web applications o
 
 - Type, Statement, Action
 - Type: Regular or Rate-based
+- Statement: (WHAT to match) or (COUNT ALL) or (WHAT and COUNT)
+- Match against .. origin country, IP, label, header, cookies, query parameter, URI path, query string, body (first 8192 bytes ONLY), HTTP method
+- Single, AND, OR, NOT
+- Action: Allow, Block, Count, Captcha ... Custom Response (x-amzn-waf-), Label
