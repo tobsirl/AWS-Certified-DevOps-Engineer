@@ -361,6 +361,7 @@
       - [AWS Network Firewall - Stateless](#aws-network-firewall---stateless)
       - [AWS Network Firewall - Stateful](#aws-network-firewall---stateful)
   - [Connection Draining](#connection-draining)
+  - [Deregistration Delay](#deregistration-delay)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4443,3 +4444,13 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Timeout: Between 1 and 3,600 Seconds (default 300)
 - InService: Instance deregistration currently in progress
 - Auto Scaling waits for all connections to complete or Timeout
+
+## Deregistration Delay
+
+- Supported on ALB, NLB and GWLBs
+- Defined on the Target group - NOT the LB
+- Stops sending requests to deregistering targets
+- Existing connections can continue
+- Until they complete naturally
+- Or the deregistration delay is reached
+- Default 300 seconds (0-3600 seconds)
