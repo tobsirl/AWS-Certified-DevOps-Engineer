@@ -358,6 +358,7 @@
   - [AWS Network Firewall](#aws-network-firewall)
     - [AWS Network Firewall - Components](#aws-network-firewall---components)
     - [AWS Network Firewall - Rule Groups](#aws-network-firewall---rule-groups)
+      - [AWS Network Firewall - Stateless](#aws-network-firewall---stateless)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4410,3 +4411,13 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Defined upfront as stateful or stateless (type)
 - Capacity .. limit on the processing requirements for the group (all the rules in the group)
 - This cannot be changed afterwards
+
+#### AWS Network Firewall - Stateless
+
+- Inspects each packet in isolation - isn't state aware
+- Request and Response are different
+- INBOUND Request and OUTBOUND Request are different
+- 5 Tuple - Protocol, SRC/DST CIDR, SRC/DST PORT
+- Actions: Pass, Drop, Forward or Custom
+- Processes in order .. then stops
+- Default = lowest number = high priority
