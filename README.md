@@ -364,6 +364,7 @@
   - [Deregistration Delay](#deregistration-delay)
   - [X-Forwarded-For and PROXY Protocol](#x-forwarded-for-and-proxy-protocol)
     - [X-Forwarded-For](#x-forwarded-for)
+    - [PROXY Protocol](#proxy-protocol)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4473,3 +4474,12 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - LB adds header, containing IP
 - Backend web server needs to be aware of this header
 - Connections from LB, but X-Forwarded-For contains original client
+- Supported ... CLB and ALB, NOT SUPPORTED NLB (not layer 4)
+
+### PROXY Protocol
+
+- Proxy Protocol works at Layer 4
+- Additional layer 4 (tcp) header .. works with a range of protocols (including HTTP/s)
+- Works with CLB (v1) and NLB (v2 - binary encoded)
+- End to end encryption - e.g. unbroken HTTPS (tcp listener)
+- Use PROXY Protocol, you can't add a HTTP header, it isn't decrypted
