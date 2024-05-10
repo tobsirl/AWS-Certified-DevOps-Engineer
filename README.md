@@ -363,6 +363,7 @@
   - [Connection Draining](#connection-draining)
   - [Deregistration Delay](#deregistration-delay)
   - [X-Forwarded-For and PROXY Protocol](#x-forwarded-for-and-proxy-protocol)
+    - [X-Forwarded-For](#x-forwarded-for)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4461,3 +4462,14 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 [X-Forwarded-For](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For)
 
 [Proxy Protocol](https://www.haproxy.com/blog/use-the-proxy-protocol-to-preserve-a-clients-ip-address)
+
+### X-Forwarded-For
+
+- A set of HTTP headers (only works for HTTP/S) (Layer 7)
+- X-Forwarded-For: client
+- The header is added or appended by proxies/LBs
+- The client is left most in the list
+- X-Forwarded-For: 1.3.3.7, proxy1, proxy2
+- LB adds header, containing IP
+- Backend web server needs to be aware of this header
+- Connections from LB, but X-Forwarded-For contains original client
