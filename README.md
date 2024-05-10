@@ -362,6 +362,7 @@
       - [AWS Network Firewall - Stateful](#aws-network-firewall---stateful)
   - [Connection Draining](#connection-draining)
   - [Deregistration Delay](#deregistration-delay)
+  - [X-Forwarded-For and PROXY Protocol](#x-forwarded-for-and-proxy-protocol)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4454,3 +4455,9 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Until they complete naturally
 - Or the deregistration delay is reached
 - Default 300 seconds (0-3600 seconds)
+
+## X-Forwarded-For and PROXY Protocol
+
+[X-Forwarded-For](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Forwarded-For)
+
+[Proxy Protocol](https://www.haproxy.com/blog/use-the-proxy-protocol-to-preserve-a-clients-ip-address)
