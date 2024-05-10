@@ -4440,3 +4440,6 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Normally all connections are closed and no new connections
 - Connection draining allows in-flight requests to complete
 - CLASSIC LOAD BALANCER ONLY -defined on the CLB
+- Timeout: Between 1 and 3,600 Seconds (default 300)
+- InService: Instance deregistration currently in progress
+- Auto Scaling waits for all connections to complete or Timeout
