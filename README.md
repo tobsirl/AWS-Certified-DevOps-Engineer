@@ -355,6 +355,7 @@
     - [Rule groups](#rule-groups)
     - [WAF Rules](#waf-rules)
     - [WAF Pricing](#waf-pricing)
+  - [AWS Network Firewall](#aws-network-firewall)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4381,3 +4382,9 @@ AWS WAF is a web application firewall that helps protect your web applications o
 - Captcha - ($0.40/1,00 challenge attempts)
 - Fraud Control/Account Takeover ($10 / month and $1 / 1,000 login attempts)
 - Marketplace Rule Groups - Extra costs
+
+## AWS Network Firewall
+
+AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs)
+
+-
