@@ -357,6 +357,7 @@
     - [WAF Pricing](#waf-pricing)
   - [AWS Network Firewall](#aws-network-firewall)
     - [AWS Network Firewall - Components](#aws-network-firewall---components)
+    - [AWS Network Firewall - Rule Groups](#aws-network-firewall---rule-groups)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4401,3 +4402,11 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Either stateless or stateful
 - Processing order and default action
 - Rules - Traffic is evaluated against rules, pass, drop, forward
+
+### AWS Network Firewall - Rule Groups
+
+- Rule groups contain rules
+- Customer created or AWS managed
+- Defined upfront as stateful or stateless (type)
+- Capacity .. limit on the processing requirements for the group (all the rules in the group)
+- This cannot be changed afterwards
