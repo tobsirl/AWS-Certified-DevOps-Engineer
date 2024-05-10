@@ -359,6 +359,7 @@
     - [AWS Network Firewall - Components](#aws-network-firewall---components)
     - [AWS Network Firewall - Rule Groups](#aws-network-firewall---rule-groups)
       - [AWS Network Firewall - Stateless](#aws-network-firewall---stateless)
+      - [AWS Network Firewall - Stateful](#aws-network-firewall---stateful)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4421,3 +4422,13 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Actions: Pass, Drop, Forward or Custom
 - Processes in order .. then stops
 - Default = lowest number = high priority
+
+#### AWS Network Firewall - Stateful
+
+- Uses suricata rules engine (open standard)
+- Default = Pass, order = pass, drop, alert
+- Rules = suricata format or built in standard for simple/domain list
+- Simple = 5-Tuple w/ state (~SG)
+- Domain list = domain names and protocol types
+- Wildcards, headers(http), SNI (https)
+- IPS Rules - Suricata compatible
