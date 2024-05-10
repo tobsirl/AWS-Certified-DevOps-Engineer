@@ -4387,4 +4387,7 @@ AWS WAF is a web application firewall that helps protect your web applications o
 
 AWS Network Firewall is a managed service that makes it easy to deploy essential network protections for all of your Amazon Virtual Private Clouds (VPCs)
 
--
+- Requires a Firewall Subnet
+- Traffic flows through Firewall Subnet into the Network Firewall
+- Network Firewall sends the data back to the Firewall subnet
+- Firewall Subnet sends the traffic into the Public Subnet
