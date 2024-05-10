@@ -356,6 +356,7 @@
     - [WAF Rules](#waf-rules)
     - [WAF Pricing](#waf-pricing)
   - [AWS Network Firewall](#aws-network-firewall)
+    - [AWS Network Firewall - Components](#aws-network-firewall---components)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4391,3 +4392,12 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Traffic flows through Firewall Subnet into the Network Firewall
 - Network Firewall sends the data back to the Firewall subnet
 - Firewall Subnet sends the traffic into the Public Subnet
+
+### AWS Network Firewall - Components
+
+- Firewall - VPC, Subnets and Firewall Policy
+- Firewall Policy - 1:M - defines filtering behaviour
+- Rule Group - Collection of rules
+- Either stateless or stateful
+- Processing order and default action
+- Rules - Traffic is evaluated against rules, pass, drop, forward
