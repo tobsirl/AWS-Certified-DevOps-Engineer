@@ -360,6 +360,7 @@
     - [AWS Network Firewall - Rule Groups](#aws-network-firewall---rule-groups)
       - [AWS Network Firewall - Stateless](#aws-network-firewall---stateless)
       - [AWS Network Firewall - Stateful](#aws-network-firewall---stateful)
+  - [Connection Draining](#connection-draining)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4432,3 +4433,10 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Domain list = domain names and protocol types
 - Wildcards, headers(http), SNI (https)
 - IPS Rules - Suricata compatible
+
+## Connection Draining
+
+- What happens when instances are unhealthy or deregistered
+- Normally all connections are closed and no new connections
+- Connection draining allows in-flight requests to complete
+- CLASSIC LOAD BALANCER ONLY -defined on the CLB
