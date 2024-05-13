@@ -4494,10 +4494,10 @@ A catagram.io Lambda function creates a _connection to a Database_ and _download
 You notice your costs for the lambda function are excessive because _every invocation_ is using _1 second_ to perform this _connection_ and _download_.
 What options do you have to reduce costs and improve execution time?
 
-- Change the runtime of the existing function
-- Use lambda savings plans
-- Store the assets in the /tmp folder
-- Store the assets in the /folder
-- Connect to the database within the function handler
-- Connect to the database outside of the function handler
-- Enable lambda execution environment persistence
+- Change the runtime of the existing function ❌
+- Use lambda savings plans ❌
+- Store the assets in the /tmp folder ✅
+- Store the assets in the /folder ❌
+- Connect to the database within the function handler ❌
+- Connect to the database outside of the function handler ✅
+- Enable lambda execution environment persistence ❌
