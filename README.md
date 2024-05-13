@@ -4488,8 +4488,16 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 
 ## Question Technique
 
-A catagram.io Lambda function creates a connection to a Database and downloads some assets when executed.
-You notice your costs for the lambda function are excessive because every invocation is using 1 second to perform this connection and download.
+### Keyword Identification
+
+A catagram.io Lambda function creates a _connection to a Database_ and _downloads some assets_ when executed.
+You notice your costs for the lambda function are excessive because _every invocation_ is using _1 second_ to perform this _connection_ and _download_.
 What options do you have to reduce costs and improve execution time?
 
-### Keyword Identification
+- Change the runtime of the existing function
+- Use lambda savings plans
+- Store the assets in the /tmp folder
+- Store the assets in the /folder
+- Connect to the database within the function handler
+- Connect to the database outside of the function handler
+- Enable lambda execution environment persistence
