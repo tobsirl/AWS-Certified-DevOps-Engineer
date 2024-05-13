@@ -365,6 +365,8 @@
   - [X-Forwarded-For and PROXY Protocol](#x-forwarded-for-and-proxy-protocol)
     - [X-Forwarded-For](#x-forwarded-for)
     - [PROXY Protocol](#proxy-protocol)
+  - [Question Technique](#question-technique)
+    - [Keyword Identification](#keyword-identification)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4483,3 +4485,11 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 - Works with CLB (v1) and NLB (v2 - binary encoded)
 - End to end encryption - e.g. unbroken HTTPS (tcp listener)
 - Use PROXY Protocol, you can't add a HTTP header, it isn't decrypted
+
+## Question Technique
+
+A catagram.io Lambda function creates a connection to a Database and downloads some assets when executed.
+You notice your costs for the lambda function are excessive because every invocation is using 1 second to perform this connection and download.
+What options do you have to reduce costs and improve execution time?
+
+### Keyword Identification
