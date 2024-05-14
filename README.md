@@ -370,6 +370,7 @@
       - [Question 1](#question-1)
       - [Answers 1](#answers-1)
       - [Question 2](#question-2)
+      - [Answers 2](#answers-2)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4514,3 +4515,11 @@ What options do you have to reduce costs and improve execution time? (Choose two
 A _Serverless_ application uses API Gateway to perform searches. API Gateway is configured with a _non proxy integration_ to a backing _lambda function_
 which queries _DynamoDB_. You need to ensure that a _searchString parameter_ is _included_ in the _request_. What should you confirm to ensure this parameter is
 required? (Choose one)
+
+#### Answers 2
+
+- Configure the integration response
+- Configure the integration request
+- Configure the API Gateway stage
+- Configure the method request
+- Configure the method response
