@@ -4497,7 +4497,7 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 
 A catagram.io Lambda function creates a _connection to a Database_ and _downloads some assets_ when executed.
 You notice your costs for the lambda function are excessive because _every invocation_ is using _1 second_ to perform this _connection_ and _download_.
-What options do you have to reduce costs and improve execution time? (Chose two)
+What options do you have to reduce costs and improve execution time? (Choose two)
 
 #### Answers 1
 
@@ -4511,6 +4511,6 @@ What options do you have to reduce costs and improve execution time? (Chose two)
 
 #### Question 2
 
-A Serverless application uses API Gateway to perform searches. API Gateway is configured with a non proxy integration to a backing lambda function
-which queries DynamoDB. You need to ensure that a searchString parameter is included in the request. What should you confirm to ensure this parameter is
-required? (Chose one)
+A _Serverless_ application uses API Gateway to perform searches. API Gateway is configured with a _non proxy integration_ to a backing _lambda function_
+which queries _DynamoDB_. You need to ensure that a _searchString parameter_ is _included_ in the _request_. What should you confirm to ensure this parameter is
+required? (Choose one)
