@@ -367,6 +367,8 @@
     - [PROXY Protocol](#proxy-protocol)
   - [Question Technique](#question-technique)
     - [Keyword Identification](#keyword-identification)
+      - [Question](#question)
+      - [Answers](#answers)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4490,9 +4492,13 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 
 ### Keyword Identification
 
+#### Question
+
 A catagram.io Lambda function creates a _connection to a Database_ and _downloads some assets_ when executed.
 You notice your costs for the lambda function are excessive because _every invocation_ is using _1 second_ to perform this _connection_ and _download_.
 What options do you have to reduce costs and improve execution time?
+
+#### Answers
 
 - Change the runtime of the existing function ❌
 - Use lambda savings plans ❌
