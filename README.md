@@ -4518,8 +4518,8 @@ required? (Choose one)
 
 #### Answers 2
 
-- Configure the integration response
-- Configure the integration request
-- Configure the API Gateway stage
-- Configure the method request
-- Configure the method response
+- Configure the integration response ❌
+- Configure the integration request ❌
+- Configure the API Gateway stage ❌
+- Configure the method request ✅
+- Configure the method response ❌
