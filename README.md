@@ -367,8 +367,9 @@
     - [PROXY Protocol](#proxy-protocol)
   - [Question Technique](#question-technique)
     - [Keyword Identification](#keyword-identification)
-      - [Question](#question)
-      - [Answers](#answers)
+      - [Question 1](#question-1)
+      - [Answers 1](#answers-1)
+      - [Question 2](#question-2)
 
 ## IAM, ACCOUNTS & ORGANIZATIONS
 
@@ -4492,13 +4493,13 @@ AWS Network Firewall is a managed service that makes it easy to deploy essential
 
 ### Keyword Identification
 
-#### Question
+#### Question 1
 
 A catagram.io Lambda function creates a _connection to a Database_ and _downloads some assets_ when executed.
 You notice your costs for the lambda function are excessive because _every invocation_ is using _1 second_ to perform this _connection_ and _download_.
-What options do you have to reduce costs and improve execution time?
+What options do you have to reduce costs and improve execution time? (Chose two)
 
-#### Answers
+#### Answers 1
 
 - Change the runtime of the existing function ❌
 - Use lambda savings plans ❌
@@ -4507,3 +4508,9 @@ What options do you have to reduce costs and improve execution time?
 - Connect to the database within the function handler ❌
 - Connect to the database outside of the function handler ✅
 - Enable lambda execution environment persistence ❌
+
+#### Question 2
+
+A Serverless application uses API Gateway to perform searches. API Gateway is configured with a non proxy integration to a backing lambda function
+which queries DynamoDB. You need to ensure that a searchString parameter is included in the request. What should you confirm to ensure this parameter is
+required? (Chose one)
